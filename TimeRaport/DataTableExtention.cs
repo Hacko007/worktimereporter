@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
+﻿using System.Data;
 
-namespace Hackovic
+namespace Hackovic.TimeReport
 {
 	public static class DataTableExtention
 	{
 		public static T Distinct<T>(this T table, params DataColumn[] columns) 
-		where T : DataTable , new()
+			where T : DataTable , new()
 		{
 
 			if (table == null) return null;
@@ -28,7 +24,7 @@ namespace Hackovic
 
 
 		private static bool IsRowInTable<T>(T table, DataRow row, DataColumn[] columns)
-		where T : DataTable, new()
+			where T : DataTable, new()
 		{			
 			foreach (DataRow myrow in table.Rows)
 			{

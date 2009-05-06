@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using System.Windows.Forms;
 using System.Data;
 
 namespace Hackovic.TimeReport
@@ -31,7 +30,7 @@ namespace Hackovic.TimeReport
 		public DistinctDateSetting DistinctDateSetting { get; set; }
 
 		public void LoadHolidays() { 
-			string xml =  global::Hackovic.TimeReport.Properties.Settings.Default.Holidays;			
+			string xml =  Properties.Settings.Default.Holidays;			
 			LoadHolidays(xml);
 		}
 
@@ -74,9 +73,9 @@ namespace Hackovic.TimeReport
 							var p = this.Where(h => h.Date == hol.Date);
 							if (p.Count() > 0) {
 								Holiday h = p.First();
-								this.Remove(h);								
+								Remove(h);								
 							}
-							this.Add(hol);
+							Add(hol);
 						}
 					}
 					catch (Exception e){
@@ -125,12 +124,12 @@ namespace Hackovic.TimeReport
 			}
 			Save();
 		}
-		public string ToXML()
+		public string ToXml()
 		{
 			StringBuilder xml = new StringBuilder(string.Format( "<?xml version=\"1.0\" encoding=\"utf-8\" ?>{0}<Root>{0}", Environment.NewLine )) ;
 			foreach (Holiday item in this)
 			{
-				xml.AppendLine(item.ToXML());
+				xml.AppendLine(item.ToXml());
 			}
 			xml.AppendLine("</Root>");
 			return xml.ToString();			
@@ -138,12 +137,12 @@ namespace Hackovic.TimeReport
 
 		public void Save() {			
 
-			global::Hackovic.TimeReport.Properties.Settings.Default["Holidays"] = ToXML() ;
-			global::Hackovic.TimeReport.Properties.Settings.Default.Save();
+			Properties.Settings.Default["Holidays"] = ToXml() ;
+			Properties.Settings.Default.Save();
 		}
 
 
-		private DataTable GetTable()
+		private static DataTable GetTable()
 		{
 			DataTable table = new DataTable();
 
@@ -179,21 +178,10 @@ namespace Hackovic.TimeReport
 			return table;
 		}
 
-
-
-
-
 		internal Holiday GetHoliday(DateTime SelectedDate)
 		{
 			var h = Instance.Where(hol => hol.Date == SelectedDate);
-			if (h.Count() > 0) {
-				return h.First();
-			}
-			else
-			{
-				return null;
-			}
+			return h.Count() > 0 ? h.First() : null;
 		}
-
 	}
 }

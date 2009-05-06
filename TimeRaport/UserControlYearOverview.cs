@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
@@ -100,26 +96,25 @@ namespace Hackovic.TimeReport
 		private void ButtonExport_Click(object sender, EventArgs e)
 		{
 			Stream myStream;
-			if (m_SaveFileDialog.ShowDialog() == DialogResult.OK)
+			if (m_SaveFileDialog.ShowDialog() != DialogResult.OK) return;
+
+			if ((myStream = m_SaveFileDialog.OpenFile()) != null)
 			{
-				if ((myStream = m_SaveFileDialog.OpenFile()) != null)
+				try
 				{
-					try
-					{
-						TextWriter tw = new StreamWriter(myStream);
-						tw.Write(m_Holydays.ToXML());
-						tw.Close();
-						myStream.Close();
-					}
-					catch
-					{
-						MessageBox.Show("Export misslyckades!");
-					}
+					TextWriter tw = new StreamWriter(myStream);
+					tw.Write(m_Holydays.ToXml());
+					tw.Close();
+					myStream.Close();
 				}
-				else
+				catch
 				{
-					MessageBox.Show("Kunde inte komma åt filen!");
+					MessageBox.Show("Export misslyckades!");
 				}
+			}
+			else
+			{
+				MessageBox.Show("Kunde inte komma åt filen!");
 			}
 		}
 

@@ -19,7 +19,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Hackovic.TimeReport</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <StartupObject>Hackovic.TimeReport.TimeRaportForm</StartupObject>
+    <StartupObject>Hackovic.TimeReport.FormTimeRaport</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -178,7 +178,7 @@
       <DependentUpon>TimeLogDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="TimeLogFactory.cs" />
-    <Compile Include="TimeRaportForm.cs">
+    <Compile Include="FormTimeRaport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddHolyday.cs">
@@ -207,8 +207,8 @@
       <DependentUpon>FormAddCategry.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimeRaportForm.resx">
-      <DependentUpon>TimeRaportForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormTimeRaport.resx">
+      <DependentUpon>FormTimeRaport.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlMonthSummary.resx">
