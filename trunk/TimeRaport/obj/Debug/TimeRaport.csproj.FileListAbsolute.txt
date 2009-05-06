@@ -1,0 +1,35 @@
+I:\Documents\DEV\TidsRapport\TimeRaport\bin\Debug\Hackovic.TimeReport.exe.config
+I:\Documents\DEV\TidsRapport\TimeRaport\bin\Debug\TimeLogDB.sdf
+I:\Documents\DEV\TidsRapport\TimeRaport\bin\Debug\Hackovic.TimeReport.exe
+I:\Documents\DEV\TidsRapport\TimeRaport\bin\Debug\Hackovic.TimeReport.pdb
+I:\Documents\DEV\TidsRapport\TimeRaport\bin\Debug\ClockForm.dll
+I:\Documents\DEV\TidsRapport\TimeRaport\bin\Debug\ClockForm.pdb
+I:\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\ResolveAssemblyReference.cache
+I:\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.CheckInMain.resources
+I:\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.FormAddCategry.resources
+I:\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.TimeRaportForm.resources
+I:\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\TimeRaport.csproj.GenerateResource.Cache
+I:\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.exe
+I:\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.pdb
+c:\Users\emithac\U3Small\Documents\DEV\TidsRapport\TimeRaport\bin\Debug\Hackovic.TimeReport.exe.config
+c:\Users\emithac\U3Small\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.exe
+c:\Users\emithac\U3Small\Documents\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.pdb
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\bin\Debug\Hackovic.TimeReport.exe.config
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.exe
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.pdb
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\bin\Debug\TimeLogDB.sdf
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\bin\Debug\Hackovic.TimeReport.exe
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\bin\Debug\Hackovic.TimeReport.pdb
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\bin\Debug\ClockForm.dll
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\bin\Debug\ClockForm.pdb
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\ResolveAssemblyReference.cache
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.FormAddCategry.resources
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.TimeRaportForm.resources
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\TimeRaport.csproj.GenerateResource.Cache
+c:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.UserControlMonthSummary.resources
+C:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.Properties.Resources.resources
+C:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.UserControlYearOverview.resources
+C:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.g.resources
+C:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.FormAddHolyday.resources
+C:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.FormImportSettings.resources
+C:\Documents and Settings\emithac\My Documents\Castra\DEV\TidsRapport\TimeRaport\obj\Debug\Hackovic.TimeReport.UserControlCheckInMain.resources

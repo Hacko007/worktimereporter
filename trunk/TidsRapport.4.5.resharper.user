@@ -1,0 +1,32 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@Microsoft.WindowsMobile.Status.SystemProperty">
+      <Item value="Time" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="46E40B22-D2F1-4756-B9A6-5CB7A76C2F98/f:Form1.cs" caret="573" fromTop="14" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="46E40B22-D2F1-4756-B9A6-5CB7A76C2F98/f:Form1.cs" caret="979" fromTop="27" />
+      <File id="46E40B22-D2F1-4756-B9A6-5CB7A76C2F98/f:Form1.cs" caret="574" fromTop="14" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerMSTest>
+    <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
+  </UnitTestRunnerMSTest>
+</Configuration>
