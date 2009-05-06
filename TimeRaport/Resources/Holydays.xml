@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <Holiday>
+    <Date>2009-01-01 00:00:00</Date>
+    <Name>Nyårsdagen</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-01-05 00:00:00</Date>
+    <Name>Trettondagsafton</Name>
+    <Info></Info>
+    <TimeToWork>4</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-01-06 00:00:00</Date>
+    <Name>Trettondag jul</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-04-09 00:00:00</Date>
+    <Name>Skärtorsdag</Name>
+    <Info></Info>
+    <TimeToWork>4</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-04-10 00:00:00</Date>
+    <Name>Långfredagen</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-04-13 00:00:00</Date>
+    <Name>Annandag påsk</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-04-30 00:00:00</Date>
+    <Name>Valborgsmässoafton</Name>
+    <Info></Info>
+    <TimeToWork>4</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-05-01 00:00:00</Date>
+    <Name>Första Maj</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-05-21 00:00:00</Date>
+    <Name>Kristi himmelsfärdsdag</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-05-30 00:00:00</Date>
+    <Name>Pingstafton</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-05-31 00:00:00</Date>
+    <Name>Pingstdagen</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-06-06 00:00:00</Date>
+    <Name>Sveriges nationaldag</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-06-18 00:00:00</Date>
+    <Name>Dag före midsommarafton</Name>
+    <Info></Info>
+    <TimeToWork>4</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-06-19 00:00:00</Date>
+    <Name>Dag före midsommarafton</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-06-20 00:00:00</Date>
+    <Name>Midsommardagen</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-10-30 00:00:00</Date>
+    <Name>Dag före alla helgons dag</Name>
+    <Info></Info>
+    <TimeToWork>4</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-10-31 00:00:00</Date>
+    <Name>Alla helgons dag</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-12-24 00:00:00</Date>
+    <Name>Julafton</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-12-25 00:00:00</Date>
+    <Name>Juldagen</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-12-26 00:00:00</Date>
+    <Name>Annandag jul</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+  <Holiday>
+    <Date>2009-12-31 00:00:00</Date>
+    <Name>Nyårsafton</Name>
+    <Info></Info>
+    <TimeToWork>0</TimeToWork>
+  </Holiday>
+</Root>
