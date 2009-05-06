@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
-using System.Text;
 using System.Windows.Forms;
-using System.IO;
-using System.Collections;
 using System.Linq;
 using Hackovic.TimeReport.TimeLogDataSetTableAdapters;
 
@@ -14,9 +11,7 @@ namespace Hackovic.TimeReport
 {
     public partial class UserControlCheckInMain : UserControl
     {
-		private FormAddCategry m_FormAddCategory;       
-		private TimeLogDataSet dsTimeReport ;
-		private double m_Hours = 0;
+    	private double m_Hours ;
 
 
 		// Declare the event.
@@ -33,14 +28,14 @@ namespace Hackovic.TimeReport
 
         public UserControlCheckInMain()
         {
+			m_Hours = 0;
 			dsTimeReport = TimeLogFactory.Instance;
             
 			InitializeComponent();
-			Application.DoEvents();
-            DateTime dt = DateTime.Now;
+			Application.DoEvents();            
 
-			this.SelectedTime = DateTime.Now;
-            this.SelectedDate = DateTime.Today;
+			SelectedTime = DateTime.Now;
+            SelectedDate = DateTime.Today;
 
             RefreshDataGrids();
 
@@ -59,7 +54,7 @@ namespace Hackovic.TimeReport
             {
                 try
                 {
-					this.m_Hours = (double)m_NumericUpDownToWork.Value;
+					m_Hours = (double)m_NumericUpDownToWork.Value;
                 }
                 catch { }
                 return m_Hours;
@@ -78,7 +73,7 @@ namespace Hackovic.TimeReport
 				return m_MonthCalendar.SelectionStart.Date;
 			}
             set { 
-				this.m_MonthCalendar.SelectionStart = value; 
+				m_MonthCalendar.SelectionStart = value; 
 			}
         }
         public DateTime SelectedTime
@@ -101,26 +96,24 @@ namespace Hackovic.TimeReport
         {
             get
             {
-                try
-                {
-                    return (TimeLogDataSet.CategoryRow)((DataRowView)this.ListBox_WorkCaegory.SelectedItem).Row;
-                }
-                catch
-                {
-					if (dsTimeReport.Category.Count > 0) {
+				try
+				{
+					return (TimeLogDataSet.CategoryRow)((DataRowView)ListBox_WorkCaegory.SelectedItem).Row;
+				}
+				catch
+				{
+					if (dsTimeReport.Category.Count > 0)
+					{
 						return dsTimeReport.Category.First();
 					}
-					else
-					{
-						TimeLogDataSet.CompanyRow cmp_row = dsTimeReport.Company.DefaultRow();
-						TimeLogDataSet.CategoryRow work_cat_row = dsTimeReport.Category.DefaultRow(cmp_row);
-						return work_cat_row;
-					}
-                    
-                }
+
+					TimeLogDataSet.CompanyRow cmpRow = dsTimeReport.Company.DefaultRow();
+					TimeLogDataSet.CategoryRow workCatRow = dsTimeReport.Category.DefaultRow(cmpRow);
+					return workCatRow;
+				}
             }
 			set {
-				this.ListBox_WorkCaegory.SelectedItem = value;
+				ListBox_WorkCaegory.SelectedItem = value;
 			}
         }
 
@@ -129,23 +122,23 @@ namespace Hackovic.TimeReport
 		{
 			get
 			{
-				TimeLogDataSet.TimeLogRow selected_timelog = null;
+				TimeLogDataSet.TimeLogRow selectedTimelog = null;
 				try
 				{
 					if (dsTimeReport.TimeLog.Count > 0)
 					{
-						selected_timelog = dsTimeReport.TimeLog
-						.Where(tl => tl.Day == this.SelectedDate
-							&& tl.CategoryId == this.SelectedCategory.CategoryId
+						selectedTimelog = dsTimeReport.TimeLog
+						.Where(tl => tl.Day == SelectedDate
+							&& tl.CategoryId == SelectedCategory.CategoryId
 							&& (tl.IsInTimeNull() || tl.IsOutTimeNull())).First();
 					}
 				}
 				catch { }
-				if (selected_timelog == null)
+				if (selectedTimelog == null)
 				{
-					selected_timelog = dsTimeReport.TimeLog.NewTimeLogRow();
+					selectedTimelog = dsTimeReport.TimeLog.NewTimeLogRow();
 				}
-				return selected_timelog;
+				return selectedTimelog;
 			}
 		}
 
@@ -153,26 +146,26 @@ namespace Hackovic.TimeReport
 		{
 			get
 			{
-				TimeLogDataSet.PlannedRow selected_planned= null;
+				TimeLogDataSet.PlannedRow selectedPlanned= null;
 				try
 				{
 					if (dsTimeReport.Planned.Count > 0)
 					{
-						selected_planned = dsTimeReport.Planned
-						.Where(tl => tl.Day == this.SelectedDate
-							&& tl.CategoryId == this.SelectedCategory.CategoryId ).First();
+						selectedPlanned = dsTimeReport.Planned
+						.Where(tl => tl.Day == SelectedDate
+							&& tl.CategoryId == SelectedCategory.CategoryId ).First();
 					}
 				}
 				catch { }
-				if (selected_planned == null)
+				if (selectedPlanned == null)
 				{
-					selected_planned = dsTimeReport.Planned.NewPlannedRow();
-					selected_planned.Day = this.SelectedDate;
-					selected_planned.CategoryId = this.SelectedCategory.CategoryId;
-					selected_planned.CategoryRow = this.SelectedCategory;
-					selected_planned.Hours = this.Hour;
+					selectedPlanned = dsTimeReport.Planned.NewPlannedRow();
+					selectedPlanned.Day = SelectedDate;
+					selectedPlanned.CategoryId = SelectedCategory.CategoryId;
+					selectedPlanned.CategoryRow = SelectedCategory;
+					selectedPlanned.Hours = Hour;
 				}
-				return selected_planned;
+				return selectedPlanned;
 			}
 		}
 
@@ -197,43 +190,43 @@ namespace Hackovic.TimeReport
 
 		#region Private methods
 		
-		private void WriteEntery(bool is_InTime)
+		private void WriteEntery(bool IsInTime)
         {
 
-			TimeLogDataSet.TimeLogRow time_log_row = this.SelectedTimeLogRow;
+			TimeLogDataSet.TimeLogRow timeLogRow = SelectedTimeLogRow;
 
-			if (time_log_row.RowState == DataRowState.Detached) { 
+			if (timeLogRow.RowState == DataRowState.Detached) { 
 				/// 
 				/// New Time Log row
 				/// 
-				TimeLogDataSet.CategoryRow cat_row = this.SelectedCategory ;
-				time_log_row.CategoryId = cat_row.CategoryId;
-				time_log_row.CategoryRow = cat_row;
-				time_log_row.CategoryText= cat_row.DisplayValue;
-				if (is_InTime)
+				TimeLogDataSet.CategoryRow catRow = SelectedCategory ;
+				timeLogRow.CategoryId = catRow.CategoryId;
+				timeLogRow.CategoryRow = catRow;
+				timeLogRow.CategoryText= catRow.DisplayValue;
+				if (IsInTime)
 				{					
-					time_log_row.InTime = this.SelectedTime;
+					timeLogRow.InTime = SelectedTime;
 				}
 				else
 				{
-					time_log_row.OutTime = this.SelectedTime;
+					timeLogRow.OutTime = SelectedTime;
 				}
 				
-				if (this.SelectedPlannedRow.RowState == DataRowState.Detached)
-					dsTimeReport.Planned.AddPlannedRow(this.SelectedPlannedRow);
+				if (SelectedPlannedRow.RowState == DataRowState.Detached)
+					dsTimeReport.Planned.AddPlannedRow(SelectedPlannedRow);
 
-				time_log_row.PlannedRowParent = this.SelectedPlannedRow;
-				time_log_row.Day = this.SelectedDate;
-				dsTimeReport.TimeLog.AddTimeLogRow(time_log_row);            
+				timeLogRow.PlannedRowParent = SelectedPlannedRow;
+				timeLogRow.Day = SelectedDate;
+				dsTimeReport.TimeLog.AddTimeLogRow(timeLogRow);            
 				
 			} else {
-				if (is_InTime)
+				if (IsInTime)
 				{
-					time_log_row.InTime = this.SelectedTime;
+					timeLogRow.InTime = SelectedTime;
 				}
 				else
 				{
-					time_log_row.OutTime = this.SelectedTime;
+					timeLogRow.OutTime = SelectedTime;
 				}				
 			}
 
@@ -247,26 +240,26 @@ namespace Hackovic.TimeReport
 			catch { }
 
             dsTimeReport.AcceptChanges();
-			this.RefreshDataGrids();
+			RefreshDataGrids();
         }
 
         private void RefreshDataGrids()
         {
 			TimeLogFactory.FillAllTables();
-			this.RaiseRefreshOverview();			
-            TimeLogFactory.CalculateMonths(this.SelectedDate);			
+			RaiseRefreshOverview();			
+            TimeLogFactory.CalculateMonths(SelectedDate);			
 			dsTimeReport.DayTimeLog.AcceptChanges();
 			dayTimeLogBindingSource.DataSource = dsTimeReport.DayTimeLog;
-			this.FilterWeeks();
-            this.categoryBindingSource.DataSource = dsTimeReport.Category;
-            this.RefreshTodayOnly();
-			this.SetTotalLabel();
-			this.TrimDataGridHeights();
+			FilterWeeks();
+            categoryBindingSource.DataSource = dsTimeReport.Category;
+            RefreshTodayOnly();
+			SetTotalLabel();
+			TrimDataGridHeights();
         }
 
         private void RefreshTodayOnly()
         {
-            this.timeLogBindingSource.DataSource = dsTimeReport.TimeLog.Where(time => time.Day == this.SelectedDate).ToArray() ;
+            timeLogBindingSource.DataSource = dsTimeReport.TimeLog.Where(time => time.Day == SelectedDate).ToArray() ;
         }
 
 		private void FilterWeeks()
@@ -300,50 +293,57 @@ namespace Hackovic.TimeReport
 			}
 
 		}
- 
-		private void UpdateTimeLogToday()
-        {
-            TimeLogDataSet.TimeLogDataTable changes_del = (TimeLogDataSet.TimeLogDataTable)dsTimeReport.TimeLog.GetChanges(DataRowState.Deleted);
-            TimeLogDataSet.TimeLogDataTable changes = (TimeLogDataSet.TimeLogDataTable)dsTimeReport.TimeLog.GetChanges();
-            if (changes != null || changes_del != null)
-            {
-                try
-                {
-                    try
-                    {
-                        timeLogTableAdapter.Update(dsTimeReport.TimeLog);
-                    }
-                    catch { }
-                    changes.AcceptChanges();
-                    dsTimeReport.TimeLog.AcceptChanges();
-                    this.RefreshTodayOnly();
-                    
-                    var empty_pln_rows = dsTimeReport.Planned.Where(ph => dsTimeReport.TimeLog.Count > 0
-                    && dsTimeReport.TimeLog.Where(time => time.Day == ph.Day && time.CategoryId == ph.CategoryId).Count() == 0);
-                    if (empty_pln_rows != null && empty_pln_rows.Count() > 0) {
-                        foreach (TimeLogDataSet.PlannedRow row in empty_pln_rows)
-                        {
-                            row.Delete();
-                        }
-                        new PlannedTableAdapter().Update(dsTimeReport.Planned);
-                    }
-                                      
-                }
-                catch
-                {
-                }
-            }
-        }
 
-		private void SetTotalLabel()
+		private void UpdateTimeLogToday()
+		{
+			TimeLogDataSet.TimeLogDataTable changesDel =
+				(TimeLogDataSet.TimeLogDataTable) dsTimeReport.TimeLog.GetChanges(DataRowState.Deleted);
+			TimeLogDataSet.TimeLogDataTable changes = (TimeLogDataSet.TimeLogDataTable) dsTimeReport.TimeLog.GetChanges();
+			
+			if (changes == null && changesDel == null) return;
+			
+			try
+			{
+				try
+				{
+					timeLogTableAdapter.Update(dsTimeReport.TimeLog);
+				}
+				catch
+				{
+				}
+				if (changes != null) changes.AcceptChanges();
+				dsTimeReport.TimeLog.AcceptChanges();
+				RefreshTodayOnly();
+
+				var emptyPlnRows = dsTimeReport.Planned.Where(ph => dsTimeReport.TimeLog.Count > 0
+				                                                      &&
+				                                                      dsTimeReport.TimeLog.Where(
+				                                                      	time =>
+				                                                      	time.Day == ph.Day && time.CategoryId == ph.CategoryId).
+				                                                      	Count() == 0);
+				if (emptyPlnRows.Count() > 0)
+				{
+					foreach (TimeLogDataSet.PlannedRow row in emptyPlnRows)
+					{
+						row.Delete();
+					}
+					new PlannedTableAdapter().Update(dsTimeReport.Planned);
+				}
+			}
+			catch
+			{
+			}
+		}
+
+    	private void SetTotalLabel()
 		{
 			label_info.Text = "Denna månad:" + Environment.NewLine;
 			int daycount = dsTimeReport.DayTimeLog.GroupBy(dl => dl.Day, dl => dl).Count();
 			label_info.Text += daycount + " arbetsdagar" + Environment.NewLine +Environment.NewLine ;
 
-			double total_hours = 0; 
-			double total_planned = 0;
-			double total_diff = 0;
+			double totalHours = 0; 
+			double totalPlanned = 0;
+			double totalDiff = 0;
 
 			var worked = dsTimeReport.DayTimeLog.GroupBy(dl => dl.CategoryId, dl => dl );
 			foreach (var category in worked)
@@ -351,9 +351,9 @@ namespace Hackovic.TimeReport
 				double sum = category.Sum(day => day.Hours);
 				double plan = category.Sum(day => day.PlannedHours);
 				double diff = sum - plan;
-				total_hours += sum;
-				total_planned += plan;
-				total_diff += diff;
+				totalHours += sum;
+				totalPlanned += plan;
+				totalDiff += diff;
 				string format = "{0,4:N2} av {1,4:N2} [+{2,4:N2}] - ";
 				if (diff < 0) {
 					format = "{0,4:N2} av {1,4:N2} [{2,4:N2}] - ";
@@ -365,12 +365,12 @@ namespace Hackovic.TimeReport
 				label_info.Text += dsTimeReport.Category.FindByCategoryId(category.Key).DisplayValue + Environment.NewLine;
 			}
 
-			label_monthTotal.Text = string.Format("Arbetat:{0,7:N2}  tim.{2}Plan:{1,10:N2}  tim.", total_hours, total_planned, Environment.NewLine);
-			if(total_diff > 0){
-				label_Diff.Text = string.Format("Skilnad:+{0,7:N2}  tim.", total_diff);
+			label_monthTotal.Text = string.Format("Arbetat:{0,7:N2}  tim.{2}Plan:{1,10:N2}  tim.", totalHours, totalPlanned, Environment.NewLine);
+			if(totalDiff > 0){
+				label_Diff.Text = string.Format("Skilnad:+{0,7:N2}  tim.", totalDiff);
 				label_Diff.ForeColor = Color.GreenYellow;
 			}else{
-				label_Diff.Text = string.Format("Skilnad:{0,7:N2}  tim.", total_diff);
+				label_Diff.Text = string.Format("Skilnad:{0,7:N2}  tim.", totalDiff);
 				label_Diff.ForeColor = Color.OrangeRed;
 
  			}
@@ -383,14 +383,14 @@ namespace Hackovic.TimeReport
 
 
 
-		private void Button_in_Click(object sender, System.EventArgs e)
+		private void Button_in_Click(object sender, EventArgs e)
 		{
-			this.WriteEntery(true);
+			WriteEntery(true);
 		}
 
-		private void Button_out_Click(object sender, System.EventArgs e)
+		private void Button_out_Click(object sender, EventArgs e)
 		{
-			this.WriteEntery(false);
+			WriteEntery(false);
 		}
 
 		private void Button_Refresh_Click(object sender, EventArgs e)
@@ -415,19 +415,17 @@ namespace Hackovic.TimeReport
 		{
 			try
 			{
-				int wid = 0;
-				if (dsTimeReport.Category.Count > 0)
-				{
-					wid = this.SelectedCategory.CategoryId;
-					TimeLogDataSet.PlannedRow planned = dsTimeReport.Planned.FindByDayCategoryId(this.SelectedDate, wid);
-					
-					if (planned == null) return;
-				
-					planned.Hours = this.Hour;
-					new TimeLogDataSetTableAdapters.PlannedTableAdapter().Update(dsTimeReport.Planned);
-					dsTimeReport.Planned.AcceptChanges();
-					this.RefreshDataGrids();
-				}
+				if (dsTimeReport.Category.Count == 0) return;
+			
+				int wid = SelectedCategory.CategoryId;
+				TimeLogDataSet.PlannedRow planned = dsTimeReport.Planned.FindByDayCategoryId(SelectedDate, wid);
+
+				if (planned == null) return;
+
+				planned.Hours = Hour;
+				new PlannedTableAdapter().Update(dsTimeReport.Planned);
+				dsTimeReport.Planned.AcceptChanges();
+				RefreshDataGrids();
 			}
 			catch
 			{
@@ -436,8 +434,8 @@ namespace Hackovic.TimeReport
        
         private void DigitalClock_Now_Click(object sender, EventArgs e)
         {            
-            this.SelectedTime = DateTime.Now;
-            this.SelectedDate = DateTime.Today;
+            SelectedTime = DateTime.Now;
+            SelectedDate = DateTime.Today;
         }
 
         void DataGrid_DataError(object sender, DataGridViewDataErrorEventArgs e) {}
@@ -450,13 +448,13 @@ namespace Hackovic.TimeReport
         
         private void ListBox_Category_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (ListBox_WorkCaegory.SelectedItem != null) {
-                TimeLogDataSet.PlannedRow day_row = dsTimeReport.Planned.FindByDayCategoryId(this.SelectedDate, this.SelectedCategory.CategoryId);
-               if (day_row != null)
-               {
-				   this.Hour = day_row.Hours;
-               }
-            }
+        	if (ListBox_WorkCaegory.SelectedItem == null) return;
+
+        	TimeLogDataSet.PlannedRow dayRow = dsTimeReport.Planned.FindByDayCategoryId(SelectedDate, SelectedCategory.CategoryId);
+        	if (dayRow != null)
+        	{
+        		Hour = dayRow.Hours;
+        	}
         }
 
  
@@ -464,24 +462,24 @@ namespace Hackovic.TimeReport
 		{
 			SelectedDate = e.Start;
 			
-			this.RefreshDataGrids();
+			RefreshDataGrids();
 			if (dsTimeReport.Category.Count > 0)
 			{
-				List<Hackovic.TimeReport.TimeLogDataSet.TimeLogRow> incompleteTimeLogs = dsTimeReport.TimeLog.FindIncmpleteTimeLogs(this.SelectedDate);
-				TimeLogDataSet.PlannedRow dayh = dsTimeReport.Planned.FindByDayCategoryId(this.SelectedDate, this.SelectedCategory.CategoryId);
+				List<TimeLogDataSet.TimeLogRow> incompleteTimeLogs = dsTimeReport.TimeLog.FindIncmpleteTimeLogs(SelectedDate);
+				TimeLogDataSet.PlannedRow dayh = dsTimeReport.Planned.FindByDayCategoryId(SelectedDate, SelectedCategory.CategoryId);
 				if (incompleteTimeLogs != null && incompleteTimeLogs.Count > 0 )
 				{
-					this.Hour = incompleteTimeLogs.First().PlannedRowParent.Hours;
-					this.SelectedCategory = incompleteTimeLogs.First().CategoryRow;
+					Hour = incompleteTimeLogs.First().PlannedRowParent.Hours;
+					SelectedCategory = incompleteTimeLogs.First().CategoryRow;
 				}
 				else if (dayh != null)
 				{
-					this.Hour = dayh.Hours;
+					Hour = dayh.Hours;
 				}
 
 				else
 				{
-					this.Hour = 8;
+					Hour = 8;
 				}
 			}
 
@@ -504,13 +502,13 @@ namespace Hackovic.TimeReport
 
 		private void m_DeleteSelectedRowToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			DateTime? dt_in = dataGridView_Timmar.SelectedRows[0].Cells[1].Value as DateTime?;
-			DateTime? dt_out = dataGridView_Timmar.SelectedRows[0].Cells[2].Value as DateTime?;
+			DateTime? dtIn = dataGridView_Timmar.SelectedRows[0].Cells[1].Value as DateTime?;
+			DateTime? dtOut = dataGridView_Timmar.SelectedRows[0].Cells[2].Value as DateTime?;
 
 			var p = TimeLogFactory.Instance.TimeLog.
 				Where(	tl =>
-						(!dt_in.HasValue && tl.IsInTimeNull() || (dt_in.HasValue && tl.InTime == dt_in.Value))
-					&& (!dt_out.HasValue && tl.IsOutTimeNull() || (dt_out.HasValue && tl.OutTime == dt_out.Value)));
+						(!dtIn.HasValue && tl.IsInTimeNull() || (dtIn.HasValue && tl.InTime == dtIn.Value))
+					&& (!dtOut.HasValue && tl.IsOutTimeNull() || (dtOut.HasValue && tl.OutTime == dtOut.Value)));
 
 			if (p.Count() > 0) {
 				var row = p.First();
@@ -540,23 +538,25 @@ namespace Hackovic.TimeReport
 				m_NumericUpDownMinute.Value = 0;
 				return;
 			}
-			else if (minute < 0) {
-				m_NumericUpDownMinute.Value = 55;
-				return;			
-			}
-			else
+
+			if (minute < 0)
 			{
-				while ((minute % 5) != 0)
-				{
-					if (minute == 0) break;
-					minute--;
-				}
-				m_NumericUpDownMinute.Value = minute;
+				m_NumericUpDownMinute.Value = 55;
+				return;
 			}
+
+
+			while ((minute%5) != 0)
+			{
+				if (minute == 0) break;
+				minute--;
+			}
+			m_NumericUpDownMinute.Value = minute;
+
 		}
-      
 
 
-		
+
+
     }
 }

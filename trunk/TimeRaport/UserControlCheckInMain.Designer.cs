@@ -136,10 +136,10 @@
 			// 
 			// button_out
 			// 
-			this.button_out.BgColor1 = System.Drawing.Color.Tan;
-			this.button_out.BgColor2 = System.Drawing.Color.SaddleBrown;
-			this.button_out.FgColor1 = System.Drawing.Color.SaddleBrown;
-			this.button_out.FgColor2 = System.Drawing.Color.SaddleBrown;
+			this.button_out.BgColor1 = System.Drawing.Color.Beige;
+			this.button_out.BgColor2 = System.Drawing.Color.DarkOliveGreen;
+			this.button_out.FgColor1 = System.Drawing.Color.DarkOliveGreen;
+			this.button_out.FgColor2 = System.Drawing.Color.DarkOliveGreen;
 			this.button_out.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button_out.Font = new System.Drawing.Font("Arial Black", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button_out.ForeColor = System.Drawing.Color.White;
@@ -149,7 +149,7 @@
 			this.button_out.TabIndex = 12;
 			this.button_out.Text = "Out";
 			this.button_out.TextHasShadow = true;
-			this.button_out.TextShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.button_out.TextShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
 			this.button_out.Click += new System.EventHandler(this.Button_out_Click);
 			// 
 			// button_in
@@ -918,5 +918,7 @@
 		private System.Windows.Forms.ToolTip m_ToolTip;
 		private System.Windows.Forms.ContextMenuStrip m_ContextMenuStrip;
 		private System.Windows.Forms.ToolStripMenuItem m_DeleteSelectedRowToolStripMenuItem;
+		private FormAddCategry m_FormAddCategory;
+		private TimeLogDataSet dsTimeReport ;
 	}
 }

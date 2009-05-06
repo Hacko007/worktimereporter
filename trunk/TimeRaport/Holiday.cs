@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Hackovic.TimeReport
 {	
@@ -31,7 +28,7 @@ namespace Hackovic.TimeReport
 			return str;
 		}
 
-		public string ToXML()
+		public string ToXml()
 		{
 			String xml = string.Format("	<Holiday>"
 			+ "<Date>{0}</Date>"

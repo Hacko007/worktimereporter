@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Hackovic.TimeReport
@@ -18,7 +12,7 @@ namespace Hackovic.TimeReport
 			InitializeComponent();			
 		}
 
-		private void buttonOK_Click(object sender, EventArgs e)
+		private void ButtonOK_Click(object sender, EventArgs e)
 		{
 			if (Holyday == null) {
 				Holyday = new Holiday();
@@ -31,7 +25,7 @@ namespace Hackovic.TimeReport
 			Close();
 		}
 
-		private void buttonCancel_Click(object sender, EventArgs e)
+		private void ButtonCancel_Click(object sender, EventArgs e)
 		{
 			m_MonthCalendar.SelectionStart = DateTime.Today;
 			m_textBoxName.Text = "";

@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Hackovic.TimeReport
 {
@@ -32,10 +30,10 @@ namespace Hackovic.TimeReport
 		#endregion
 
 		public static void FillAllTables() {
-			new TimeReport.TimeLogDataSetTableAdapters.CategoryTableAdapter().Fill(Instance.Category);
-			new TimeReport.TimeLogDataSetTableAdapters.CompanyTableAdapter().Fill(Instance.Company);
-			new TimeReport.TimeLogDataSetTableAdapters.PlannedTableAdapter().Fill(Instance.Planned);
-			new TimeReport.TimeLogDataSetTableAdapters.TimeLogTableAdapter().Fill(Instance.TimeLog);
+			new TimeLogDataSetTableAdapters.CategoryTableAdapter().Fill(Instance.Category);
+			new TimeLogDataSetTableAdapters.CompanyTableAdapter().Fill(Instance.Company);
+			new TimeLogDataSetTableAdapters.PlannedTableAdapter().Fill(Instance.Planned);
+			new TimeLogDataSetTableAdapters.TimeLogTableAdapter().Fill(Instance.TimeLog);
 			Instance.AcceptChanges();
 		}
 

@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Hackovic.TimeReport
@@ -25,8 +19,8 @@ namespace Hackovic.TimeReport
             } 
         }
         void LoadData() {          
-            this.categoryTableAdapter.Fill(this.timeLogDataSet.Category);            
-            this.companyTableAdapter.Fill(this.timeLogDataSet.Company);
+            categoryTableAdapter.Fill(timeLogDataSet.Category);            
+            companyTableAdapter.Fill(timeLogDataSet.Company);
             
         }
         private void RefreshData() {
@@ -45,14 +39,14 @@ namespace Hackovic.TimeReport
         #region Category
         private void Button_Save_Click(object sender, EventArgs e)
 		{
-            this.categoryTableAdapter.Update(timeLogDataSet.Category);
-            this.timeLogDataSet.Category.AcceptChanges();
-            this.RefreshData();
+            categoryTableAdapter.Update(timeLogDataSet.Category);
+            timeLogDataSet.Category.AcceptChanges();
+            RefreshData();
 		}
 
         private void button_workCategoryReset_Click(object sender, EventArgs e)
         {
-            this.timeLogDataSet.Category.RejectChanges();
+            timeLogDataSet.Category.RejectChanges();
         }
 
         #endregion Category
@@ -62,9 +56,9 @@ namespace Hackovic.TimeReport
         {
             try
             {
-                this.companyTableAdapter.Update(this.timeLogDataSet.Company);
-                this.timeLogDataSet.Company.AcceptChanges();
-                this.RefreshData();
+                companyTableAdapter.Update(this.timeLogDataSet.Company);
+                timeLogDataSet.Company.AcceptChanges();
+                RefreshData();
 
             }
             catch { }
@@ -72,7 +66,7 @@ namespace Hackovic.TimeReport
 
         private void button_comnapnyReset_Click(object sender, EventArgs e)
         {
-            this.timeLogDataSet.Company.RejectChanges();
+            timeLogDataSet.Company.RejectChanges();
         }
 
         #endregion
