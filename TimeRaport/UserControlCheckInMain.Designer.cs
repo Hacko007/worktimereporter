@@ -31,17 +31,17 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.label2 = new System.Windows.Forms.Label();
 			this.button_out = new Hackovic.FreshUserControls.ColorButton();
 			this.button_in = new Hackovic.FreshUserControls.ColorButton();
@@ -89,7 +89,6 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.timeLogTableAdapter = new Hackovic.TimeReport.TimeLogDataSetTableAdapters.TimeLogTableAdapter();
 			this.categoryTableAdapter = new Hackovic.TimeReport.TimeLogDataSetTableAdapters.CategoryTableAdapter();
-			this.Button_Refresh = new Hackovic.FreshUserControls.ColorButton();
 			this.colorPanel1 = new Hackovic.FreshUserControls.ColorPanel();
 			this.m_NumericUpDownToWork = new System.Windows.Forms.NumericUpDown();
 			this.m_NumericUpDownMinute = new System.Windows.Forms.NumericUpDown();
@@ -126,54 +125,54 @@
 			// label2
 			// 
 			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.ForeColor = System.Drawing.Color.SeaGreen;
+			this.label2.ForeColor = System.Drawing.Color.Honeydew;
 			this.label2.Location = new System.Drawing.Point(226, 108);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(88, 29);
+			this.label2.Size = new System.Drawing.Size(88, 19);
 			this.label2.TabIndex = 6;
 			this.label2.Text = "Att jobba idag";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.label2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
 			// 
 			// button_out
 			// 
-			this.button_out.BgColor1 = System.Drawing.Color.Beige;
-			this.button_out.BgColor2 = System.Drawing.Color.DarkOliveGreen;
-			this.button_out.FgColor1 = System.Drawing.Color.DarkOliveGreen;
-			this.button_out.FgColor2 = System.Drawing.Color.DarkOliveGreen;
+			this.button_out.BgColor1 = System.Drawing.Color.PowderBlue;
+			this.button_out.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.button_out.FgColor1 = System.Drawing.Color.PaleTurquoise;
+			this.button_out.FgColor2 = System.Drawing.Color.Teal;
 			this.button_out.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button_out.Font = new System.Drawing.Font("Arial Black", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button_out.Font = new System.Drawing.Font("Arial Black", 24F);
 			this.button_out.ForeColor = System.Drawing.Color.White;
-			this.button_out.Location = new System.Drawing.Point(170, 313);
+			this.button_out.Location = new System.Drawing.Point(162, 329);
 			this.button_out.Name = "button_out";
-			this.button_out.Size = new System.Drawing.Size(144, 72);
+			this.button_out.Size = new System.Drawing.Size(152, 51);
 			this.button_out.TabIndex = 12;
-			this.button_out.Text = "Out";
+			this.button_out.Text = "Ut";
 			this.button_out.TextHasShadow = true;
-			this.button_out.TextShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+			this.button_out.TextShadowColor = System.Drawing.Color.Black;
 			this.button_out.Click += new System.EventHandler(this.Button_out_Click);
 			// 
 			// button_in
 			// 
-			this.button_in.BgColor1 = System.Drawing.Color.Beige;
-			this.button_in.BgColor2 = System.Drawing.Color.DarkOliveGreen;
-			this.button_in.FgColor1 = System.Drawing.Color.DarkOliveGreen;
-			this.button_in.FgColor2 = System.Drawing.Color.DarkOliveGreen;
+			this.button_in.BgColor1 = System.Drawing.Color.PowderBlue;
+			this.button_in.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.button_in.FgColor1 = System.Drawing.Color.PaleTurquoise;
+			this.button_in.FgColor2 = System.Drawing.Color.Teal;
 			this.button_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button_in.Font = new System.Drawing.Font("Arial Black", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button_in.Font = new System.Drawing.Font("Arial Black", 24F);
 			this.button_in.ForeColor = System.Drawing.Color.White;
-			this.button_in.Location = new System.Drawing.Point(9, 313);
+			this.button_in.Location = new System.Drawing.Point(9, 329);
 			this.button_in.Name = "button_in";
-			this.button_in.Size = new System.Drawing.Size(156, 72);
+			this.button_in.Size = new System.Drawing.Size(147, 51);
 			this.button_in.TabIndex = 11;
 			this.button_in.Text = "In";
 			this.button_in.TextHasShadow = true;
-			this.button_in.TextShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+			this.button_in.TextShadowColor = System.Drawing.Color.Black;
 			this.button_in.Click += new System.EventHandler(this.Button_in_Click);
 			// 
 			// My_Button_AddCategory
 			// 
 			this.My_Button_AddCategory.BgColor1 = System.Drawing.Color.PowderBlue;
-			this.My_Button_AddCategory.BgColor2 = System.Drawing.Color.Black;
+			this.My_Button_AddCategory.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.My_Button_AddCategory.FgColor1 = System.Drawing.Color.White;
 			this.My_Button_AddCategory.FgColor2 = System.Drawing.Color.LightGray;
 			this.My_Button_AddCategory.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -182,13 +181,14 @@
 			this.My_Button_AddCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.My_Button_AddCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.My_Button_AddCategory.ForeColor = System.Drawing.Color.White;
-			this.My_Button_AddCategory.Location = new System.Drawing.Point(278, 205);
+			this.My_Button_AddCategory.Location = new System.Drawing.Point(248, 221);
 			this.My_Button_AddCategory.Name = "My_Button_AddCategory";
-			this.My_Button_AddCategory.Size = new System.Drawing.Size(34, 21);
+			this.My_Button_AddCategory.Size = new System.Drawing.Size(66, 21);
 			this.My_Button_AddCategory.TabIndex = 9;
 			this.My_Button_AddCategory.Text = "+";
 			this.My_Button_AddCategory.TextHasShadow = false;
 			this.My_Button_AddCategory.TextShadowColor = System.Drawing.Color.Empty;
+			this.m_ToolTip.SetToolTip(this.My_Button_AddCategory, "Ändra kategory");
 			this.My_Button_AddCategory.UseVisualStyleBackColor = false;
 			this.My_Button_AddCategory.Click += new System.EventHandler(this.Button_AddCategory_Click);
 			// 
@@ -211,14 +211,14 @@
 			this.dataGridView_Timmar.Location = new System.Drawing.Point(0, 0);
 			this.dataGridView_Timmar.Name = "dataGridView_Timmar";
 			this.dataGridView_Timmar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle15.BackColor = System.Drawing.Color.Gainsboro;
-			dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView_Timmar.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+			dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle35.BackColor = System.Drawing.Color.Gainsboro;
+			dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView_Timmar.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
 			this.dataGridView_Timmar.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
 			this.dataGridView_Timmar.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.dataGridView_Timmar.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -230,27 +230,27 @@
 			// dataGridViewTextBoxColumn3
 			// 
 			this.dataGridViewTextBoxColumn3.DataPropertyName = "Day";
-			dataGridViewCellStyle12.Format = "d";
-			dataGridViewCellStyle12.NullValue = null;
-			this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle12;
+			dataGridViewCellStyle32.Format = "d";
+			dataGridViewCellStyle32.NullValue = null;
+			this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle32;
 			this.dataGridViewTextBoxColumn3.HeaderText = "Dag";
 			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
 			// 
 			// inTimeDataGridViewTextBoxColumn
 			// 
 			this.inTimeDataGridViewTextBoxColumn.DataPropertyName = "InTime";
-			dataGridViewCellStyle13.Format = "t";
-			dataGridViewCellStyle13.NullValue = null;
-			this.inTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle13;
+			dataGridViewCellStyle33.Format = "t";
+			dataGridViewCellStyle33.NullValue = null;
+			this.inTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle33;
 			this.inTimeDataGridViewTextBoxColumn.HeaderText = "In";
 			this.inTimeDataGridViewTextBoxColumn.Name = "inTimeDataGridViewTextBoxColumn";
 			// 
 			// outTimeDataGridViewTextBoxColumn
 			// 
 			this.outTimeDataGridViewTextBoxColumn.DataPropertyName = "OutTime";
-			dataGridViewCellStyle14.Format = "t";
-			dataGridViewCellStyle14.NullValue = null;
-			this.outTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+			dataGridViewCellStyle34.Format = "t";
+			dataGridViewCellStyle34.NullValue = null;
+			this.outTimeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle34;
 			this.outTimeDataGridViewTextBoxColumn.HeaderText = "Ut";
 			this.outTimeDataGridViewTextBoxColumn.Name = "outTimeDataGridViewTextBoxColumn";
 			// 
@@ -301,11 +301,12 @@
 			// 
 			// digitalClock_Now
 			// 
-			this.digitalClock_Now.BackColor2 = System.Drawing.Color.Empty;
+			this.digitalClock_Now.BackColor = System.Drawing.Color.DarkSeaGreen;
+			this.digitalClock_Now.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
 			this.digitalClock_Now.ClockStyle = Hackovic.FreshUserControls.DigitalClockStyle.FullClock;
 			this.digitalClock_Now.DateTimeFormat = "yyy-MM-dd       HH:mm:ss";
-			this.digitalClock_Now.ForeColor = System.Drawing.Color.PowderBlue;
-			this.digitalClock_Now.ForeColor2 = System.Drawing.Color.Azure;
+			this.digitalClock_Now.ForeColor = System.Drawing.Color.Teal;
+			this.digitalClock_Now.ForeColor2 = System.Drawing.Color.Teal;
 			this.digitalClock_Now.FramePrecent = 0;
 			this.digitalClock_Now.Location = new System.Drawing.Point(0, 0);
 			this.digitalClock_Now.Name = "digitalClock_Now";
@@ -347,11 +348,11 @@
 			// dataGridViewTextBoxColumn9
 			// 
 			this.dataGridViewTextBoxColumn9.DataPropertyName = "Hours";
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle4.Format = "N2";
-			dataGridViewCellStyle4.NullValue = "0";
-			this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+			dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle25.Format = "N2";
+			dataGridViewCellStyle25.NullValue = "0";
+			this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle25;
 			this.dataGridViewTextBoxColumn9.HeaderText = "Hours";
 			this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
 			this.dataGridViewTextBoxColumn9.ReadOnly = true;
@@ -359,10 +360,10 @@
 			// plannedHoursDataGridViewTextBoxColumn1
 			// 
 			this.plannedHoursDataGridViewTextBoxColumn1.DataPropertyName = "PlannedHours";
-			dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-			dataGridViewCellStyle16.Format = "N2";
-			dataGridViewCellStyle16.NullValue = "0";
-			this.plannedHoursDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+			dataGridViewCellStyle36.Format = "N2";
+			dataGridViewCellStyle36.NullValue = "0";
+			this.plannedHoursDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle36;
 			this.plannedHoursDataGridViewTextBoxColumn1.HeaderText = "Planned";
 			this.plannedHoursDataGridViewTextBoxColumn1.Name = "plannedHoursDataGridViewTextBoxColumn1";
 			this.plannedHoursDataGridViewTextBoxColumn1.ReadOnly = true;
@@ -370,11 +371,11 @@
 			// dataGridViewTextBoxColumn10
 			// 
 			this.dataGridViewTextBoxColumn10.DataPropertyName = "Diff";
-			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-			dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle17.Format = "N2";
-			dataGridViewCellStyle17.NullValue = "0";
-			this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle17;
+			dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+			dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle37.Format = "N2";
+			dataGridViewCellStyle37.NullValue = "0";
+			this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle37;
 			this.dataGridViewTextBoxColumn10.HeaderText = "Diff";
 			this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
 			this.dataGridViewTextBoxColumn10.ReadOnly = true;
@@ -434,9 +435,9 @@
 			// dataGridViewTextBoxColumn5
 			// 
 			this.dataGridViewTextBoxColumn5.DataPropertyName = "Day";
-			dataGridViewCellStyle18.Format = "dd-MMM  ddd";
-			dataGridViewCellStyle18.NullValue = null;
-			this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle18;
+			dataGridViewCellStyle38.Format = "dd-MMM  ddd";
+			dataGridViewCellStyle38.NullValue = null;
+			this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle38;
 			this.dataGridViewTextBoxColumn5.HeaderText = "Day";
 			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
 			this.dataGridViewTextBoxColumn5.ReadOnly = true;
@@ -444,11 +445,11 @@
 			// dataGridViewTextBoxColumn6
 			// 
 			this.dataGridViewTextBoxColumn6.DataPropertyName = "Hours";
-			dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-			dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle19.Format = "N2";
-			dataGridViewCellStyle19.NullValue = "0";
-			this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle19;
+			dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+			dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle39.Format = "N2";
+			dataGridViewCellStyle39.NullValue = "0";
+			this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle39;
 			this.dataGridViewTextBoxColumn6.HeaderText = "Hours";
 			this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
 			this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -456,10 +457,10 @@
 			// plannedHoursDataGridViewTextBoxColumn
 			// 
 			this.plannedHoursDataGridViewTextBoxColumn.DataPropertyName = "PlannedHours";
-			dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-			dataGridViewCellStyle20.Format = "N2";
-			dataGridViewCellStyle20.NullValue = "0";
-			this.plannedHoursDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
+			dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+			dataGridViewCellStyle40.Format = "N2";
+			dataGridViewCellStyle40.NullValue = "0";
+			this.plannedHoursDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle40;
 			this.plannedHoursDataGridViewTextBoxColumn.HeaderText = "PlannedHours";
 			this.plannedHoursDataGridViewTextBoxColumn.Name = "plannedHoursDataGridViewTextBoxColumn";
 			this.plannedHoursDataGridViewTextBoxColumn.ReadOnly = true;
@@ -467,10 +468,10 @@
 			// dataGridViewTextBoxColumn7
 			// 
 			this.dataGridViewTextBoxColumn7.DataPropertyName = "Diff";
-			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-			dataGridViewCellStyle21.Format = "N2";
-			dataGridViewCellStyle21.NullValue = "0";
-			this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle21;
+			dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+			dataGridViewCellStyle41.Format = "N2";
+			dataGridViewCellStyle41.NullValue = "0";
+			this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle41;
 			this.dataGridViewTextBoxColumn7.HeaderText = "Diff";
 			this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
 			this.dataGridViewTextBoxColumn7.ReadOnly = true;
@@ -585,21 +586,21 @@
 			this.label_info.BackColor = System.Drawing.Color.Transparent;
 			this.label_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label_info.ForeColor = System.Drawing.Color.Aquamarine;
-			this.label_info.Location = new System.Drawing.Point(10, 472);
+			this.label_info.Location = new System.Drawing.Point(10, 481);
 			this.label_info.Name = "label_info";
 			this.label_info.Size = new System.Drawing.Size(0, 16);
 			this.label_info.TabIndex = 16;
 			// 
 			// ListBox_WorkCaegory
 			// 
-			this.ListBox_WorkCaegory.BackColor = System.Drawing.Color.DarkGray;
+			this.ListBox_WorkCaegory.BackColor = System.Drawing.Color.DarkSlateGray;
 			this.ListBox_WorkCaegory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.ListBox_WorkCaegory.DataSource = this.categoryBindingSource;
 			this.ListBox_WorkCaegory.DisplayMember = "DisplayValue";
-			this.ListBox_WorkCaegory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ListBox_WorkCaegory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ListBox_WorkCaegory.ForeColor = System.Drawing.Color.White;
 			this.ListBox_WorkCaegory.FormattingEnabled = true;
-			this.ListBox_WorkCaegory.Location = new System.Drawing.Point(8, 227);
+			this.ListBox_WorkCaegory.Location = new System.Drawing.Point(8, 243);
 			this.ListBox_WorkCaegory.Name = "ListBox_WorkCaegory";
 			this.ListBox_WorkCaegory.Size = new System.Drawing.Size(306, 80);
 			this.ListBox_WorkCaegory.TabIndex = 10;
@@ -614,7 +615,7 @@
 			// 
 			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.ForeColor = System.Drawing.Color.Honeydew;
-			this.label1.Location = new System.Drawing.Point(6, 198);
+			this.label1.Location = new System.Drawing.Point(6, 214);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(93, 26);
 			this.label1.TabIndex = 8;
@@ -629,32 +630,12 @@
 			// 
 			this.categoryTableAdapter.ClearBeforeFill = true;
 			// 
-			// Button_Refresh
-			// 
-			this.Button_Refresh.BgColor1 = System.Drawing.Color.PowderBlue;
-			this.Button_Refresh.BgColor2 = System.Drawing.Color.Black;
-			this.Button_Refresh.FgColor1 = System.Drawing.Color.Black;
-			this.Button_Refresh.FgColor2 = System.Drawing.Color.White;
-			this.Button_Refresh.FlatAppearance.BorderColor = System.Drawing.Color.White;
-			this.Button_Refresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-			this.Button_Refresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-			this.Button_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Button_Refresh.Font = new System.Drawing.Font("Wingdings", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-			this.Button_Refresh.ForeColor = System.Drawing.Color.White;
-			this.Button_Refresh.Location = new System.Drawing.Point(278, 391);
-			this.Button_Refresh.Name = "Button_Refresh";
-			this.Button_Refresh.Size = new System.Drawing.Size(34, 31);
-			this.Button_Refresh.TabIndex = 14;
-			this.Button_Refresh.Text = "Ä";
-			this.Button_Refresh.TextHasShadow = true;
-			this.Button_Refresh.TextShadowColor = System.Drawing.Color.Black;
-			this.Button_Refresh.UseVisualStyleBackColor = false;
-			this.Button_Refresh.Click += new System.EventHandler(this.Button_Refresh_Click);
-			// 
 			// colorPanel1
 			// 
+			this.colorPanel1.AutoScroll = true;
 			this.colorPanel1.BgColor1 = System.Drawing.Color.PowderBlue;
 			this.colorPanel1.BgColor2 = System.Drawing.Color.Black;
+			this.colorPanel1.Controls.Add(this.digitalClock_Now);
 			this.colorPanel1.Controls.Add(this.m_NumericUpDownToWork);
 			this.colorPanel1.Controls.Add(this.m_NumericUpDownMinute);
 			this.colorPanel1.Controls.Add(this.m_NumericUpDownHour);
@@ -663,8 +644,6 @@
 			this.colorPanel1.Controls.Add(this.m_MonthCalendar);
 			this.colorPanel1.Controls.Add(this.label_monthTotal);
 			this.colorPanel1.Controls.Add(this.label_Diff);
-			this.colorPanel1.Controls.Add(this.digitalClock_Now);
-			this.colorPanel1.Controls.Add(this.Button_Refresh);
 			this.colorPanel1.Controls.Add(this.button_in);
 			this.colorPanel1.Controls.Add(this.button_out);
 			this.colorPanel1.Controls.Add(this.label1);
@@ -680,16 +659,18 @@
 			// 
 			// m_NumericUpDownToWork
 			// 
-			this.m_NumericUpDownToWork.BackColor = System.Drawing.Color.LightBlue;
+			this.m_NumericUpDownToWork.BackColor = System.Drawing.Color.CadetBlue;
+			this.m_NumericUpDownToWork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.m_NumericUpDownToWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.m_NumericUpDownToWork.Location = new System.Drawing.Point(260, 137);
+			this.m_NumericUpDownToWork.ForeColor = System.Drawing.Color.White;
+			this.m_NumericUpDownToWork.Location = new System.Drawing.Point(262, 130);
 			this.m_NumericUpDownToWork.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
 			this.m_NumericUpDownToWork.Name = "m_NumericUpDownToWork";
-			this.m_NumericUpDownToWork.Size = new System.Drawing.Size(54, 38);
+			this.m_NumericUpDownToWork.Size = new System.Drawing.Size(52, 38);
 			this.m_NumericUpDownToWork.TabIndex = 7;
 			this.m_NumericUpDownToWork.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.m_NumericUpDownToWork.Value = new decimal(new int[] {
@@ -702,13 +683,14 @@
 			// m_NumericUpDownMinute
 			// 
 			this.m_NumericUpDownMinute.BackColor = System.Drawing.Color.MintCream;
+			this.m_NumericUpDownMinute.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.m_NumericUpDownMinute.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.m_NumericUpDownMinute.Increment = new decimal(new int[] {
             5,
             0,
             0,
             0});
-			this.m_NumericUpDownMinute.Location = new System.Drawing.Point(248, 67);
+			this.m_NumericUpDownMinute.Location = new System.Drawing.Point(262, 61);
 			this.m_NumericUpDownMinute.Maximum = new decimal(new int[] {
             59,
             0,
@@ -720,28 +702,34 @@
             0,
             -2147483648});
 			this.m_NumericUpDownMinute.Name = "m_NumericUpDownMinute";
-			this.m_NumericUpDownMinute.Size = new System.Drawing.Size(64, 38);
+			this.m_NumericUpDownMinute.Size = new System.Drawing.Size(52, 38);
 			this.m_NumericUpDownMinute.TabIndex = 5;
 			this.m_NumericUpDownMinute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.m_NumericUpDownMinute.Value = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
 			this.m_NumericUpDownMinute.ValueChanged += new System.EventHandler(this.m_NumericUpDownMinute_ValueChanged);
 			// 
 			// m_NumericUpDownHour
 			// 
 			this.m_NumericUpDownHour.BackColor = System.Drawing.Color.MintCream;
+			this.m_NumericUpDownHour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.m_NumericUpDownHour.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.m_NumericUpDownHour.Location = new System.Drawing.Point(179, 67);
+			this.m_NumericUpDownHour.Location = new System.Drawing.Point(205, 61);
 			this.m_NumericUpDownHour.Maximum = new decimal(new int[] {
             23,
             0,
             0,
             0});
 			this.m_NumericUpDownHour.Name = "m_NumericUpDownHour";
-			this.m_NumericUpDownHour.Size = new System.Drawing.Size(63, 38);
+			this.m_NumericUpDownHour.Size = new System.Drawing.Size(51, 38);
 			this.m_NumericUpDownHour.TabIndex = 3;
 			this.m_NumericUpDownHour.Tag = "";
 			this.m_NumericUpDownHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.m_NumericUpDownHour.Value = new decimal(new int[] {
-            9,
+            18,
             0,
             0,
             0});
@@ -751,26 +739,28 @@
 			this.label4.AutoSize = true;
 			this.label4.BackColor = System.Drawing.Color.Transparent;
 			this.label4.ForeColor = System.Drawing.Color.SeaGreen;
-			this.label4.Location = new System.Drawing.Point(248, 54);
+			this.label4.Location = new System.Drawing.Point(272, 45);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(42, 13);
 			this.label4.TabIndex = 4;
 			this.label4.Text = "Minuter";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
 			this.label3.BackColor = System.Drawing.Color.Transparent;
 			this.label3.ForeColor = System.Drawing.Color.SeaGreen;
-			this.label3.Location = new System.Drawing.Point(179, 54);
+			this.label3.Location = new System.Drawing.Point(215, 45);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(41, 13);
 			this.label3.TabIndex = 2;
 			this.label3.Text = "Timmar";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
 			// 
 			// m_MonthCalendar
 			// 
-			this.m_MonthCalendar.Location = new System.Drawing.Point(4, 44);
+			this.m_MonthCalendar.Location = new System.Drawing.Point(8, 61);
 			this.m_MonthCalendar.Name = "m_MonthCalendar";
 			this.m_MonthCalendar.ShowWeekNumbers = true;
 			this.m_MonthCalendar.TabIndex = 1;
@@ -783,7 +773,7 @@
 			this.label_monthTotal.BackColor = System.Drawing.Color.Transparent;
 			this.label_monthTotal.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label_monthTotal.ForeColor = System.Drawing.Color.White;
-			this.label_monthTotal.Location = new System.Drawing.Point(10, 391);
+			this.label_monthTotal.Location = new System.Drawing.Point(10, 400);
 			this.label_monthTotal.Name = "label_monthTotal";
 			this.label_monthTotal.Size = new System.Drawing.Size(58, 18);
 			this.label_monthTotal.TabIndex = 13;
@@ -795,7 +785,7 @@
 			this.label_Diff.BackColor = System.Drawing.Color.Transparent;
 			this.label_Diff.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label_Diff.ForeColor = System.Drawing.Color.White;
-			this.label_Diff.Location = new System.Drawing.Point(10, 440);
+			this.label_Diff.Location = new System.Drawing.Point(10, 449);
 			this.label_Diff.Name = "label_Diff";
 			this.label_Diff.Size = new System.Drawing.Size(48, 18);
 			this.label_Diff.TabIndex = 15;
@@ -887,8 +877,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn outTimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoryText;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn infoDataGridViewTextBoxColumn;
-        private ColorButton Button_Refresh;
+		private System.Windows.Forms.DataGridViewTextBoxColumn infoDataGridViewTextBoxColumn;
 		private ColorPanel colorPanel1;
 		private System.Windows.Forms.BindingSource dayTimeLogBindingSource;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
