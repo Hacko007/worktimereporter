@@ -4,10 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeRaport", "TimeRaport\Ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshUserControls", "ClockForm\FreshUserControls.csproj", "{55571464-248A-42D3-AFD7-D8B2B20703F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeReportMobile", "TimeReportMobile\TimeReportMobile.csproj", "{46E40B22-D2F1-4756-B9A6-5CB7A76C2F98}"
-EndProject
-Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "TimeReportMobileSetup", "TimeReportMobileSetup\TimeReportMobileSetup.vddproj", "{DBE54088-4C3F-4ED0-A1F1-4F88815456B6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,10 +18,6 @@ Global
 		{55571464-248A-42D3-AFD7-D8B2B20703F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55571464-248A-42D3-AFD7-D8B2B20703F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55571464-248A-42D3-AFD7-D8B2B20703F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46E40B22-D2F1-4756-B9A6-5CB7A76C2F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46E40B22-D2F1-4756-B9A6-5CB7A76C2F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBE54088-4C3F-4ED0-A1F1-4F88815456B6}.Debug|Any CPU.ActiveCfg = Debug
-		{DBE54088-4C3F-4ED0-A1F1-4F88815456B6}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

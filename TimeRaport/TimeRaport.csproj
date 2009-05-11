@@ -136,6 +136,9 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ToolStripMonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserControlCheckInMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,6 +195,12 @@
     </Compile>
     <Compile Include="UserControlMonthSummary.Designer.cs">
       <DependentUpon>UserControlMonthSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSummary.Designer.cs">
+      <DependentUpon>UserControlSummary.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlYearOverview.cs">
       <SubType>UserControl</SubType>
@@ -255,6 +264,10 @@
     <EmbeddedResource Include="Resources\Holydays.xsd" />
     <EmbeddedResource Include="FormAddHolyday.resx">
       <DependentUpon>FormAddHolyday.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSummary.resx">
+      <DependentUpon>UserControlSummary.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="TimeLogDataSet.xsc">
