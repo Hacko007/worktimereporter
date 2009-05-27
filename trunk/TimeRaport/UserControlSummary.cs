@@ -76,7 +76,7 @@ namespace Hackovic.TimeReport
 			Graphics memoryGraphics = Graphics.FromImage(m_MemoryImage);
 
 			Point loc = GetAbsoluteLocation(pnl, pnl.Location);
-			memoryGraphics.CopyFromScreen(loc.X, loc.Y, 0, 0, s, CopyPixelOperation.SourceCopy);
+			memoryGraphics.CopyFromScreen(loc.X+5, loc.Y+5, 0, 0, s, CopyPixelOperation.SourceCopy);
 		}
 
 
