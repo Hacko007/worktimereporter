@@ -186,6 +186,7 @@ namespace Hackovic.TimeReport
 			this.m_printPreviewDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
 			this.m_printPreviewDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
 			this.m_printPreviewDialog.ClientSize = new System.Drawing.Size(400, 300);
+			this.m_printPreviewDialog.Document = this.m_printDocument;
 			this.m_printPreviewDialog.Enabled = true;
 			this.m_printPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("m_printPreviewDialog.Icon")));
 			this.m_printPreviewDialog.Name = "m_printPreviewDialog";
@@ -195,6 +196,10 @@ namespace Hackovic.TimeReport
 			// 
 			this.m_printDocument.DocumentName = "Översikt";
 			this.m_printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument_PrintPage);
+			// 
+			// m_pageSetupDialog
+			// 
+			this.m_pageSetupDialog.Document = this.m_printDocument;
 			// 
 			// UserControlSummary
 			// 
