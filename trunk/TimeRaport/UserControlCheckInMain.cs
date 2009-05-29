@@ -253,6 +253,7 @@ namespace Hackovic.TimeReport
 			FilterWeeks();
             categoryBindingSource.DataSource = dsTimeReport.Category;
             RefreshTodayOnly();
+			SetHowLongToWorkTodayLabel();
 			SetTotalLabel();
 			TrimDataGridHeights();
         }
@@ -377,6 +378,21 @@ namespace Hackovic.TimeReport
 			
 		}
 
+
+		/// <summary>
+		/// Set label text that displays how long do you need to
+		/// work today to fulfill todays planed hours.
+		/// </summary>
+		private void SetHowLongToWorkTodayLabel() 
+		{
+			var today = TimeLogFactory.Instance.DayTimeLog.FindByDayCategoryId(SelectedDate, SelectedCategory.CategoryId);
+			DateTime timeToLeave = SelectedTime.AddHours(Hour);
+			if (today != null) {
+				timeToLeave = DateTime.Now.AddHours(-today.Diff); 
+			}
+			m_LabelTimeToFinishToday.Text = string.Format("Klar {0:HH.mm}", timeToLeave);
+
+		}
 		#endregion        
 		
 		#region Events
@@ -450,11 +466,20 @@ namespace Hackovic.TimeReport
         {
         	if (ListBox_WorkCaegory.SelectedItem == null) return;
 
+			m_NumericUpDownToWork.ValueChanged -= NumericUpDownToWork_ValueChanged;
+
+			Holiday holiday = HolidaysCollection.Instance.Find(holid => holid.Date == SelectedDate);			
+			if (holiday != null) {
+				Hour = holiday.TimeToWork;
+			}
+
         	TimeLogDataSet.PlannedRow dayRow = dsTimeReport.Planned.FindByDayCategoryId(SelectedDate, SelectedCategory.CategoryId);
         	if (dayRow != null)
         	{
         		Hour = dayRow.Hours;
         	}
+
+			m_NumericUpDownToWork.ValueChanged += this.NumericUpDownToWork_ValueChanged;
         }
 
  
@@ -466,17 +491,22 @@ namespace Hackovic.TimeReport
 			if (dsTimeReport.Category.Count > 0)
 			{
 				List<TimeLogDataSet.TimeLogRow> incompleteTimeLogs = dsTimeReport.TimeLog.FindIncmpleteTimeLogs(SelectedDate);
-				TimeLogDataSet.PlannedRow dayh = dsTimeReport.Planned.FindByDayCategoryId(SelectedDate, SelectedCategory.CategoryId);
+				TimeLogDataSet.PlannedRow planedDayHour = dsTimeReport.Planned.FindByDayCategoryId(SelectedDate, SelectedCategory.CategoryId);
+				Holiday holiday = HolidaysCollection.Instance.Find(holid => holid.Date == SelectedDate);
+
 				if (incompleteTimeLogs != null && incompleteTimeLogs.Count > 0 )
 				{
 					Hour = incompleteTimeLogs.First().PlannedRowParent.Hours;
 					SelectedCategory = incompleteTimeLogs.First().CategoryRow;
 				}
-				else if (dayh != null)
+				else if (planedDayHour != null)
 				{
-					Hour = dayh.Hours;
+					Hour = planedDayHour.Hours;
 				}
-
+				else if (holiday != null)
+				{
+					Hour = holiday.TimeToWork;
+				}
 				else
 				{
 					Hour = 8;
