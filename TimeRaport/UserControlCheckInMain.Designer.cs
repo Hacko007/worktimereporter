@@ -100,6 +100,7 @@
 			this.label_Diff = new System.Windows.Forms.Label();
 			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.m_ToolTip = new System.Windows.Forms.ToolTip(this.components);
+			this.m_LabelTimeToFinishToday = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView_Timmar)).BeginInit();
 			this.m_ContextMenuStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.timeLogBindingSource)).BeginInit();
@@ -126,7 +127,7 @@
 			// 
 			this.label2.BackColor = System.Drawing.Color.Transparent;
 			this.label2.ForeColor = System.Drawing.Color.Honeydew;
-			this.label2.Location = new System.Drawing.Point(226, 108);
+			this.label2.Location = new System.Drawing.Point(226, 126);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(88, 19);
 			this.label2.TabIndex = 6;
@@ -635,6 +636,7 @@
 			this.colorPanel1.AutoScroll = true;
 			this.colorPanel1.BgColor1 = System.Drawing.Color.PowderBlue;
 			this.colorPanel1.BgColor2 = System.Drawing.Color.Black;
+			this.colorPanel1.Controls.Add(this.m_LabelTimeToFinishToday);
 			this.colorPanel1.Controls.Add(this.digitalClock_Now);
 			this.colorPanel1.Controls.Add(this.m_NumericUpDownToWork);
 			this.colorPanel1.Controls.Add(this.m_NumericUpDownMinute);
@@ -663,7 +665,7 @@
 			this.m_NumericUpDownToWork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.m_NumericUpDownToWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.m_NumericUpDownToWork.ForeColor = System.Drawing.Color.White;
-			this.m_NumericUpDownToWork.Location = new System.Drawing.Point(262, 130);
+			this.m_NumericUpDownToWork.Location = new System.Drawing.Point(262, 148);
 			this.m_NumericUpDownToWork.Maximum = new decimal(new int[] {
             24,
             0,
@@ -798,6 +800,19 @@
 			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
 			this.dataGridViewTextBoxColumn4.ReadOnly = true;
 			// 
+			// m_LabelTimeToFinishToday
+			// 
+			this.m_LabelTimeToFinishToday.AutoSize = true;
+			this.m_LabelTimeToFinishToday.BackColor = System.Drawing.Color.Transparent;
+			this.m_LabelTimeToFinishToday.ForeColor = System.Drawing.Color.SeaGreen;
+			this.m_LabelTimeToFinishToday.Location = new System.Drawing.Point(256, 102);
+			this.m_LabelTimeToFinishToday.Name = "m_LabelTimeToFinishToday";
+			this.m_LabelTimeToFinishToday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.m_LabelTimeToFinishToday.Size = new System.Drawing.Size(61, 13);
+			this.m_LabelTimeToFinishToday.TabIndex = 17;
+			this.m_LabelTimeToFinishToday.Text = "Klar : 18.00";
+			this.m_LabelTimeToFinishToday.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
 			// UserControlCheckInMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -909,5 +924,6 @@
 		private System.Windows.Forms.ToolStripMenuItem m_DeleteSelectedRowToolStripMenuItem;
 		private FormAddCategry m_FormAddCategory;
 		private TimeLogDataSet dsTimeReport ;
+		private System.Windows.Forms.Label m_LabelTimeToFinishToday;
 	}
 }
