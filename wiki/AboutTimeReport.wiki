@@ -1,0 +1,11 @@
+#summary About Time Report.
+#labels Featured,Phase-Support
+
+= Introduction =
+
+Time report is used to keep track of how working hours.
+
+
+= Details =
+
+Here is some screenshots
