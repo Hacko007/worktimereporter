@@ -18,6 +18,8 @@ namespace Hackovic.TimeReport
 		private TabPage m_TabPageCalender;
 		private UserControlYearOverview m_UserControlYearOverview1;
 		private UserControlSummary m_UserControlSummary;
+		private TabPage m_TabPageMaintaince;
+		private UserControlMaintenance m_UserControlMaintenance;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -67,11 +69,14 @@ namespace Hackovic.TimeReport
 			this.m_TabPageCurrent = new System.Windows.Forms.TabPage();
 			this.m_TabPageAll = new System.Windows.Forms.TabPage();
 			this.m_TabPageCalender = new System.Windows.Forms.TabPage();
-			this.m_UserControlYearOverview1 = new Hackovic.TimeReport.UserControlYearOverview();
+			this.m_TabPageMaintaince = new System.Windows.Forms.TabPage();
 			this.m_UserControlSummary = new Hackovic.TimeReport.UserControlSummary();
+			this.m_UserControlYearOverview1 = new Hackovic.TimeReport.UserControlYearOverview();
+			this.m_UserControlMaintenance = new Hackovic.TimeReport.UserControlMaintenance();
 			this.m_MyTabControlMain.SuspendLayout();
 			this.m_TabPageAll.SuspendLayout();
 			this.m_TabPageCalender.SuspendLayout();
+			this.m_TabPageMaintaince.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// m_MyTabControlMain
@@ -79,6 +84,7 @@ namespace Hackovic.TimeReport
 			this.m_MyTabControlMain.Controls.Add(this.m_TabPageCurrent);
 			this.m_MyTabControlMain.Controls.Add(this.m_TabPageAll);
 			this.m_MyTabControlMain.Controls.Add(this.m_TabPageCalender);
+			this.m_MyTabControlMain.Controls.Add(this.m_TabPageMaintaince);
 			this.m_MyTabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.m_MyTabControlMain.Location = new System.Drawing.Point(0, 0);
 			this.m_MyTabControlMain.Margin = new System.Windows.Forms.Padding(0);
@@ -119,13 +125,15 @@ namespace Hackovic.TimeReport
 			this.m_TabPageCalender.Text = "Kalender";
 			this.m_TabPageCalender.UseVisualStyleBackColor = true;
 			// 
-			// m_UserControlYearOverview1
+			// m_TabPageMaintaince
 			// 
-			this.m_UserControlYearOverview1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlYearOverview1.Location = new System.Drawing.Point(3, 3);
-			this.m_UserControlYearOverview1.Name = "m_UserControlYearOverview1";
-			this.m_UserControlYearOverview1.Size = new System.Drawing.Size(1208, 614);
-			this.m_UserControlYearOverview1.TabIndex = 1;
+			this.m_TabPageMaintaince.Controls.Add(this.m_UserControlMaintenance);
+			this.m_TabPageMaintaince.Location = new System.Drawing.Point(4, 22);
+			this.m_TabPageMaintaince.Name = "m_TabPageMaintaince";
+			this.m_TabPageMaintaince.Size = new System.Drawing.Size(1214, 620);
+			this.m_TabPageMaintaince.TabIndex = 3;
+			this.m_TabPageMaintaince.Text = "Underhåll";
+			this.m_TabPageMaintaince.UseVisualStyleBackColor = true;
 			// 
 			// m_UserControlSummary
 			// 
@@ -134,6 +142,22 @@ namespace Hackovic.TimeReport
 			this.m_UserControlSummary.Name = "m_UserControlSummary";
 			this.m_UserControlSummary.Size = new System.Drawing.Size(1208, 614);
 			this.m_UserControlSummary.TabIndex = 0;
+			// 
+			// m_UserControlYearOverview1
+			// 
+			this.m_UserControlYearOverview1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.m_UserControlYearOverview1.Location = new System.Drawing.Point(3, 3);
+			this.m_UserControlYearOverview1.Name = "m_UserControlYearOverview1";
+			this.m_UserControlYearOverview1.Size = new System.Drawing.Size(1208, 614);
+			this.m_UserControlYearOverview1.TabIndex = 1;
+			// 
+			// m_UserControlMaintenance
+			// 
+			this.m_UserControlMaintenance.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.m_UserControlMaintenance.Location = new System.Drawing.Point(0, 0);
+			this.m_UserControlMaintenance.Name = "m_UserControlMaintenance";
+			this.m_UserControlMaintenance.Size = new System.Drawing.Size(1214, 620);
+			this.m_UserControlMaintenance.TabIndex = 0;
 			// 
 			// FormTimeRaport
 			// 
@@ -148,6 +172,7 @@ namespace Hackovic.TimeReport
 			this.m_MyTabControlMain.ResumeLayout(false);
 			this.m_TabPageAll.ResumeLayout(false);
 			this.m_TabPageCalender.ResumeLayout(false);
+			this.m_TabPageMaintaince.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}

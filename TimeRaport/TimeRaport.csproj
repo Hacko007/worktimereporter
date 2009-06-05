@@ -190,6 +190,18 @@
     <Compile Include="FormAddHolyday.Designer.cs">
       <DependentUpon>FormAddHolyday.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMaintenance.Designer.cs">
+      <DependentUpon>UserControlMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMonthSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMonthSelector.Designer.cs">
+      <DependentUpon>UserControlMonthSelector.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlMonthSummary.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -264,6 +276,14 @@
     <EmbeddedResource Include="Resources\Holydays.xsd" />
     <EmbeddedResource Include="FormAddHolyday.resx">
       <DependentUpon>FormAddHolyday.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMaintenance.resx">
+      <DependentUpon>UserControlMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMonthSelector.resx">
+      <DependentUpon>UserControlMonthSelector.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlSummary.resx">
