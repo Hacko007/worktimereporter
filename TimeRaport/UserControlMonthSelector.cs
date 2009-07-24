@@ -50,7 +50,14 @@ namespace Hackovic.TimeReport
 			}
 		}
 
-		public DateTime Date { get { return new DateTime(Year, Month, 1); } }
+		public DateTime Date { get { return new DateTime(Year, Month, 1); }
+			set {
+				Year = value.Year;
+				Month = value.Month;
+				UpdateControls();
+			}
+
+		}
 		public int Year { get; set; }
 		public int Month { get; set; }
 
@@ -85,7 +92,10 @@ namespace Hackovic.TimeReport
 			if (ShowOkButton == false)
 				OnDateChanged();
 		}
-
+		private void UpdateControls(){
+			m_ComboBoxMonth.SelectedIndex = Month - 1;
+			m_NumericUpDownYear.Value = Year;
+		}
 		private void OnDateChanged() 
 		{
 			if (DateChanged != null) {

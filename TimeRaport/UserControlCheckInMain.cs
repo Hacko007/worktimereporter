@@ -94,28 +94,38 @@ namespace Hackovic.TimeReport
 
         public TimeLogDataSet.CategoryRow SelectedCategory
         {
-            get
-            {
+			get
+			{
 				try
 				{
-					return (TimeLogDataSet.CategoryRow)((DataRowView)ListBox_WorkCaegory.SelectedItem).Row;
+					if (ListBox_WorkCaegory.SelectedItem != null)
+						return (TimeLogDataSet.CategoryRow)((DataRowView)ListBox_WorkCaegory.SelectedItem).Row;
+					else
+					{
+						return GetDefaultCategory();
+					}
 				}
 				catch
 				{
-					if (dsTimeReport.Category.Count > 0)
-					{
-						return dsTimeReport.Category.First();
-					}
-
-					TimeLogDataSet.CompanyRow cmpRow = dsTimeReport.Company.DefaultRow();
-					TimeLogDataSet.CategoryRow workCatRow = dsTimeReport.Category.DefaultRow(cmpRow);
-					return workCatRow;
+					return GetDefaultCategory();
 				}
-            }
+			}
 			set {
 				ListBox_WorkCaegory.SelectedItem = value;
 			}
         }
+
+		private TimeLogDataSet.CategoryRow GetDefaultCategory()
+		{
+			if (dsTimeReport.Category.Count > 0)
+			{
+				return dsTimeReport.Category.First();
+			}
+
+			TimeLogDataSet.CompanyRow cmpRow = dsTimeReport.Company.DefaultRow();
+			TimeLogDataSet.CategoryRow workCatRow = dsTimeReport.Category.DefaultRow(cmpRow);
+			return workCatRow;
+		}
 
  
 		private TimeLogDataSet.TimeLogRow SelectedTimeLogRow
@@ -130,7 +140,7 @@ namespace Hackovic.TimeReport
 						selectedTimelog = dsTimeReport.TimeLog
 						.Where(tl => tl.Day == SelectedDate
 							&& tl.CategoryId == SelectedCategory.CategoryId
-							&& (tl.IsInTimeNull() || tl.IsOutTimeNull())).First();
+							&& (tl.IsInTimeNull() || tl.IsOutTimeNull())).FirstOrDefault();
 					}
 				}
 				catch { }
@@ -153,7 +163,7 @@ namespace Hackovic.TimeReport
 					{
 						selectedPlanned = dsTimeReport.Planned
 						.Where(tl => tl.Day == SelectedDate
-							&& tl.CategoryId == SelectedCategory.CategoryId ).First();
+							&& tl.CategoryId == SelectedCategory.CategoryId ).FirstOrDefault();
 					}
 				}
 				catch { }
@@ -185,6 +195,21 @@ namespace Hackovic.TimeReport
 			splitContainer1.SplitterDistance = Math.Max( dgDailyHight + 15 , 80);
 			splitContainer2.SplitterDistance = Math.Max( dgWeekHight + 15 , 60);
 		}
+
+        public void RefreshDataGrids()
+        {
+			TimeLogFactory.FillAllTables();
+			RaiseRefreshOverview();			
+            TimeLogFactory.CalculateMonths(SelectedDate);			
+			dsTimeReport.DayTimeLog.AcceptChanges();
+			dayTimeLogBindingSource.DataSource = dsTimeReport.DayTimeLog;
+			FilterWeeks();
+            categoryBindingSource.DataSource = dsTimeReport.Category;
+            RefreshTodayOnly();
+			SetHowLongToWorkTodayLabel();
+			SetTotalLabel();
+			TrimDataGridHeights();
+        }
 
 		#endregion
 
@@ -241,21 +266,6 @@ namespace Hackovic.TimeReport
 
             dsTimeReport.AcceptChanges();
 			RefreshDataGrids();
-        }
-
-        private void RefreshDataGrids()
-        {
-			TimeLogFactory.FillAllTables();
-			RaiseRefreshOverview();			
-            TimeLogFactory.CalculateMonths(SelectedDate);			
-			dsTimeReport.DayTimeLog.AcceptChanges();
-			dayTimeLogBindingSource.DataSource = dsTimeReport.DayTimeLog;
-			FilterWeeks();
-            categoryBindingSource.DataSource = dsTimeReport.Category;
-            RefreshTodayOnly();
-			SetHowLongToWorkTodayLabel();
-			SetTotalLabel();
-			TrimDataGridHeights();
         }
 
         private void RefreshTodayOnly()

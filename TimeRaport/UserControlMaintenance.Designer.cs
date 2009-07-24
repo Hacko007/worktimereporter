@@ -54,33 +54,34 @@
 			this.m_GroupBoxClean.Controls.Add(this.m_RadioButtonBefore);
 			this.m_GroupBoxClean.Location = new System.Drawing.Point(3, 3);
 			this.m_GroupBoxClean.Name = "m_GroupBoxClean";
-			this.m_GroupBoxClean.Size = new System.Drawing.Size(679, 156);
+			this.m_GroupBoxClean.Size = new System.Drawing.Size(679, 171);
 			this.m_GroupBoxClean.TabIndex = 0;
 			this.m_GroupBoxClean.TabStop = false;
 			this.m_GroupBoxClean.Text = "Rensa";
 			// 
 			// m_ButtonClean
 			// 
-			this.m_ButtonClean.Location = new System.Drawing.Point(278, 121);
+			this.m_ButtonClean.Location = new System.Drawing.Point(7, 142);
 			this.m_ButtonClean.Name = "m_ButtonClean";
 			this.m_ButtonClean.Size = new System.Drawing.Size(75, 23);
 			this.m_ButtonClean.TabIndex = 8;
 			this.m_ButtonClean.Text = "Rensa";
 			this.m_ButtonClean.UseVisualStyleBackColor = true;
+			this.m_ButtonClean.Click += new System.EventHandler(this.ButtonClean_Click);
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
 			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Location = new System.Drawing.Point(197, 67);
+			this.label1.Location = new System.Drawing.Point(233, 67);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(20, 13);
+			this.label1.Size = new System.Drawing.Size(54, 13);
 			this.label1.TabIndex = 4;
-			this.label1.Text = "Till";
+			this.label1.Text = "och innan";
 			// 
 			// m_UserControlMonthSelectorAfter
 			// 
-			this.m_UserControlMonthSelectorAfter.Location = new System.Drawing.Point(65, 94);
+			this.m_UserControlMonthSelectorAfter.Location = new System.Drawing.Point(57, 94);
 			this.m_UserControlMonthSelectorAfter.Margin = new System.Windows.Forms.Padding(1);
 			this.m_UserControlMonthSelectorAfter.Month = 1;
 			this.m_UserControlMonthSelectorAfter.Name = "m_UserControlMonthSelectorAfter";
@@ -91,7 +92,7 @@
 			// 
 			// m_UserControlMonthSelectorTo
 			// 
-			this.m_UserControlMonthSelectorTo.Location = new System.Drawing.Point(221, 59);
+			this.m_UserControlMonthSelectorTo.Location = new System.Drawing.Point(300, 61);
 			this.m_UserControlMonthSelectorTo.Margin = new System.Windows.Forms.Padding(1);
 			this.m_UserControlMonthSelectorTo.Month = 1;
 			this.m_UserControlMonthSelectorTo.Name = "m_UserControlMonthSelectorTo";
@@ -99,10 +100,11 @@
 			this.m_UserControlMonthSelectorTo.Size = new System.Drawing.Size(132, 21);
 			this.m_UserControlMonthSelectorTo.TabIndex = 5;
 			this.m_UserControlMonthSelectorTo.Year = 2009;
+			this.m_UserControlMonthSelectorTo.DateChanged += new Hackovic.TimeReport.UserControlMonthSelector.DateTimeHandler(this.UserControlMonthSelector_DateChanged);
 			// 
 			// m_UserControlMonthSelectorFrom
 			// 
-			this.m_UserControlMonthSelectorFrom.Location = new System.Drawing.Point(65, 59);
+			this.m_UserControlMonthSelectorFrom.Location = new System.Drawing.Point(101, 61);
 			this.m_UserControlMonthSelectorFrom.Margin = new System.Windows.Forms.Padding(1);
 			this.m_UserControlMonthSelectorFrom.Month = 1;
 			this.m_UserControlMonthSelectorFrom.Name = "m_UserControlMonthSelectorFrom";
@@ -110,10 +112,11 @@
 			this.m_UserControlMonthSelectorFrom.Size = new System.Drawing.Size(128, 21);
 			this.m_UserControlMonthSelectorFrom.TabIndex = 3;
 			this.m_UserControlMonthSelectorFrom.Year = 2009;
+			this.m_UserControlMonthSelectorFrom.DateChanged += new Hackovic.TimeReport.UserControlMonthSelector.DateTimeHandler(this.UserControlMonthSelector_DateChanged);
 			// 
 			// m_UserControlMonthSelectorBefore
 			// 
-			this.m_UserControlMonthSelectorBefore.Location = new System.Drawing.Point(65, 28);
+			this.m_UserControlMonthSelectorBefore.Location = new System.Drawing.Point(63, 32);
 			this.m_UserControlMonthSelectorBefore.Margin = new System.Windows.Forms.Padding(1);
 			this.m_UserControlMonthSelectorBefore.Month = 1;
 			this.m_UserControlMonthSelectorBefore.Name = "m_UserControlMonthSelectorBefore";
@@ -138,9 +141,9 @@
 			this.m_RadioButtonBetween.AutoSize = true;
 			this.m_RadioButtonBetween.Location = new System.Drawing.Point(7, 65);
 			this.m_RadioButtonBetween.Name = "m_RadioButtonBetween";
-			this.m_RadioButtonBetween.Size = new System.Drawing.Size(46, 17);
+			this.m_RadioButtonBetween.Size = new System.Drawing.Size(90, 17);
 			this.m_RadioButtonBetween.TabIndex = 2;
-			this.m_RadioButtonBetween.Text = "Från";
+			this.m_RadioButtonBetween.Text = "Från och med";
 			this.m_RadioButtonBetween.UseVisualStyleBackColor = true;
 			this.m_RadioButtonBetween.CheckedChanged += new System.EventHandler(this.RadioButtonBetween_CheckedChanged);
 			// 

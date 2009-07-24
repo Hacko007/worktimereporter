@@ -92,6 +92,7 @@
 			this.dataGridView_WorkCategory.Name = "dataGridView_WorkCategory";
 			this.dataGridView_WorkCategory.Size = new System.Drawing.Size(791, 420);
 			this.dataGridView_WorkCategory.TabIndex = 9;
+			this.dataGridView_WorkCategory.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridView_DataError);
 			// 
 			// companyDataGridViewComboBoxColumn
 			// 
@@ -221,6 +222,7 @@
 			this.dataGridView_Company.Name = "dataGridView_Company";
 			this.dataGridView_Company.Size = new System.Drawing.Size(786, 397);
 			this.dataGridView_Company.TabIndex = 0;
+			this.dataGridView_Company.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridView_DataError);
 			// 
 			// companyNameDataGridViewTextBoxColumn
 			// 
