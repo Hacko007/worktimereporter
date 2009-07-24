@@ -70,8 +70,11 @@ namespace Hackovic.TimeReport
         }
 
         #endregion
-      
-      
-      
+
+		private void DataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
+		{			
+		}
+
+     
 	}
 }

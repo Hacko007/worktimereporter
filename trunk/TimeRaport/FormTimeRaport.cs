@@ -20,6 +20,7 @@ namespace Hackovic.TimeReport
 		private UserControlSummary m_UserControlSummary;
 		private TabPage m_TabPageMaintaince;
 		private UserControlMaintenance m_UserControlMaintenance;
+		UserControlCheckInMain m_UserControlCheckInMain;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -32,15 +33,15 @@ namespace Hackovic.TimeReport
 			//
 			InitializeComponent();
 
-			UserControlCheckInMain checkinmainForm = new UserControlCheckInMain {Dock = DockStyle.Fill};
-			m_TabPageCurrent.Controls.Add(checkinmainForm);
+			m_UserControlCheckInMain = new UserControlCheckInMain { Dock = DockStyle.Fill };
+			m_TabPageCurrent.Controls.Add(m_UserControlCheckInMain);
 
-			checkinmainForm.RefreshOverview += m_UserControlSummary.InitAnnualOverview;
+			m_UserControlCheckInMain.RefreshOverview += m_UserControlSummary.InitAnnualOverview;
+			m_UserControlMaintenance.DbCleaned += m_UserControlCheckInMain.RefreshDataGrids;
+
 			m_UserControlSummary.InitAnnualOverview();
 
 		}
-
-
 
 		/// <summary>
 		/// Clean up any resources being used.
