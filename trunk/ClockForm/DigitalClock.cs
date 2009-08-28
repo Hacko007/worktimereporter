@@ -86,12 +86,23 @@ namespace Hackovic.FreshUserControls
             }
         }
 
+		protected override void OnPaintBackground(PaintEventArgs pevent)
+		{
+			if (ClockStyle == DigitalClockStyle.PlainBackground)
+			{
+				base.OnPaintBackground(pevent);
+			}
+			else
+			{
+				pevent.Graphics.FillRectangle(Brushes.Transparent, pevent.ClipRectangle);
+			}
+		}
 
-        private void DigitalClock_Paint(object sender, PaintEventArgs e)
-        {
+		protected override void OnPaint(PaintEventArgs e)
+		{
+			base.OnPaint(e);
+		
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-            
             
             switch (this.ClockStyle)
             {
