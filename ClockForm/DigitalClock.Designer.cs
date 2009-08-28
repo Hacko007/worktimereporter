@@ -88,7 +88,7 @@
 			// 
 			// DigitalClock
 			// 
-			this.Paint += new System.Windows.Forms.PaintEventHandler(this.DigitalClock_Paint);
+			//this.Paint += new System.Windows.Forms.PaintEventHandler(this.DigitalClock_Paint);
 			this.DigitalClock_contextMenuStrip.ResumeLayout(false);
 			this.DigitalClock_contextMenuStrip.PerformLayout();
 			this.ResumeLayout(false);
