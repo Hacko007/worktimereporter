@@ -10,7 +10,7 @@ namespace Hackovic.TimeReport
 		public UserControlSummary()
 		{
 			InitializeComponent();
-			SetWholeYearTimeSpan();
+			SetThisYearTimeSpan();
 		}	
 		
 		public void InitAnnualOverview() {
@@ -36,7 +36,14 @@ namespace Hackovic.TimeReport
 				actualMonth = new DateTime(actualMonth.Year, actualMonth.Month, 1);
 			}
 		}
-		
+
+		private void SetThisYearTimeSpan()
+		{
+			DateTime actualMonth = new DateTime(DateTime.Today.Year , 1,1);			
+			m_ToolStripMonthCalendarFrom.MonthCalendarControl.SetDate(new DateTime(actualMonth.Year, actualMonth.Month, 1));
+			m_ToolStripMonthCalendarTo.MonthCalendarControl.SetDate(new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month)));
+		}
+
 		private void SetWholeYearTimeSpan()
 		{
 			DateTime actualMonth = DateTime.Today.AddMonths(-12);
@@ -99,15 +106,28 @@ namespace Hackovic.TimeReport
 		{
 			if (m_ToolStripButtonShowLastYear.Checked)
 			{
+				SetThisYearTimeSpan();
+			}
+			m_ToolStripButton12Months.Checked = !m_ToolStripButtonShowLastYear.Checked;
+			EnableTimeSpanSelection();
+			InitAnnualOverview();
+		}
+
+		private void m_ToolStripButton12Months_CheckedChanged(object sender, EventArgs e)
+		{
+			if (m_ToolStripButton12Months.Checked)
+			{
 				SetWholeYearTimeSpan();
 			}
+			m_ToolStripButtonShowLastYear.Checked = !m_ToolStripButton12Months.Checked;
+
 			EnableTimeSpanSelection();
 			InitAnnualOverview();
 		}
 
 		private void EnableTimeSpanSelection()
 		{
-			bool enable = ! m_ToolStripButtonShowLastYear.Checked;
+			bool enable = ! m_ToolStripButtonShowLastYear.Checked && ! m_ToolStripButton12Months.Checked;
 			m_ToolStripLabelSumaryTimeSpan.Enabled = enable;
 			m_ToolStripLabelAnd.Enabled = enable;
 			m_ToolStripSplitButtonFrom.Enabled = enable;
@@ -131,6 +151,7 @@ namespace Hackovic.TimeReport
 			m_ToolStripSplitButtonTo.Text = e.Start.ToShortDateString();
 			m_ToolStripSplitButtonTo.HideDropDown();
 		}
+
 		
 	}
 }

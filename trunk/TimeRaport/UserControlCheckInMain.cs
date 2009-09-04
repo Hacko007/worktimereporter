@@ -400,6 +400,20 @@ namespace Hackovic.TimeReport
 			if (today != null) {
 				timeToLeave = DateTime.Now.AddHours(-today.Diff); 
 			}
+
+			List<TimeLogDataSet.TimeLogRow> incompleteTimeLogs = TimeLogFactory.Instance.TimeLog.FindIncmpleteTimeLogs(SelectedDate);
+			if (incompleteTimeLogs != null) {
+				foreach (TimeLogDataSet.TimeLogRow row in incompleteTimeLogs)
+				{
+					if (row.CategoryId == SelectedCategory.CategoryId
+						&& row.IsInTimeNull() == false
+						&& row.IsOutTimeNull() == true)
+					{
+						timeToLeave = row.InTime.AddHours(-today.Diff);
+						break;
+					}
+				}
+			}
 			m_LabelTimeToFinishToday.Text = string.Format("Klar {0:HH.mm}", timeToLeave);
 
 		}
