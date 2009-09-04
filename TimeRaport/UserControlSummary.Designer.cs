@@ -48,6 +48,7 @@ namespace Hackovic.TimeReport
 			this.m_printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
 			this.m_printDocument = new System.Drawing.Printing.PrintDocument();
 			this.m_pageSetupDialog = new System.Windows.Forms.PageSetupDialog();
+			this.m_ToolStripButton12Months = new System.Windows.Forms.ToolStripButton();
 			this.m_ToolStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -68,6 +69,7 @@ namespace Hackovic.TimeReport
             this.m_ToolStripButtonPrinterSetup,
             this.m_ToolStripSeparator1,
             this.m_ToolStripButtonShowLastYear,
+            this.m_ToolStripButton12Months,
             this.m_ToolStripSeparator2,
             this.m_ToolStripLabelSumaryTimeSpan,
             this.m_ToolStripSplitButtonFrom,
@@ -201,6 +203,16 @@ namespace Hackovic.TimeReport
 			// 
 			this.m_pageSetupDialog.Document = this.m_printDocument;
 			// 
+			// m_ToolStripButton12Months
+			// 
+			this.m_ToolStripButton12Months.CheckOnClick = true;
+			this.m_ToolStripButton12Months.Image = ((System.Drawing.Image)(resources.GetObject("m_ToolStripButton12Months.Image")));
+			this.m_ToolStripButton12Months.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.m_ToolStripButton12Months.Name = "m_ToolStripButton12Months";
+			this.m_ToolStripButton12Months.Size = new System.Drawing.Size(84, 22);
+			this.m_ToolStripButton12Months.Text = "12 månader";
+			this.m_ToolStripButton12Months.CheckedChanged += new System.EventHandler(this.m_ToolStripButton12Months_CheckedChanged);
+			// 
 			// UserControlSummary
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,5 +248,6 @@ namespace Hackovic.TimeReport
 		private System.Windows.Forms.ToolStripSplitButton m_ToolStripSplitButtonFrom;
 		private System.Windows.Forms.ToolStripSplitButton m_ToolStripSplitButtonTo;
 		private Bitmap m_MemoryImage;
+		private System.Windows.Forms.ToolStripButton m_ToolStripButton12Months;
 	}
 }
