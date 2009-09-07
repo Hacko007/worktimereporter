@@ -46,22 +46,22 @@ namespace Hackovic.TimeReport
 			// 
 			// m_MonthCalendar
 			// 
-			this.m_MonthCalendar.BackColor = System.Drawing.Color.AliceBlue;
+			this.m_MonthCalendar.BackColor = System.Drawing.Color.AntiqueWhite;
 			this.m_MonthCalendar.CalendarDimensions = new System.Drawing.Size(3, 4);
 			this.m_MonthCalendar.Location = new System.Drawing.Point(4, 4);
 			this.m_MonthCalendar.Name = "m_MonthCalendar";
 			this.m_MonthCalendar.ShowWeekNumbers = true;
 			this.m_MonthCalendar.TabIndex = 0;
-			this.m_MonthCalendar.TitleBackColor = System.Drawing.Color.DarkBlue;
+			this.m_MonthCalendar.TitleBackColor = System.Drawing.Color.SaddleBrown;
 			this.m_MonthCalendar.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.m_MonthCalendar_DateSelected);
 			// 
 			// ButtonExport
 			// 
 			this.ButtonExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.ButtonExport.BgColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.ButtonExport.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.ButtonExport.BgColor1 = System.Drawing.Color.BurlyWood;
+			this.ButtonExport.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.ButtonExport.FgColor1 = System.Drawing.Color.White;
-			this.ButtonExport.FgColor2 = System.Drawing.Color.Lime;
+			this.ButtonExport.FgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.ButtonExport.Location = new System.Drawing.Point(788, 4);
 			this.ButtonExport.Name = "ButtonExport";
 			this.ButtonExport.Size = new System.Drawing.Size(75, 23);
@@ -75,10 +75,10 @@ namespace Hackovic.TimeReport
 			// ButtonImp
 			// 
 			this.ButtonImp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.ButtonImp.BgColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.ButtonImp.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.ButtonImp.BgColor1 = System.Drawing.Color.BurlyWood;
+			this.ButtonImp.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.ButtonImp.FgColor1 = System.Drawing.Color.White;
-			this.ButtonImp.FgColor2 = System.Drawing.Color.Lime;
+			this.ButtonImp.FgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.ButtonImp.Location = new System.Drawing.Point(720, 4);
 			this.ButtonImp.Name = "ButtonImp";
 			this.ButtonImp.Size = new System.Drawing.Size(62, 23);
@@ -92,10 +92,10 @@ namespace Hackovic.TimeReport
 			// buttonAddHolyday
 			// 
 			this.buttonAddHolyday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.buttonAddHolyday.BgColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.buttonAddHolyday.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.buttonAddHolyday.BgColor1 = System.Drawing.Color.BurlyWood;
+			this.buttonAddHolyday.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.buttonAddHolyday.FgColor1 = System.Drawing.Color.White;
-			this.buttonAddHolyday.FgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+			this.buttonAddHolyday.FgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.buttonAddHolyday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttonAddHolyday.Location = new System.Drawing.Point(632, 4);
 			this.buttonAddHolyday.Name = "buttonAddHolyday";
@@ -126,7 +126,7 @@ namespace Hackovic.TimeReport
 			this.m_LabelHolydays.AutoSize = true;
 			this.m_LabelHolydays.BackColor = System.Drawing.Color.Transparent;
 			this.m_LabelHolydays.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.m_LabelHolydays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.m_LabelHolydays.ForeColor = System.Drawing.Color.Maroon;
 			this.m_LabelHolydays.Location = new System.Drawing.Point(515, 7);
 			this.m_LabelHolydays.Name = "m_LabelHolydays";
 			this.m_LabelHolydays.Size = new System.Drawing.Size(103, 20);
@@ -147,8 +147,8 @@ namespace Hackovic.TimeReport
 			// 
 			// m_ColorPanel
 			// 
-			this.m_ColorPanel.BgColor1 = System.Drawing.Color.PaleTurquoise;
-			this.m_ColorPanel.BgColor2 = System.Drawing.Color.Teal;
+			this.m_ColorPanel.BgColor1 = System.Drawing.Color.BurlyWood;
+			this.m_ColorPanel.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.m_ColorPanel.Controls.Add(this.m_DataGridView);
 			this.m_ColorPanel.Controls.Add(this.ButtonExport);
 			this.m_ColorPanel.Controls.Add(this.m_LabelHolydays);
