@@ -93,7 +93,8 @@ namespace Hackovic.TimeReport
 				OnDateChanged();
 		}
 		private void UpdateControls(){
-			m_ComboBoxMonth.SelectedIndex = Month - 1;
+			int index = Month - 1 ;
+			m_ComboBoxMonth.SelectedIndex = -1 <= index && index < m_ComboBoxMonth.Items.Count ? index : -1 ;
 			m_NumericUpDownYear.Value = Year;
 		}
 		private void OnDateChanged() 
