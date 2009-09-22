@@ -38,12 +38,18 @@ namespace Hackovic.TimeReport
             SelectedDate = DateTime.Today;
 
             RefreshDataGrids();
-
-            dataGridView_Timmar.DataError += DataGrid_DataError;
+            
 			dataGridView_week.DataError += DataGrid_DataError;
 			dataGridView_month.DataError += DataGrid_DataError;
 
+			m_dataGridViewToday.TimeLogChange += new EventHandler(DataGridViewToday_TimeLogChange);
 			m_MonthCalendar.AnnuallyBoldedDates = HolidaysCollection.Instance.GetDates();
+		}
+
+		void DataGridViewToday_TimeLogChange(object sender, EventArgs e)
+		{
+			UpdateTimeLogToday();
+			RefreshDataGrids();
 		}
 
 
@@ -184,8 +190,8 @@ namespace Hackovic.TimeReport
 		#region Public methods
 		public void TrimDataGridHeights (){
 
-			int dgDailyHight = dataGridView_Timmar.ColumnHeadersHeight
-					+ (dataGridView_Timmar.RowCount * dataGridView_Timmar.RowTemplate.Height);
+			int dgDailyHight = m_dataGridViewToday.ColumnHeadersHeight
+					+ (m_dataGridViewToday.RowCount * m_dataGridViewToday.RowTemplate.Height);
 
 			int dgWeekHight = dataGridView_week.ColumnHeadersHeight
 					+ (dataGridView_week.RowCount * dataGridView_week.RowTemplate.Height);
