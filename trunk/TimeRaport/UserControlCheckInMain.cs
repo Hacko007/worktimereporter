@@ -562,8 +562,8 @@ namespace Hackovic.TimeReport
 
 		private void m_DeleteSelectedRowToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			DateTime? dtIn = dataGridView_Timmar.SelectedRows[0].Cells[1].Value as DateTime?;
-			DateTime? dtOut = dataGridView_Timmar.SelectedRows[0].Cells[2].Value as DateTime?;
+			DateTime? dtIn = m_dataGridViewToday.SelectedRows[0].Cells[1].Value as DateTime?;
+			DateTime? dtOut = m_dataGridViewToday.SelectedRows[0].Cells[2].Value as DateTime?;
 
 			var p = TimeLogFactory.Instance.TimeLog.
 				Where(	tl =>
@@ -583,7 +583,7 @@ namespace Hackovic.TimeReport
 
 		private void m_ContextMenuStrip_Opening(object sender, CancelEventArgs e)
 		{
-			if (dataGridView_Timmar.SelectedRows.Count == 0) {
+			if (m_dataGridViewToday.SelectedRows.Count == 0) {
 				e.Cancel = true;
 			}
 		}

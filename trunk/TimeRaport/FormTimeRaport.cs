@@ -69,10 +69,10 @@ namespace Hackovic.TimeReport
 			this.m_MyTabControlMain = new System.Windows.Forms.TabControl();
 			this.m_TabPageCurrent = new System.Windows.Forms.TabPage();
 			this.m_TabPageAll = new System.Windows.Forms.TabPage();
-			this.m_TabPageCalender = new System.Windows.Forms.TabPage();
-			this.m_TabPageMaintaince = new System.Windows.Forms.TabPage();
 			this.m_UserControlSummary = new Hackovic.TimeReport.UserControlSummary();
+			this.m_TabPageCalender = new System.Windows.Forms.TabPage();
 			this.m_UserControlYearOverview1 = new Hackovic.TimeReport.UserControlYearOverview();
+			this.m_TabPageMaintaince = new System.Windows.Forms.TabPage();
 			this.m_UserControlMaintenance = new Hackovic.TimeReport.UserControlMaintenance();
 			this.m_MyTabControlMain.SuspendLayout();
 			this.m_TabPageAll.SuspendLayout();
@@ -115,6 +115,14 @@ namespace Hackovic.TimeReport
 			this.m_TabPageAll.Text = "            Sammanställning                  ";
 			this.m_TabPageAll.UseVisualStyleBackColor = true;
 			// 
+			// m_UserControlSummary
+			// 
+			this.m_UserControlSummary.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.m_UserControlSummary.Location = new System.Drawing.Point(3, 3);
+			this.m_UserControlSummary.Name = "m_UserControlSummary";
+			this.m_UserControlSummary.Size = new System.Drawing.Size(1208, 614);
+			this.m_UserControlSummary.TabIndex = 0;
+			// 
 			// m_TabPageCalender
 			// 
 			this.m_TabPageCalender.Controls.Add(this.m_UserControlYearOverview1);
@@ -126,6 +134,14 @@ namespace Hackovic.TimeReport
 			this.m_TabPageCalender.Text = "Kalender";
 			this.m_TabPageCalender.UseVisualStyleBackColor = true;
 			// 
+			// m_UserControlYearOverview1
+			// 
+			this.m_UserControlYearOverview1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.m_UserControlYearOverview1.Location = new System.Drawing.Point(3, 3);
+			this.m_UserControlYearOverview1.Name = "m_UserControlYearOverview1";
+			this.m_UserControlYearOverview1.Size = new System.Drawing.Size(1208, 614);
+			this.m_UserControlYearOverview1.TabIndex = 1;
+			// 
 			// m_TabPageMaintaince
 			// 
 			this.m_TabPageMaintaince.Controls.Add(this.m_UserControlMaintenance);
@@ -135,22 +151,6 @@ namespace Hackovic.TimeReport
 			this.m_TabPageMaintaince.TabIndex = 3;
 			this.m_TabPageMaintaince.Text = "Underhåll";
 			this.m_TabPageMaintaince.UseVisualStyleBackColor = true;
-			// 
-			// m_UserControlSummary
-			// 
-			this.m_UserControlSummary.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlSummary.Location = new System.Drawing.Point(3, 3);
-			this.m_UserControlSummary.Name = "m_UserControlSummary";
-			this.m_UserControlSummary.Size = new System.Drawing.Size(1208, 614);
-			this.m_UserControlSummary.TabIndex = 0;
-			// 
-			// m_UserControlYearOverview1
-			// 
-			this.m_UserControlYearOverview1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlYearOverview1.Location = new System.Drawing.Point(3, 3);
-			this.m_UserControlYearOverview1.Name = "m_UserControlYearOverview1";
-			this.m_UserControlYearOverview1.Size = new System.Drawing.Size(1208, 614);
-			this.m_UserControlYearOverview1.TabIndex = 1;
 			// 
 			// m_UserControlMaintenance
 			// 
@@ -163,7 +163,7 @@ namespace Hackovic.TimeReport
 			// FormTimeRaport
 			// 
 			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.BackColor = System.Drawing.Color.DarkSlateGray;
+			this.BackColor = System.Drawing.SystemColors.Control;
 			this.ClientSize = new System.Drawing.Size(1222, 646);
 			this.Controls.Add(this.m_MyTabControlMain);
 			this.ForeColor = System.Drawing.Color.Black;
