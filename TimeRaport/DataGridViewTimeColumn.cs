@@ -184,7 +184,6 @@ namespace Hackovic.TimeReport
 		public bool EditingControlWantsInputKey(
 			Keys key, bool dataGridViewWantsInputKey)
 		{
-			Console.WriteLine(SelectionStart);
 			int selStart = SelectionStart;
 			// Let the DateTimePicker handle the keys listed.
 			switch (key & Keys.KeyCode)
