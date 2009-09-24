@@ -16,8 +16,8 @@ namespace Hackovic.TimeReport
 		}
 
 		private DataGridViewTextBoxColumn m_ColumnDay;
-		private DataGridViewTextBoxColumn m_ColumnInTime;
-		private DataGridViewTextBoxColumn m_ColumnOutTime;
+		private DataGridViewTimeColumn m_ColumnInTime;
+		private DataGridViewTimeColumn m_ColumnOutTime;
 		private DataGridViewTextBoxColumn m_ColumnCategoryText;
 		private DataGridViewTextBoxColumn m_ColumnCategoryId;
 		private DataGridViewTextBoxColumn m_CoulmnInfo;
@@ -34,31 +34,21 @@ namespace Hackovic.TimeReport
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-			this.timeLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.timeLogDataSet = new Hackovic.TimeReport.TimeLogDataSet();
 			this.m_ContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.m_DeleteSelectedRowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.timeLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.timeLogDataSet = new Hackovic.TimeReport.TimeLogDataSet();
 			this.m_ColumnDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.m_ColumnInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.m_ColumnOutTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.m_ColumnInTime = new DataGridViewTimeColumn();
+			this.m_ColumnOutTime = new DataGridViewTimeColumn();
 			this.m_ColumnCategoryText = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.m_ColumnCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.m_CoulmnInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.m_ContextMenuStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.timeLogBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.timeLogDataSet)).BeginInit();
-			this.m_ContextMenuStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// timeLogBindingSource
-			// 
-			this.timeLogBindingSource.DataMember = "TimeLog";
-			this.timeLogBindingSource.DataSource = this.timeLogDataSet;
-			// 
-			// timeLogDataSet
-			// 
-			this.timeLogDataSet.DataSetName = "TimeLogDataSet";
-			this.timeLogDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// m_ContextMenuStrip
 			// 
@@ -74,6 +64,16 @@ namespace Hackovic.TimeReport
 			this.m_DeleteSelectedRowToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
 			this.m_DeleteSelectedRowToolStripMenuItem.Text = "Radera vald rad";
 			this.m_DeleteSelectedRowToolStripMenuItem.Click += new System.EventHandler(this.DeleteSelectedRowToolStripMenuItem_Click);
+			// 
+			// timeLogBindingSource
+			// 
+			this.timeLogBindingSource.DataMember = "TimeLog";
+			this.timeLogBindingSource.DataSource = this.timeLogDataSet;
+			// 
+			// timeLogDataSet
+			// 
+			this.timeLogDataSet.DataSetName = "TimeLogDataSet";
+			this.timeLogDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// m_ColumnDay
 			// 
@@ -116,7 +116,7 @@ namespace Hackovic.TimeReport
 			// 
 			this.m_ColumnCategoryText.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.m_ColumnCategoryText.DataPropertyName = "CategoryText";
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.m_ColumnCategoryText.DefaultCellStyle = dataGridViewCellStyle4;
 			this.m_ColumnCategoryText.HeaderText = "Kategory";
 			this.m_ColumnCategoryText.Name = "m_ColumnCategoryText";
@@ -148,11 +148,10 @@ namespace Hackovic.TimeReport
 			this.BackgroundColor = System.Drawing.Color.DarkGray;
 			this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-			this.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
 			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-			this.ColumnHeadersHeight = 35;
+			this.ColumnHeadersHeight = 22;
 			this.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.m_ColumnDay,
             this.m_ColumnInTime,
@@ -177,9 +176,9 @@ namespace Hackovic.TimeReport
 			this.RowTemplate.Height = 30;
 			this.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
 			this.Size = new System.Drawing.Size(661, 175);
+			this.m_ContextMenuStrip.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.timeLogBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.timeLogDataSet)).EndInit();
-			this.m_ContextMenuStrip.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 			this.ResumeLayout(false);
 
