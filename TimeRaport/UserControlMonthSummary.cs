@@ -25,6 +25,11 @@ namespace Hackovic.TimeReport
 				catch { }
 			}
 		}
+		
+		public DataGridView DataGrid{
+			get { return dataGridView_Month; }
+			set { dataGridView_Month = value; }
+		}
 
 		public UserControlMonthSummary()
 		{
@@ -52,7 +57,7 @@ namespace Hackovic.TimeReport
 			double totalHours = 0;
 			double totalPlanned = 0;
 			double totalDiff = 0;
-
+			dataGridView_Month.Rows.Clear();
 			var worked = dsTimeReport.DayTimeLog.GroupBy(dl => dl.CategoryId, dl => dl);
 			foreach (var category in worked)
 			{
@@ -65,7 +70,7 @@ namespace Hackovic.TimeReport
 				dataGridView_Month.Rows.Add(sum, plan, diff, dsTimeReport.Category.FindByCategoryId(category.Key).DisplayValue);
 			}
 
-			label_Hours.Text = string.Format("Arbetat:{0:N2}   Plan:{1:N2}  Delta:{2:N2}", totalHours, totalPlanned , totalDiff);			
+			label_Hours.Text = string.Format("Arbetat:{0:N2}  Plan:{1:N2}  Delta:{2:N2}", totalHours, totalPlanned , totalDiff);			
 		}
  
      

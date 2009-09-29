@@ -141,7 +141,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataGridViewToday.cs">
-      <SubType>Component</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ToolStripMonthCalendar.cs">
       <SubType>Component</SubType>
