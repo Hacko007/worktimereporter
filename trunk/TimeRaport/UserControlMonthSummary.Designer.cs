@@ -158,15 +158,15 @@
 			// 
 			this.label_Hours.AutoSize = true;
 			this.label_Hours.BackColor = System.Drawing.Color.Transparent;
-			this.label_Hours.Dock = System.Windows.Forms.DockStyle.Right;
+			this.label_Hours.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.label_Hours.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label_Hours.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.label_Hours.Location = new System.Drawing.Point(426, 0);
+			this.label_Hours.Location = new System.Drawing.Point(158, 0);
 			this.label_Hours.Name = "label_Hours";
-			this.label_Hours.Size = new System.Drawing.Size(88, 27);
+			this.label_Hours.Size = new System.Drawing.Size(356, 27);
 			this.label_Hours.TabIndex = 2;
 			this.label_Hours.Text = "156 timmar";
-			this.label_Hours.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.label_Hours.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// UserControlMonthSummary
 			// 

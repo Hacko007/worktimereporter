@@ -7,13 +7,15 @@ using System.ComponentModel;
 
 namespace Hackovic.TimeReport
 {
-	public class DataGridViewToday : DataGridView
+	public class DataGridViewToday : UserControl// DataGridView
 	{		
 		public event EventHandler TimeLogChange ;
 
 		public DataGridViewToday() {
-			InitializeComponent();
+			InitializeComponent();			
 		}
+
+		public DataGridView DataGrid { get; set; }
 
 		private DataGridViewTextBoxColumn m_ColumnDay;
 		private DataGridViewTimeColumn m_ColumnInTime;
@@ -26,6 +28,7 @@ namespace Hackovic.TimeReport
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			this.DataGrid = new DataGridView();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,15 +42,15 @@ namespace Hackovic.TimeReport
 			this.timeLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.timeLogDataSet = new Hackovic.TimeReport.TimeLogDataSet();
 			this.m_ColumnDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.m_ColumnInTime = new DataGridViewTimeColumn();
-			this.m_ColumnOutTime = new DataGridViewTimeColumn();
+			this.m_ColumnInTime = new Hackovic.TimeReport.DataGridViewTimeColumn();
+			this.m_ColumnOutTime = new Hackovic.TimeReport.DataGridViewTimeColumn();
 			this.m_ColumnCategoryText = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.m_ColumnCategoryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.m_CoulmnInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.m_ContextMenuStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.timeLogBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.timeLogDataSet)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// m_ContextMenuStrip
@@ -137,68 +140,72 @@ namespace Hackovic.TimeReport
 			// 
 			// DataGridViewToday
 			// 
-			this.AllowUserToAddRows = false;
-			this.AllowUserToOrderColumns = true;
+			this.DataGrid.AllowUserToAddRows = false;
+			this.DataGrid.AllowUserToOrderColumns = true;
 			dataGridViewCellStyle5.BackColor = System.Drawing.Color.Gainsboro;
 			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gray;
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkGray;
 			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-			this.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-			this.AutoGenerateColumns = false;
-			this.BackgroundColor = System.Drawing.Color.DarkGray;
-			this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+			this.DataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+			this.DataGrid.AutoGenerateColumns = false;
+			this.DataGrid.BackgroundColor = System.Drawing.Color.DarkGray;
+			this.DataGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.DataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
 			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-			this.ColumnHeadersHeight = 22;
-			this.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			this.DataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			this.DataGrid.ColumnHeadersHeight = 22;
+			this.DataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.m_ColumnDay,
             this.m_ColumnInTime,
             this.m_ColumnOutTime,
             this.m_ColumnCategoryText,
             this.m_ColumnCategoryId,
             this.m_CoulmnInfo});
-			this.ContextMenuStrip = this.m_ContextMenuStrip;
-			this.DataSource = this.timeLogBindingSource;
-			this.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-			this.GridColor = System.Drawing.Color.WhiteSmoke;
-			this.Name = "dataGridView_Timmar";
-			this.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-			this.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-			this.RowHeadersWidth = 20;
-			dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightGray;
+			this.DataGrid.ContextMenuStrip = this.m_ContextMenuStrip;
+			this.DataGrid.DataSource = this.timeLogBindingSource;
+			this.DataGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+			this.DataGrid.GridColor = System.Drawing.Color.WhiteSmoke;
+			this.DataGrid.Name = "dataGridView_Timmar";
+			this.DataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+			this.DataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+			this.DataGrid.RowHeadersWidth = 20;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
 			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gray;
-			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.DarkRed;
 			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.RowsDefaultCellStyle = dataGridViewCellStyle8;
-			this.RowTemplate.Height = 30;
-			this.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-			this.Size = new System.Drawing.Size(661, 175);
-			this.m_ContextMenuStrip.ResumeLayout(false);
+			this.DataGrid.RowsDefaultCellStyle = dataGridViewCellStyle8;
+			this.DataGrid.RowTemplate.Height = 30;
+			this.DataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			this.DataGrid.Size = new System.Drawing.Size(661, 175);
+			this.DataGrid.DataError += new DataGridViewDataErrorEventHandler(DataGrid_DataError);
+			this.DataGrid.Dock = DockStyle.Fill;
+			this.m_ContextMenuStrip.ResumeLayout(false);			
+			this.Controls.Add(this.DataGrid);
 			((System.ComponentModel.ISupportInitialize)(this.timeLogBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.timeLogDataSet)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
 			this.ResumeLayout(false);
 
 		}
-		
-		protected override void OnDataError(bool displayErrorDialogIfNoHandler, DataGridViewDataErrorEventArgs e)
-		{			
+
+		void DataGrid_DataError(object sender, DataGridViewDataErrorEventArgs e)
+		{
+			
 		}
 		
 		private void ContextMenuStrip_Opening(object sender, CancelEventArgs e)
 		{
-			if (this.SelectedRows.Count == 0)
+			if (this.DataGrid.SelectedRows.Count == 0)
 			{
 				e.Cancel = true;
 			}
 		}
 		private void DeleteSelectedRowToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			DateTime? dtIn = this.SelectedRows[0].Cells[1].Value as DateTime?;
-			DateTime? dtOut = this.SelectedRows[0].Cells[2].Value as DateTime?;
+			DateTime? dtIn = this.DataGrid.SelectedRows[0].Cells[1].Value as DateTime?;
+			DateTime? dtOut = this.DataGrid.SelectedRows[0].Cells[2].Value as DateTime?;
 
 			var p = TimeLogFactory.Instance.TimeLog.
 				Where(tl =>
@@ -235,7 +242,7 @@ namespace Hackovic.TimeReport
 			set
 			{
 				timeLogBindingSource = value;
-				this.DataSource = timeLogBindingSource;
+				this.DataGrid.DataSource = timeLogBindingSource;
 			}
 		}
 		

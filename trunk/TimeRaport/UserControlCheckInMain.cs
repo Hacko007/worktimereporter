@@ -190,8 +190,8 @@ namespace Hackovic.TimeReport
 		#region Public methods
 		public void TrimDataGridHeights (){
 
-			int dgDailyHight = m_dataGridViewToday.ColumnHeadersHeight
-					+ (m_dataGridViewToday.RowCount * m_dataGridViewToday.RowTemplate.Height);
+			int dgDailyHight = m_dataGridViewToday.DataGrid.ColumnHeadersHeight
+					+ (m_dataGridViewToday.DataGrid.RowCount * m_dataGridViewToday.DataGrid.RowTemplate.Height);
 
 			int dgWeekHight = dataGridView_week.ColumnHeadersHeight
 					+ (dataGridView_week.RowCount * dataGridView_week.RowTemplate.Height);
@@ -354,43 +354,47 @@ namespace Hackovic.TimeReport
 
     	private void SetTotalLabel()
 		{
-			label_info.Text = "Denna månad:" + Environment.NewLine;
-			int daycount = dsTimeReport.DayTimeLog.GroupBy(dl => dl.Day, dl => dl).Count();
-			label_info.Text += daycount + " arbetsdagar" + Environment.NewLine +Environment.NewLine ;
 
-			double totalHours = 0; 
-			double totalPlanned = 0;
-			double totalDiff = 0;
+			m_userControlMonthSummary.Month = this.SelectedDate;
+			return;
 
-			var worked = dsTimeReport.DayTimeLog.GroupBy(dl => dl.CategoryId, dl => dl );
-			foreach (var category in worked)
-			{
-				double sum = category.Sum(day => day.Hours);
-				double plan = category.Sum(day => day.PlannedHours);
-				double diff = sum - plan;
-				totalHours += sum;
-				totalPlanned += plan;
-				totalDiff += diff;
-				string format = "{0,4:N2} av {1,4:N2} [+{2,4:N2}] - ";
-				if (diff < 0) {
-					format = "{0,4:N2} av {1,4:N2} [{2,4:N2}] - ";
-				}
-				else if (diff == 0) {
-					format = "{0,4:N2} av {1,4:N2} - ";
-				}
-				label_info.Text += string.Format(format , sum, plan, diff);
-				label_info.Text += dsTimeReport.Category.FindByCategoryId(category.Key).DisplayValue + Environment.NewLine;
-			}
+			//label_info.Text = "Denna månad:" + Environment.NewLine;
+			//int daycount = dsTimeReport.DayTimeLog.GroupBy(dl => dl.Day, dl => dl).Count();
+			//label_info.Text += daycount + " arbetsdagar" + Environment.NewLine +Environment.NewLine ;
 
-			label_monthTotal.Text = string.Format("Arbetat:{0,7:N2}  tim.{2}Plan:{1,10:N2}  tim.", totalHours, totalPlanned, Environment.NewLine);
-			if(totalDiff > 0){
-				label_Diff.Text = string.Format("Skilnad:+{0,7:N2}  tim.", totalDiff);
-				label_Diff.ForeColor = Color.GreenYellow;
-			}else{
-				label_Diff.Text = string.Format("Skilnad:{0,7:N2}  tim.", totalDiff);
-				label_Diff.ForeColor = Color.OrangeRed;
+			//double totalHours = 0; 
+			//double totalPlanned = 0;
+			//double totalDiff = 0;
 
- 			}
+			//var worked = dsTimeReport.DayTimeLog.GroupBy(dl => dl.CategoryId, dl => dl );
+			//foreach (var category in worked)
+			//{
+			//    double sum = category.Sum(day => day.Hours);
+			//    double plan = category.Sum(day => day.PlannedHours);
+			//    double diff = sum - plan;
+			//    totalHours += sum;
+			//    totalPlanned += plan;
+			//    totalDiff += diff;
+			//    string format = "{0,4:N2} av {1,4:N2} [+{2,4:N2}] - ";
+			//    if (diff < 0) {
+			//        format = "{0,4:N2} av {1,4:N2} [{2,4:N2}] - ";
+			//    }
+			//    else if (diff == 0) {
+			//        format = "{0,4:N2} av {1,4:N2} - ";
+			//    }
+			//    label_info.Text += string.Format(format , sum, plan, diff);
+			//    label_info.Text += dsTimeReport.Category.FindByCategoryId(category.Key).DisplayValue + Environment.NewLine;
+			//}
+
+			//label_monthTotal.Text = string.Format("Arbetat:{0,7:N2}  tim.{2}Plan:{1,10:N2}  tim.", totalHours, totalPlanned, Environment.NewLine);
+			//if(totalDiff > 0){
+			//    label_Diff.Text = string.Format("Skilnad:+{0,7:N2}  tim.", totalDiff);
+			//    label_Diff.ForeColor = Color.GreenYellow;
+			//}else{
+			//    label_Diff.Text = string.Format("Skilnad:{0,7:N2}  tim.", totalDiff);
+			//    label_Diff.ForeColor = Color.OrangeRed;
+
+			//}
 			
 		}
 
@@ -562,8 +566,8 @@ namespace Hackovic.TimeReport
 
 		private void m_DeleteSelectedRowToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			DateTime? dtIn = m_dataGridViewToday.SelectedRows[0].Cells[1].Value as DateTime?;
-			DateTime? dtOut = m_dataGridViewToday.SelectedRows[0].Cells[2].Value as DateTime?;
+			DateTime? dtIn = m_dataGridViewToday.DataGrid.SelectedRows[0].Cells[1].Value as DateTime?;
+			DateTime? dtOut = m_dataGridViewToday.DataGrid.SelectedRows[0].Cells[2].Value as DateTime?;
 
 			var p = TimeLogFactory.Instance.TimeLog.
 				Where(	tl =>
@@ -583,7 +587,8 @@ namespace Hackovic.TimeReport
 
 		private void m_ContextMenuStrip_Opening(object sender, CancelEventArgs e)
 		{
-			if (m_dataGridViewToday.SelectedRows.Count == 0) {
+			if (m_dataGridViewToday.DataGrid.SelectedRows.Count == 0)
+			{
 				e.Cancel = true;
 			}
 		}
