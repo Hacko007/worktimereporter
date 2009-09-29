@@ -242,7 +242,7 @@
 			// label2
 			// 
 			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.ForeColor = System.Drawing.Color.Honeydew;
+			this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.label2.Location = new System.Drawing.Point(356, 66);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(88, 19);
@@ -252,10 +252,10 @@
 			// 
 			// button_out
 			// 
-			this.button_out.BgColor1 = System.Drawing.Color.PowderBlue;
-			this.button_out.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.button_out.FgColor1 = System.Drawing.Color.PaleTurquoise;
-			this.button_out.FgColor2 = System.Drawing.Color.Teal;
+			this.button_out.BgColor1 = System.Drawing.SystemColors.Control;
+			this.button_out.BgColor2 = System.Drawing.SystemColors.ControlDarkDark;
+			this.button_out.FgColor1 = System.Drawing.SystemColors.ActiveCaptionText;
+			this.button_out.FgColor2 = System.Drawing.SystemColors.ControlText;
 			this.button_out.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button_out.Font = new System.Drawing.Font("Arial Black", 24F);
 			this.button_out.ForeColor = System.Drawing.Color.White;
@@ -270,10 +270,10 @@
 			// 
 			// button_in
 			// 
-			this.button_in.BgColor1 = System.Drawing.Color.PowderBlue;
-			this.button_in.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.button_in.FgColor1 = System.Drawing.Color.PaleTurquoise;
-			this.button_in.FgColor2 = System.Drawing.Color.Teal;
+			this.button_in.BgColor1 = System.Drawing.SystemColors.Control;
+			this.button_in.BgColor2 = System.Drawing.SystemColors.ControlDarkDark;
+			this.button_in.FgColor1 = System.Drawing.SystemColors.ActiveCaptionText;
+			this.button_in.FgColor2 = System.Drawing.SystemColors.ControlText;
 			this.button_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button_in.Font = new System.Drawing.Font("Arial Black", 24F);
 			this.button_in.ForeColor = System.Drawing.Color.White;
@@ -288,8 +288,8 @@
 			// 
 			// My_Button_AddCategory
 			// 
-			this.My_Button_AddCategory.BgColor1 = System.Drawing.Color.PowderBlue;
-			this.My_Button_AddCategory.BgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.My_Button_AddCategory.BgColor1 = System.Drawing.SystemColors.Control;
+			this.My_Button_AddCategory.BgColor2 = System.Drawing.SystemColors.ControlDarkDark;
 			this.My_Button_AddCategory.FgColor1 = System.Drawing.Color.White;
 			this.My_Button_AddCategory.FgColor2 = System.Drawing.Color.LightGray;
 			this.My_Button_AddCategory.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -385,12 +385,12 @@
 			// 
 			// digitalClock_Now
 			// 
-			this.digitalClock_Now.BackColor = System.Drawing.Color.DarkSlateGray;
-			this.digitalClock_Now.BackColor2 = System.Drawing.Color.Teal;
+			this.digitalClock_Now.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.digitalClock_Now.BackColor2 = System.Drawing.SystemColors.Desktop;
 			this.digitalClock_Now.ClockStyle = Hackovic.FreshUserControls.DigitalClockStyle.FullClock;
 			this.digitalClock_Now.DateTimeFormat = "yyy-MM-dd       HH:mm:ss";
-			this.digitalClock_Now.ForeColor = System.Drawing.Color.Teal;
-			this.digitalClock_Now.ForeColor2 = System.Drawing.Color.PaleTurquoise;
+			this.digitalClock_Now.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.digitalClock_Now.ForeColor2 = System.Drawing.SystemColors.InactiveCaptionText;
 			this.digitalClock_Now.FramePrecent = 0;
 			this.digitalClock_Now.Location = new System.Drawing.Point(0, 0);
 			this.digitalClock_Now.Name = "digitalClock_Now";
@@ -1372,7 +1372,7 @@
 			// 
 			// ListBox_WorkCaegory
 			// 
-			this.ListBox_WorkCaegory.BackColor = System.Drawing.Color.DarkSlateGray;
+			this.ListBox_WorkCaegory.BackColor = System.Drawing.SystemColors.ControlDarkDark;
 			this.ListBox_WorkCaegory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.ListBox_WorkCaegory.DataSource = this.categoryBindingSource;
 			this.ListBox_WorkCaegory.DisplayMember = "DisplayValue";
@@ -1412,8 +1412,9 @@
 			// colorPanel1
 			// 
 			this.colorPanel1.AutoScroll = true;
-			this.colorPanel1.BgColor1 = System.Drawing.Color.PowderBlue;
-			this.colorPanel1.BgColor2 = System.Drawing.Color.Black;
+			this.colorPanel1.BackColor = System.Drawing.SystemColors.Control;
+			this.colorPanel1.BgColor1 = System.Drawing.SystemColors.ControlLight;
+			this.colorPanel1.BgColor2 = System.Drawing.SystemColors.ControlDarkDark;
 			this.colorPanel1.Controls.Add(this.m_userControlMonthSummary);
 			this.colorPanel1.Controls.Add(this.m_LabelTimeToFinishToday);
 			this.colorPanel1.Controls.Add(this.digitalClock_Now);
@@ -1430,6 +1431,7 @@
 			this.colorPanel1.Controls.Add(this.label2);
 			this.colorPanel1.Controls.Add(this.My_Button_AddCategory);
 			this.colorPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.colorPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.colorPanel1.Location = new System.Drawing.Point(0, 0);
 			this.colorPanel1.Name = "colorPanel1";
 			this.colorPanel1.Size = new System.Drawing.Size(1173, 623);
@@ -1440,7 +1442,7 @@
 			this.m_LabelTimeToFinishToday.AutoSize = true;
 			this.m_LabelTimeToFinishToday.BackColor = System.Drawing.Color.Transparent;
 			this.m_LabelTimeToFinishToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.m_LabelTimeToFinishToday.ForeColor = System.Drawing.Color.SeaGreen;
+			this.m_LabelTimeToFinishToday.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.m_LabelTimeToFinishToday.Location = new System.Drawing.Point(278, 145);
 			this.m_LabelTimeToFinishToday.Name = "m_LabelTimeToFinishToday";
 			this.m_LabelTimeToFinishToday.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1451,10 +1453,10 @@
 			// 
 			// m_NumericUpDownToWork
 			// 
-			this.m_NumericUpDownToWork.BackColor = System.Drawing.Color.CadetBlue;
+			this.m_NumericUpDownToWork.BackColor = System.Drawing.SystemColors.Control;
 			this.m_NumericUpDownToWork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.m_NumericUpDownToWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.m_NumericUpDownToWork.ForeColor = System.Drawing.Color.White;
+			this.m_NumericUpDownToWork.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.m_NumericUpDownToWork.Location = new System.Drawing.Point(392, 89);
 			this.m_NumericUpDownToWork.Maximum = new decimal(new int[] {
             24,
@@ -1474,7 +1476,7 @@
 			// 
 			// m_NumericUpDownMinute
 			// 
-			this.m_NumericUpDownMinute.BackColor = System.Drawing.Color.MintCream;
+			this.m_NumericUpDownMinute.BackColor = System.Drawing.SystemColors.Control;
 			this.m_NumericUpDownMinute.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.m_NumericUpDownMinute.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.m_NumericUpDownMinute.Increment = new decimal(new int[] {
@@ -1506,7 +1508,7 @@
 			// 
 			// m_NumericUpDownHour
 			// 
-			this.m_NumericUpDownHour.BackColor = System.Drawing.Color.MintCream;
+			this.m_NumericUpDownHour.BackColor = System.Drawing.SystemColors.Control;
 			this.m_NumericUpDownHour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.m_NumericUpDownHour.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.m_NumericUpDownHour.Location = new System.Drawing.Point(217, 89);
@@ -1530,7 +1532,7 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.BackColor = System.Drawing.Color.Transparent;
-			this.label4.ForeColor = System.Drawing.Color.SeaGreen;
+			this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.label4.Location = new System.Drawing.Point(304, 72);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(42, 13);
@@ -1542,7 +1544,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.BackColor = System.Drawing.Color.Transparent;
-			this.label3.ForeColor = System.Drawing.Color.SeaGreen;
+			this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.label3.Location = new System.Drawing.Point(235, 73);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(41, 13);
@@ -1556,7 +1558,7 @@
 			this.m_MonthCalendar.Name = "m_MonthCalendar";
 			this.m_MonthCalendar.ShowWeekNumbers = true;
 			this.m_MonthCalendar.TabIndex = 1;
-			this.m_MonthCalendar.TitleBackColor = System.Drawing.Color.DarkSlateGray;
+			this.m_MonthCalendar.TitleBackColor = System.Drawing.SystemColors.ControlDarkDark;
 			this.m_MonthCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.MonthCalendar_DateChanged);
 			// 
 			// dataGridViewTextBoxColumn4
@@ -1621,7 +1623,7 @@
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.AutoScroll = true;
-			this.BackColor = System.Drawing.Color.DarkSlateGray;
+			this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
 			this.Controls.Add(this.panel_dataGrids);
 			this.Controls.Add(this.colorPanel1);
 			this.DoubleBuffered = true;
