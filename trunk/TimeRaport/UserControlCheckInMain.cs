@@ -12,10 +12,10 @@ namespace Hackovic.TimeReport
     public partial class UserControlCheckInMain : UserControl
     {
     	private double m_Hours ;
-
+		public delegate void RefreshOverviewHandler();
 
 		// Declare the event.
-		public event RefreshOverview RefreshOverview;
+		public event RefreshOverviewHandler RefreshOverview;
 
 		// Wrap the event in a protected virtual method
 		// to enable derived classes to raise the event.
@@ -28,7 +28,7 @@ namespace Hackovic.TimeReport
 
         public UserControlCheckInMain()
         {
-			m_Hours = 0;
+			
 			dsTimeReport = TimeLogFactory.Instance;
             
 			InitializeComponent();
@@ -44,6 +44,15 @@ namespace Hackovic.TimeReport
 
 			m_dataGridViewToday.TimeLogChange += new EventHandler(DataGridViewToday_TimeLogChange);
 			m_MonthCalendar.AnnuallyBoldedDates = HolidaysCollection.Instance.GetDates();
+			InitDataGridStyle();
+		}
+
+		private void InitDataGridStyle()
+		{
+			DataGridStyle.InitDefaultStyle();
+			dataGridView_month.ApplyDefaultStyle();
+			dataGridView_week.ApplyDefaultStyle();
+			m_userControlMonthSummary.DataGrid.ApplyDefaultStyle();
 		}
 
 		void DataGridViewToday_TimeLogChange(object sender, EventArgs e)
@@ -443,17 +452,17 @@ namespace Hackovic.TimeReport
 			WriteEntery(false);
 		}
 
-		private void Button_Refresh_Click(object sender, EventArgs e)
-		{
-			RefreshDataGrids();
-			RefreshTodayOnly();
-		}
+		//private void Button_Refresh_Click(object sender, EventArgs e)
+		//{
+		//    RefreshDataGrids();
+		//    RefreshTodayOnly();
+		//}
 
         private void Button_AddCategory_Click(object sender, EventArgs e)
         {
             if (m_FormAddCategory == null)
             {
-                m_FormAddCategory = new FormAddCategry();
+                m_FormAddCategory = new FormAddCategory();
             }
             m_FormAddCategory.TimeReportDS = dsTimeReport;
             m_FormAddCategory.ShowDialog();
@@ -490,11 +499,11 @@ namespace Hackovic.TimeReport
 
         void DataGrid_DataError(object sender, DataGridViewDataErrorEventArgs e) {}
 
-        private void DataGridView_Timmar_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-            timeLogTableAdapter.Update(dsTimeReport.TimeLog);
-            RefreshDataGrids();
-        }       
+		//private void DataGridView_Timmar_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+		//{
+		//    timeLogTableAdapter.Update(dsTimeReport.TimeLog);
+		//    RefreshDataGrids();
+		//}       
         
         private void ListBox_Category_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -550,7 +559,7 @@ namespace Hackovic.TimeReport
 			if (m_MonthCalendar.AnnuallyBoldedDates.Contains(SelectedDate))
 			{
 			
-				Holiday h = HolidaysCollection.Instance.GetHoliday(SelectedDate);
+				Holiday h = HolidaysCollection.GetHoliday(SelectedDate);
 				m_ToolTip.ToolTipTitle = SelectedDate.ToShortDateString();
 				m_ToolTip.SetToolTip(m_MonthCalendar, h.ToString());
 				m_ToolTip.Active = true;

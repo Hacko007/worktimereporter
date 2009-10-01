@@ -82,7 +82,7 @@ namespace Hackovic.TimeReport
 	internal class TimeEditingControl : MaskedTextBox, IDataGridViewEditingControl
 	{
 		DataGridView dataGridView;
-		private bool valueChanged = false;
+		private bool valueChanged ;
 		int rowIndex;
 
 		public TimeEditingControl()

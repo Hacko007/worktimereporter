@@ -1,6 +1,6 @@
 ﻿namespace Hackovic.TimeReport
 {
-	partial class FormAddCategry
+	partial class FormAddCategory
 	{
 		/// <summary>
 		/// Required designer variable.

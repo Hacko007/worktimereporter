@@ -68,7 +68,7 @@ namespace Hackovic.TimeReport
 				foreach (var day in month)
 				{
 					TimeLogDataSet.DayTimeLogRow row = m_Instance.DayTimeLog.FindByDayCategoryId(day.Day, day.CategoryId);
-					string info = (day.Info == null || day.Info == "") ? "" : " * " + day.Info;
+					string info = string.IsNullOrEmpty(day.Info) ? "" : " * " + day.Info;
 					if (row == null)
 					{
 						m_Instance.DayTimeLog.AddDayTimeLogRow(day.Day, day.Hours, day.PlannedHours, day.CategoryId, day.Category, info);
