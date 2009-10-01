@@ -177,7 +177,7 @@ namespace Hackovic.TimeReport
 			this.m_UserControlMonthSelectorTo.Size = new System.Drawing.Size(132, 21);
 			this.m_UserControlMonthSelectorTo.TabIndex = 5;
 			this.m_UserControlMonthSelectorTo.Year = 2009;
-			this.m_UserControlMonthSelectorTo.DateChanged += new Hackovic.TimeReport.UserControlMonthSelector.DateTimeHandler(this.UserControlMonthSelector_DateChanged);
+			this.m_UserControlMonthSelectorTo.DateChanged += new Hackovic.TimeReport.DateTimeEventHandler(this.UserControlMonthSelector_DateChanged);
 			// 
 			// m_UserControlMonthSelectorFrom
 			// 
@@ -190,7 +190,7 @@ namespace Hackovic.TimeReport
 			this.m_UserControlMonthSelectorFrom.Size = new System.Drawing.Size(128, 21);
 			this.m_UserControlMonthSelectorFrom.TabIndex = 3;
 			this.m_UserControlMonthSelectorFrom.Year = 2009;
-			this.m_UserControlMonthSelectorFrom.DateChanged += new Hackovic.TimeReport.UserControlMonthSelector.DateTimeHandler(this.UserControlMonthSelector_DateChanged);
+			this.m_UserControlMonthSelectorFrom.DateChanged += new Hackovic.TimeReport.DateTimeEventHandler(this.UserControlMonthSelector_DateChanged);
 			// 
 			// m_UserControlMonthSelectorBefore
 			// 

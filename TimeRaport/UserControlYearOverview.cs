@@ -122,7 +122,7 @@ namespace Hackovic.TimeReport
 		{
 			if (m_MonthCalendar.AnnuallyBoldedDates.Contains(m_MonthCalendar.SelectionStart))
 			{
-				Holiday h = HolidaysCollection.Instance.GetHoliday(m_MonthCalendar.SelectionStart);
+				Holiday h = HolidaysCollection.GetHoliday(m_MonthCalendar.SelectionStart);
 				m_ToolTip.ToolTipTitle = m_MonthCalendar.SelectionStart.ToShortDateString();
 				m_ToolTip.SetToolTip(m_MonthCalendar, h.ToString());
 				m_ToolTip.Active = true;

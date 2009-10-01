@@ -10,10 +10,11 @@ using System.Globalization;
 
 namespace Hackovic.TimeReport
 {
+	public delegate void DateTimeEventHandler(object sender, DateTime dateTime);
+
 	public partial class UserControlMonthSelector : UserControl
 	{
-		public delegate void DateTimeHandler(object sender, DateTime dateTime);
-		public event DateTimeHandler DateChanged;
+		public event DateTimeEventHandler DateChanged;
 
 		private bool m_ShowOkButton = true;
 

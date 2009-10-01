@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace Hackovic.TimeReport
 {
-	public partial class FormAddCategry : Form
+	public partial class FormAddCategory : Form
 	{        
 
-		public FormAddCategry()
+		public FormAddCategory()
 		{
 			InitializeComponent();
 			

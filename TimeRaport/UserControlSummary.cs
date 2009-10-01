@@ -75,14 +75,14 @@ namespace Hackovic.TimeReport
 			m_pageSetupDialog.ShowDialog();
 		}
 
-		public void GetPrintArea(Panel pnl)
+		public void GetPrintArea(Control panel)
 		{			
-			Graphics myGraphics = pnl.CreateGraphics();
-			Size s = pnl.Size;			
+			Graphics myGraphics = panel.CreateGraphics();
+			Size s = panel.Size;			
 			m_MemoryImage = new Bitmap(s.Width, s.Height, myGraphics);
 			Graphics memoryGraphics = Graphics.FromImage(m_MemoryImage);
 
-			Point loc = GetAbsoluteLocation(pnl, pnl.Location);
+			Point loc = GetAbsoluteLocation(panel, panel.Location);
 			memoryGraphics.CopyFromScreen(loc.X+5, loc.Y+5, 0, 0, s, CopyPixelOperation.SourceCopy);
 		}
 

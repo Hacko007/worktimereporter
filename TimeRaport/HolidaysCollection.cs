@@ -36,9 +36,8 @@ namespace Hackovic.TimeReport
 
 		public void LoadHolidays(string xml)
 		{
-			if (DistinctDateSetting == null) {
-				DistinctDateSetting = DistinctDateSetting.CreateNewRow;
-			}
+			DistinctDateSetting = DistinctDateSetting.CreateNewRow;
+			
 			XmlDocument doc = new XmlDocument();
 			doc.LoadXml(xml);
 
@@ -178,7 +177,7 @@ namespace Hackovic.TimeReport
 			return table;
 		}
 
-		internal Holiday GetHoliday(DateTime SelectedDate)
+		internal static Holiday GetHoliday(DateTime SelectedDate)
 		{
 			var h = Instance.Where(hol => hol.Date == SelectedDate);
 			return h.Count() > 0 ? h.First() : null;

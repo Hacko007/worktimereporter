@@ -17,6 +17,7 @@ namespace Hackovic.TimeReport
 		{
 			if (disposing && (components != null))
 			{
+				m_MemoryImage.Dispose();
 				components.Dispose();
 			}
 			base.Dispose(disposing);

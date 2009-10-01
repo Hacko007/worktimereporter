@@ -3,14 +3,13 @@ using System.Windows.Forms;
 
 namespace Hackovic.TimeReport
 {
-	public delegate	void RefreshOverview();
 	/// <summary>
 	/// Summary description for FormTimeRaport.
 	/// </summary>
-	public class FormTimeRaport : Form
+	public class FormTimeReport : Form
 	{
-		public const string _IN = "In";
-		public const string _OUT = "Ut";
+		public const string m_In = "In";
+		public const string m_Out = "Ut";
 
 		private TabControl m_MyTabControlMain;
 		private TabPage m_TabPageCurrent;
@@ -26,7 +25,7 @@ namespace Hackovic.TimeReport
 		/// </summary>
 		private System.ComponentModel.Container components = null;
 
-		public FormTimeRaport()
+		public FormTimeReport()
 		{
 			//
 			// Required for Windows Form Designer support
@@ -65,7 +64,7 @@ namespace Hackovic.TimeReport
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTimeRaport));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTimeReport));
 			this.m_MyTabControlMain = new System.Windows.Forms.TabControl();
 			this.m_TabPageCurrent = new System.Windows.Forms.TabPage();
 			this.m_TabPageAll = new System.Windows.Forms.TabPage();
@@ -187,7 +186,7 @@ namespace Hackovic.TimeReport
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FormTimeRaport());
+			Application.Run(new FormTimeReport());
 		}
 
 

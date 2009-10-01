@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeRaport", "TimeRaport\TimeRaport.csproj", "{3EC39A61-8896-4CD3-B1DD-315A05305AF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeReport", "TimeRaport\TimeReport.csproj", "{3EC39A61-8896-4CD3-B1DD-315A05305AF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshUserControls", "ClockForm\FreshUserControls.csproj", "{55571464-248A-42D3-AFD7-D8B2B20703F9}"
 EndProject
