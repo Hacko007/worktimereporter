@@ -41,6 +41,7 @@ namespace Hackovic.TimeReport
             
 			dataGridView_week.DataError += DataGrid_DataError;
 			dataGridView_month.DataError += DataGrid_DataError;
+			this.m_dataGridViewToday.DataGrid.DataSource = this.timeLogBindingSource;
 
 			m_dataGridViewToday.TimeLogChange += new EventHandler(DataGridViewToday_TimeLogChange);
 			m_MonthCalendar.AnnuallyBoldedDates = HolidaysCollection.Instance.GetDates();
@@ -627,6 +628,56 @@ namespace Hackovic.TimeReport
 			}
 			m_NumericUpDownMinute.Value = minute;
 
+		}
+
+		private void DataGridViewWeek_SelectionChanged(object sender, EventArgs e)
+		{
+			if (dataGridView_week.SelectedRows.Count == 0) return;
+
+			/// Clear all selected rows in dataGridView_month
+			foreach (DataGridViewRow row in dataGridView_month.Rows)
+			{
+				row.Selected = false;
+			}
+
+			/// Mark selected all rows in dataGridView_month related to selected
+			/// rows in dataGridView_week
+			foreach (DataGridViewRow selectedRow in dataGridView_week.SelectedRows)
+			{
+				try
+				{
+					if (dataGridView_week.Rows.Contains(selectedRow) &&selectedRow.Index >=0 )
+					{
+						DataRowView r = (DataRowView)this.weekTimeLogBindingSource[selectedRow.Index];						
+						TimeLogDataSet.WeekTimeLogRow row = (  TimeLogDataSet.WeekTimeLogRow)r.Row;
+						MarkSelectedWeekCategory(row);
+					}
+				}
+				catch {	}
+			}
+		}
+
+		/// <summary>
+		/// Mark selected all rows in dataGridView_month related to <c>row</c>
+		/// </summary>
+		/// <param name="row">Selected Week row</param>
+		private void MarkSelectedWeekCategory(TimeLogDataSet.WeekTimeLogRow row)
+		{
+			if (dataGridView_month.Rows.Count == 0) return;
+
+			foreach (DataGridViewRow monthRow in dataGridView_month.Rows)
+			{
+				try
+				{
+					DataRowView r = (DataRowView)this.dayTimeLogBindingSource[monthRow.Index];
+					TimeLogDataSet.DayTimeLogRow dayRow = (TimeLogDataSet.DayTimeLogRow)r.Row;
+					if (dayRow.CategoryId == row.CategoryId
+						&& dayRow.Day.GetWeekOfYear() == row.WeekNr) {
+							monthRow.Selected = true;
+					}
+				}
+				catch{	}
+			}
 		}
 
 
