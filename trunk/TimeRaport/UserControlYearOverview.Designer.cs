@@ -30,6 +30,7 @@ namespace Hackovic.TimeReport
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlYearOverview));
 			this.m_MonthCalendar = new System.Windows.Forms.MonthCalendar();
 			this.ButtonExport = new Hackovic.FreshUserControls.ColorButton();
 			this.ButtonImp = new Hackovic.FreshUserControls.ColorButton();
@@ -46,107 +47,110 @@ namespace Hackovic.TimeReport
 			// 
 			// m_MonthCalendar
 			// 
+			this.m_MonthCalendar.AccessibleDescription = null;
+			this.m_MonthCalendar.AccessibleName = null;
+			resources.ApplyResources(this.m_MonthCalendar, "m_MonthCalendar");
 			this.m_MonthCalendar.BackColor = System.Drawing.Color.AntiqueWhite;
-			this.m_MonthCalendar.CalendarDimensions = new System.Drawing.Size(3, 4);
-			this.m_MonthCalendar.Location = new System.Drawing.Point(4, 4);
+			this.m_MonthCalendar.BackgroundImage = null;
+			this.m_MonthCalendar.Font = null;
 			this.m_MonthCalendar.Name = "m_MonthCalendar";
-			this.m_MonthCalendar.ShowWeekNumbers = true;
-			this.m_MonthCalendar.TabIndex = 0;
 			this.m_MonthCalendar.TitleBackColor = System.Drawing.Color.SaddleBrown;
+			this.m_ToolTip.SetToolTip(this.m_MonthCalendar, resources.GetString("m_MonthCalendar.ToolTip"));
 			this.m_MonthCalendar.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.m_MonthCalendar_DateSelected);
 			// 
 			// ButtonExport
 			// 
-			this.ButtonExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.ButtonExport.AccessibleDescription = null;
+			this.ButtonExport.AccessibleName = null;
+			resources.ApplyResources(this.ButtonExport, "ButtonExport");
+			this.ButtonExport.BackgroundImage = null;
 			this.ButtonExport.BgColor1 = System.Drawing.Color.BurlyWood;
 			this.ButtonExport.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.ButtonExport.FgColor1 = System.Drawing.Color.White;
 			this.ButtonExport.FgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.ButtonExport.Location = new System.Drawing.Point(788, 4);
+			this.ButtonExport.Font = null;
 			this.ButtonExport.Name = "ButtonExport";
-			this.ButtonExport.Size = new System.Drawing.Size(75, 23);
-			this.ButtonExport.TabIndex = 4;
-			this.ButtonExport.Text = "Exportera";
 			this.ButtonExport.TextHasShadow = false;
 			this.ButtonExport.TextShadowColor = System.Drawing.Color.Empty;
+			this.m_ToolTip.SetToolTip(this.ButtonExport, resources.GetString("ButtonExport.ToolTip"));
 			this.ButtonExport.UseVisualStyleBackColor = true;
 			this.ButtonExport.Click += new System.EventHandler(this.ButtonExport_Click);
 			// 
 			// ButtonImp
 			// 
-			this.ButtonImp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.ButtonImp.AccessibleDescription = null;
+			this.ButtonImp.AccessibleName = null;
+			resources.ApplyResources(this.ButtonImp, "ButtonImp");
+			this.ButtonImp.BackgroundImage = null;
 			this.ButtonImp.BgColor1 = System.Drawing.Color.BurlyWood;
 			this.ButtonImp.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.ButtonImp.FgColor1 = System.Drawing.Color.White;
 			this.ButtonImp.FgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.ButtonImp.Location = new System.Drawing.Point(720, 4);
+			this.ButtonImp.Font = null;
 			this.ButtonImp.Name = "ButtonImp";
-			this.ButtonImp.Size = new System.Drawing.Size(62, 23);
-			this.ButtonImp.TabIndex = 3;
-			this.ButtonImp.Text = "Importera";
 			this.ButtonImp.TextHasShadow = false;
 			this.ButtonImp.TextShadowColor = System.Drawing.Color.Empty;
+			this.m_ToolTip.SetToolTip(this.ButtonImp, resources.GetString("ButtonImp.ToolTip"));
 			this.ButtonImp.UseVisualStyleBackColor = true;
 			this.ButtonImp.Click += new System.EventHandler(this.ButtonImp_Click);
 			// 
 			// buttonAddHolyday
 			// 
-			this.buttonAddHolyday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.buttonAddHolyday.AccessibleDescription = null;
+			this.buttonAddHolyday.AccessibleName = null;
+			resources.ApplyResources(this.buttonAddHolyday, "buttonAddHolyday");
+			this.buttonAddHolyday.BackgroundImage = null;
 			this.buttonAddHolyday.BgColor1 = System.Drawing.Color.BurlyWood;
 			this.buttonAddHolyday.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.buttonAddHolyday.FgColor1 = System.Drawing.Color.White;
 			this.buttonAddHolyday.FgColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.buttonAddHolyday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.buttonAddHolyday.Location = new System.Drawing.Point(632, 4);
 			this.buttonAddHolyday.Name = "buttonAddHolyday";
-			this.buttonAddHolyday.Size = new System.Drawing.Size(82, 23);
-			this.buttonAddHolyday.TabIndex = 2;
-			this.buttonAddHolyday.Text = "+";
 			this.buttonAddHolyday.TextHasShadow = false;
 			this.buttonAddHolyday.TextShadowColor = System.Drawing.Color.Empty;
+			this.m_ToolTip.SetToolTip(this.buttonAddHolyday, resources.GetString("buttonAddHolyday.ToolTip"));
 			this.buttonAddHolyday.UseVisualStyleBackColor = true;
 			this.buttonAddHolyday.Click += new System.EventHandler(this.buttonAddHolyday_Click);
 			// 
 			// m_DataGridView
 			// 
+			this.m_DataGridView.AccessibleDescription = null;
+			this.m_DataGridView.AccessibleName = null;
 			this.m_DataGridView.AllowUserToAddRows = false;
-			this.m_DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
+			resources.ApplyResources(this.m_DataGridView, "m_DataGridView");
+			this.m_DataGridView.BackgroundImage = null;
 			this.m_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.m_DataGridView.Location = new System.Drawing.Point(519, 33);
+			this.m_DataGridView.Font = null;
 			this.m_DataGridView.Name = "m_DataGridView";
-			this.m_DataGridView.Size = new System.Drawing.Size(344, 552);
-			this.m_DataGridView.TabIndex = 0;
+			this.m_ToolTip.SetToolTip(this.m_DataGridView, resources.GetString("m_DataGridView.ToolTip"));
 			this.m_DataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
 			this.m_DataGridView.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.m_DataGridView_RowsRemoved);
 			// 
 			// m_LabelHolydays
 			// 
-			this.m_LabelHolydays.AutoSize = true;
+			this.m_LabelHolydays.AccessibleDescription = null;
+			this.m_LabelHolydays.AccessibleName = null;
+			resources.ApplyResources(this.m_LabelHolydays, "m_LabelHolydays");
 			this.m_LabelHolydays.BackColor = System.Drawing.Color.Transparent;
-			this.m_LabelHolydays.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.m_LabelHolydays.ForeColor = System.Drawing.Color.Maroon;
-			this.m_LabelHolydays.Location = new System.Drawing.Point(515, 7);
 			this.m_LabelHolydays.Name = "m_LabelHolydays";
-			this.m_LabelHolydays.Size = new System.Drawing.Size(103, 20);
-			this.m_LabelHolydays.TabIndex = 1;
-			this.m_LabelHolydays.Text = "Röda dagar";
+			this.m_ToolTip.SetToolTip(this.m_LabelHolydays, resources.GetString("m_LabelHolydays.ToolTip"));
 			// 
 			// m_OpenFileDialog
 			// 
 			this.m_OpenFileDialog.DefaultExt = "xml";
-			this.m_OpenFileDialog.Filter = "XML filer|*.xml";
-			this.m_OpenFileDialog.Title = "Importera XML";
+			resources.ApplyResources(this.m_OpenFileDialog, "m_OpenFileDialog");
 			// 
 			// m_SaveFileDialog
 			// 
 			this.m_SaveFileDialog.DefaultExt = "xml";
-			this.m_SaveFileDialog.Filter = "XML filer|*.xml";
-			this.m_SaveFileDialog.Title = "Spara XML";
+			resources.ApplyResources(this.m_SaveFileDialog, "m_SaveFileDialog");
 			// 
 			// m_ColorPanel
 			// 
+			this.m_ColorPanel.AccessibleDescription = null;
+			this.m_ColorPanel.AccessibleName = null;
+			resources.ApplyResources(this.m_ColorPanel, "m_ColorPanel");
+			this.m_ColorPanel.BackgroundImage = null;
 			this.m_ColorPanel.BgColor1 = System.Drawing.Color.BurlyWood;
 			this.m_ColorPanel.BgColor2 = System.Drawing.Color.SaddleBrown;
 			this.m_ColorPanel.Controls.Add(this.m_DataGridView);
@@ -154,20 +158,22 @@ namespace Hackovic.TimeReport
 			this.m_ColorPanel.Controls.Add(this.m_LabelHolydays);
 			this.m_ColorPanel.Controls.Add(this.ButtonImp);
 			this.m_ColorPanel.Controls.Add(this.buttonAddHolyday);
-			this.m_ColorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_ColorPanel.Location = new System.Drawing.Point(0, 0);
+			this.m_ColorPanel.Font = null;
 			this.m_ColorPanel.Name = "m_ColorPanel";
-			this.m_ColorPanel.Size = new System.Drawing.Size(866, 602);
-			this.m_ColorPanel.TabIndex = 2;
+			this.m_ToolTip.SetToolTip(this.m_ColorPanel, resources.GetString("m_ColorPanel.ToolTip"));
 			// 
 			// UserControlYearOverview
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AccessibleDescription = null;
+			this.AccessibleName = null;
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = null;
 			this.Controls.Add(this.m_MonthCalendar);
 			this.Controls.Add(this.m_ColorPanel);
+			this.Font = null;
 			this.Name = "UserControlYearOverview";
-			this.Size = new System.Drawing.Size(866, 602);
+			this.m_ToolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
 			this.Load += new System.EventHandler(this.UserControlYearOverview_Load);
 			((System.ComponentModel.ISupportInitialize)(this.m_DataGridView)).EndInit();
 			this.m_ColorPanel.ResumeLayout(false);

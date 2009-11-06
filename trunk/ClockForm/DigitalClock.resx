@@ -123,7 +123,92 @@
   <metadata name="DigitalClock_contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
+  <data name="toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>HH:mm:ss</value>
+  </data>
+  <data name="toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>yyyy-MM-dd  HH:mm</value>
+  </data>
+  <data name="toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>yyyy-MM-dd  HH:mm:ss</value>
+  </data>
+  <data name="toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>d MMM yyyy</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripTextBox_DateTimeFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 21</value>
+  </data>
+  <data name="toolStripTextBox_DateTimeFormat.Text" xml:space="preserve">
+    <value>Time Format</value>
+  </data>
+  <data name="toolStripTextBox_DateTimeFormat.ToolTipText" xml:space="preserve">
+    <value>DateTime Format</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 6</value>
+  </data>
+  <data name="toolStripComboBox_Style.Items" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="toolStripComboBox_Style.Items1" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="toolStripComboBox_Style.Items2" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="toolStripComboBox_Style.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 21</value>
+  </data>
+  <data name="DigitalClock_contextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 58</value>
+  </data>
+  <data name="&gt;&gt;DigitalClock_contextMenuStrip.Name" xml:space="preserve">
+    <value>DigitalClock_contextMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;DigitalClock_contextMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="&gt;&gt;Clock_timer.Name" xml:space="preserve">
+    <value>Clock_timer</value>
+  </data>
+  <data name="&gt;&gt;Clock_timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox_DateTimeFormat.Name" xml:space="preserve">
+    <value>toolStripTextBox_DateTimeFormat</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox_DateTimeFormat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripComboBox_Style.Name" xml:space="preserve">
+    <value>toolStripComboBox_Style</value>
+  </data>
+  <data name="&gt;&gt;toolStripComboBox_Style.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DigitalClock</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Control, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

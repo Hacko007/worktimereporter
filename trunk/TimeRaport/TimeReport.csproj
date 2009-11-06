@@ -144,6 +144,17 @@
     <Compile Include="DataGridViewToday.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ILocalizableControl.cs" />
+    <Compile Include="TextLocalizations.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextLocalizations.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TextLocalizations.sv-SE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextLocalizations.sv-SE.resx</DependentUpon>
+    </Compile>
     <Compile Include="ToolStripMonthCalendar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -277,6 +288,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <EmbeddedResource Include="DataGridViewToday.bs-Latn-BA.resx">
+      <DependentUpon>DataGridViewToday.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewToday.en.resx">
+      <DependentUpon>DataGridViewToday.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataGridViewToday.resx">
       <DependentUpon>DataGridViewToday.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -285,12 +304,60 @@
       <DependentUpon>FormImportSettings.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeRaport.bs-Latn-BA.resx">
+      <DependentUpon>FormTimeRaport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeRaport.en.resx">
+      <DependentUpon>FormTimeRaport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Holydays.xsd" />
     <EmbeddedResource Include="FormAddHolyday.resx">
       <DependentUpon>FormAddHolyday.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TextLocalizations.bs-Latn-BA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextLocalizations.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextLocalizations.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextLocalizations.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextLocalizations.sv-SE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextLocalizations.sv-SE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCheckInMain.bs-Latn-BA.resx">
+      <DependentUpon>UserControlCheckInMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCheckInMain.en.resx">
+      <DependentUpon>UserControlCheckInMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCheckInMain.sv-SE.resx">
+      <DependentUpon>UserControlCheckInMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMaintenance.bs-Latn-BA.resx">
+      <DependentUpon>UserControlMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMaintenance.en.resx">
+      <DependentUpon>UserControlMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlMaintenance.resx">
+      <DependentUpon>UserControlMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMaintenance.sv-SE.resx">
       <DependentUpon>UserControlMaintenance.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -298,8 +365,40 @@
       <DependentUpon>UserControlMonthSelector.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMonthSummary.bs-Latn-BA.resx">
+      <DependentUpon>UserControlMonthSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMonthSummary.en.resx">
+      <DependentUpon>UserControlMonthSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMonthSummary.sv-SE.resx">
+      <DependentUpon>UserControlMonthSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSummary.bs-Latn-BA.resx">
+      <DependentUpon>UserControlSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSummary.en.resx">
+      <DependentUpon>UserControlSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlSummary.resx">
       <DependentUpon>UserControlSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSummary.sv-SE.resx">
+      <DependentUpon>UserControlSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlYearOverview.bs-Latn-BA.resx">
+      <DependentUpon>UserControlYearOverview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlYearOverview.en.resx">
+      <DependentUpon>UserControlYearOverview.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="TimeLogDataSet.xsc">

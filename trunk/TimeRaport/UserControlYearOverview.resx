@@ -117,13 +117,274 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="m_SaveFileDialog.Title" xml:space="preserve">
+    <value>Spara XML</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_MonthCalendar.CalendarDimensions" type="System.Drawing.Size, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ButtonImp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;m_LabelHolydays.Name" xml:space="preserve">
+    <value>m_LabelHolydays</value>
+  </data>
+  <data name="m_DataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 33</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_LabelHolydays.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_MonthCalendar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonAddHolyday.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonImp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_SaveFileDialog.Filter" xml:space="preserve">
+    <value>XML filer|*.xml</value>
+  </data>
+  <data name="m_DataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 552</value>
+  </data>
+  <data name="&gt;&gt;m_OpenFileDialog.Name" xml:space="preserve">
+    <value>m_OpenFileDialog</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 602</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ButtonImp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 23</value>
+  </data>
+  <data name="ButtonExport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="m_LabelHolydays.Text" xml:space="preserve">
+    <value>Röda dagar</value>
+  </data>
+  <data name="buttonAddHolyday.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="m_MonthCalendar.ShowWeekNumbers" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="m_LabelHolydays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 7</value>
+  </data>
+  <data name="ButtonExport.Text" xml:space="preserve">
+    <value>Exportera</value>
+  </data>
+  <data name="&gt;&gt;ButtonExport.Name" xml:space="preserve">
+    <value>ButtonExport</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonAddHolyday.Parent" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="buttonAddHolyday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.Name" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="m_OpenFileDialog.Title" xml:space="preserve">
+    <value>Importera XML</value>
+  </data>
+  <data name="&gt;&gt;ButtonExport.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorButton, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonImp.Parent" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="ButtonExport.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;m_LabelHolydays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_ColorPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_DataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="m_LabelHolydays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 20</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.Name" xml:space="preserve">
+    <value>m_MonthCalendar</value>
+  </data>
+  <data name="&gt;&gt;ButtonExport.Parent" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="&gt;&gt;m_ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_ToolTip.Name" xml:space="preserve">
+    <value>m_ToolTip</value>
+  </data>
+  <data name="buttonAddHolyday.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UserControlYearOverview</value>
+  </data>
+  <data name="buttonAddHolyday.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="m_ColorPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorPanel, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonAddHolyday.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonAddHolyday.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorButton, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="buttonAddHolyday.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;buttonAddHolyday.Name" xml:space="preserve">
+    <value>buttonAddHolyday</value>
+  </data>
+  <data name="m_LabelHolydays.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_OpenFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_ColorPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ButtonImp.Text" xml:space="preserve">
+    <value>Importera</value>
+  </data>
+  <data name="m_DataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ButtonImp.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_SaveFileDialog.Name" xml:space="preserve">
+    <value>m_SaveFileDialog</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelHolydays.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="m_MonthCalendar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="m_MonthCalendar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonExport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>788, 4</value>
+  </data>
+  <data name="&gt;&gt;m_LabelHolydays.Parent" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="ButtonExport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="ButtonImp.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_DataGridView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_LabelHolydays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;ButtonExport.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_LabelHolydays.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonExport.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonAddHolyday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>632, 4</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridView.Name" xml:space="preserve">
+    <value>m_DataGridView</value>
+  </data>
+  <data name="m_OpenFileDialog.Filter" xml:space="preserve">
+    <value>XML filer|*.xml</value>
+  </data>
+  <data name="ButtonImp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>720, 4</value>
+  </data>
+  <data name="&gt;&gt;ButtonImp.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorButton, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonImp.Name" xml:space="preserve">
+    <value>ButtonImp</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="m_ColorPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 602</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridView.Parent" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="m_ColorPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;m_SaveFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="m_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>286, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="m_OpenFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="m_SaveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>147, 17</value>
   </metadata>
-  <metadata name="m_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>286, 17</value>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>bosanski (Bosna i Hercegovina)</value>
   </metadata>
 </root>

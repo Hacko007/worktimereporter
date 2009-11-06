@@ -1,6 +1,11 @@
 using System;
 using System.Windows.Forms;
+using System.Security.Permissions;
+using System.Threading;
+using System.ComponentModel;
+using System.Globalization;
 
+[assembly: SecurityPermission(SecurityAction.RequestMinimum, ControlThread = true)]
 namespace Hackovic.TimeReport
 {
 	/// <summary>
@@ -27,6 +32,7 @@ namespace Hackovic.TimeReport
 
 		public FormTimeReport()
 		{
+			LoadCultureInfo();
 			//
 			// Required for Windows Form Designer support
 			//
@@ -39,7 +45,52 @@ namespace Hackovic.TimeReport
 			m_UserControlMaintenance.DbCleaned += m_UserControlCheckInMain.RefreshDataGrids;
 
 			m_UserControlSummary.InitAnnualOverview();
+			this.m_UserControlMaintenance.CurrentUICultureChanged += new EventHandler(UserControlMaintenance_CurrentUICultureChanged);
+		}
 
+		private void LoadCultureInfo()
+		{
+			try
+			{
+				Thread.CurrentThread.CurrentUICulture = new CultureInfo(global::Hackovic.TimeReport.Properties.Settings.Default.Language, true);
+				Thread.CurrentThread.CurrentCulture = new CultureInfo(global::Hackovic.TimeReport.Properties.Settings.Default.Language, true);
+			}
+			catch
+			{
+			}
+		}
+
+		void UserControlMaintenance_CurrentUICultureChanged(object sender, EventArgs e)
+		{
+			try
+			{
+				ComponentResourceManager resources = new ComponentResourceManager(typeof(FormTimeReport));
+				resources.ApplyResources(this.m_MyTabControlMain, "m_MyTabControlMain");
+				resources.ApplyResources(this.m_TabPageCurrent, "m_TabPageCurrent");
+				resources.ApplyResources(this.m_TabPageAll, "m_TabPageAll");
+				resources.ApplyResources(this.m_UserControlSummary, "m_UserControlSummary");
+				resources.ApplyResources(this.m_TabPageCalender, "m_TabPageCalender");
+				resources.ApplyResources(this.m_UserControlYearOverview1, "m_UserControlYearOverview1");
+				resources.ApplyResources(this.m_TabPageMaintaince, "m_TabPageMaintaince");
+				resources.ApplyResources(this.m_UserControlMaintenance, "m_UserControlMaintenance");
+				resources.ApplyResources(this, "$this");
+				ChangeUICulture(this.Controls);
+			}
+			catch { }
+		}
+
+		private void ChangeUICulture(Control.ControlCollection controlCollection)
+		{
+			if (controlCollection == null || controlCollection.Count == 0) return;
+
+			foreach (Control item in controlCollection)
+			{
+				ChangeUICulture(item.Controls);
+				var localizebleControl = item as ILocalizableControl;
+				if (localizebleControl == null) continue;
+
+				localizebleControl.ChangeLanguage();
+			}
 		}
 
 		/// <summary>
@@ -81,94 +132,99 @@ namespace Hackovic.TimeReport
 			// 
 			// m_MyTabControlMain
 			// 
+			this.m_MyTabControlMain.AccessibleDescription = null;
+			this.m_MyTabControlMain.AccessibleName = null;
+			resources.ApplyResources(this.m_MyTabControlMain, "m_MyTabControlMain");
+			this.m_MyTabControlMain.BackgroundImage = null;
 			this.m_MyTabControlMain.Controls.Add(this.m_TabPageCurrent);
 			this.m_MyTabControlMain.Controls.Add(this.m_TabPageAll);
 			this.m_MyTabControlMain.Controls.Add(this.m_TabPageCalender);
 			this.m_MyTabControlMain.Controls.Add(this.m_TabPageMaintaince);
-			this.m_MyTabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_MyTabControlMain.Location = new System.Drawing.Point(0, 0);
-			this.m_MyTabControlMain.Margin = new System.Windows.Forms.Padding(0);
+			this.m_MyTabControlMain.Font = null;
 			this.m_MyTabControlMain.Name = "m_MyTabControlMain";
 			this.m_MyTabControlMain.SelectedIndex = 0;
-			this.m_MyTabControlMain.Size = new System.Drawing.Size(1222, 646);
-			this.m_MyTabControlMain.TabIndex = 0;
 			// 
 			// m_TabPageCurrent
 			// 
-			this.m_TabPageCurrent.Location = new System.Drawing.Point(4, 22);
+			this.m_TabPageCurrent.AccessibleDescription = null;
+			this.m_TabPageCurrent.AccessibleName = null;
+			resources.ApplyResources(this.m_TabPageCurrent, "m_TabPageCurrent");
+			this.m_TabPageCurrent.BackgroundImage = null;
+			this.m_TabPageCurrent.Font = null;
 			this.m_TabPageCurrent.Name = "m_TabPageCurrent";
-			this.m_TabPageCurrent.Padding = new System.Windows.Forms.Padding(3);
-			this.m_TabPageCurrent.Size = new System.Drawing.Size(1214, 620);
-			this.m_TabPageCurrent.TabIndex = 0;
-			this.m_TabPageCurrent.Text = "       Vy: Dag - Vecka - Månad        ";
 			this.m_TabPageCurrent.UseVisualStyleBackColor = true;
 			// 
 			// m_TabPageAll
 			// 
+			this.m_TabPageAll.AccessibleDescription = null;
+			this.m_TabPageAll.AccessibleName = null;
+			resources.ApplyResources(this.m_TabPageAll, "m_TabPageAll");
+			this.m_TabPageAll.BackgroundImage = null;
 			this.m_TabPageAll.Controls.Add(this.m_UserControlSummary);
-			this.m_TabPageAll.Location = new System.Drawing.Point(4, 22);
+			this.m_TabPageAll.Font = null;
 			this.m_TabPageAll.Name = "m_TabPageAll";
-			this.m_TabPageAll.Padding = new System.Windows.Forms.Padding(3);
-			this.m_TabPageAll.Size = new System.Drawing.Size(1214, 620);
-			this.m_TabPageAll.TabIndex = 1;
-			this.m_TabPageAll.Text = "            Sammanställning                  ";
 			this.m_TabPageAll.UseVisualStyleBackColor = true;
 			// 
 			// m_UserControlSummary
 			// 
-			this.m_UserControlSummary.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlSummary.Location = new System.Drawing.Point(3, 3);
+			this.m_UserControlSummary.AccessibleDescription = null;
+			this.m_UserControlSummary.AccessibleName = null;
+			resources.ApplyResources(this.m_UserControlSummary, "m_UserControlSummary");
+			this.m_UserControlSummary.BackgroundImage = null;
+			this.m_UserControlSummary.Font = null;
 			this.m_UserControlSummary.Name = "m_UserControlSummary";
-			this.m_UserControlSummary.Size = new System.Drawing.Size(1208, 614);
-			this.m_UserControlSummary.TabIndex = 0;
 			// 
 			// m_TabPageCalender
 			// 
+			this.m_TabPageCalender.AccessibleDescription = null;
+			this.m_TabPageCalender.AccessibleName = null;
+			resources.ApplyResources(this.m_TabPageCalender, "m_TabPageCalender");
+			this.m_TabPageCalender.BackgroundImage = null;
 			this.m_TabPageCalender.Controls.Add(this.m_UserControlYearOverview1);
-			this.m_TabPageCalender.Location = new System.Drawing.Point(4, 22);
+			this.m_TabPageCalender.Font = null;
 			this.m_TabPageCalender.Name = "m_TabPageCalender";
-			this.m_TabPageCalender.Padding = new System.Windows.Forms.Padding(3);
-			this.m_TabPageCalender.Size = new System.Drawing.Size(1214, 620);
-			this.m_TabPageCalender.TabIndex = 2;
-			this.m_TabPageCalender.Text = "Kalender";
 			this.m_TabPageCalender.UseVisualStyleBackColor = true;
 			// 
 			// m_UserControlYearOverview1
 			// 
-			this.m_UserControlYearOverview1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlYearOverview1.Location = new System.Drawing.Point(3, 3);
+			this.m_UserControlYearOverview1.AccessibleDescription = null;
+			this.m_UserControlYearOverview1.AccessibleName = null;
+			resources.ApplyResources(this.m_UserControlYearOverview1, "m_UserControlYearOverview1");
+			this.m_UserControlYearOverview1.BackgroundImage = null;
+			this.m_UserControlYearOverview1.Font = null;
 			this.m_UserControlYearOverview1.Name = "m_UserControlYearOverview1";
-			this.m_UserControlYearOverview1.Size = new System.Drawing.Size(1208, 614);
-			this.m_UserControlYearOverview1.TabIndex = 1;
 			// 
 			// m_TabPageMaintaince
 			// 
+			this.m_TabPageMaintaince.AccessibleDescription = null;
+			this.m_TabPageMaintaince.AccessibleName = null;
+			resources.ApplyResources(this.m_TabPageMaintaince, "m_TabPageMaintaince");
+			this.m_TabPageMaintaince.BackgroundImage = null;
 			this.m_TabPageMaintaince.Controls.Add(this.m_UserControlMaintenance);
-			this.m_TabPageMaintaince.Location = new System.Drawing.Point(4, 22);
+			this.m_TabPageMaintaince.Font = null;
 			this.m_TabPageMaintaince.Name = "m_TabPageMaintaince";
-			this.m_TabPageMaintaince.Size = new System.Drawing.Size(1214, 620);
-			this.m_TabPageMaintaince.TabIndex = 3;
-			this.m_TabPageMaintaince.Text = "Underhåll";
 			this.m_TabPageMaintaince.UseVisualStyleBackColor = true;
 			// 
 			// m_UserControlMaintenance
 			// 
-			this.m_UserControlMaintenance.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlMaintenance.Location = new System.Drawing.Point(0, 0);
+			this.m_UserControlMaintenance.AccessibleDescription = null;
+			this.m_UserControlMaintenance.AccessibleName = null;
+			resources.ApplyResources(this.m_UserControlMaintenance, "m_UserControlMaintenance");
+			this.m_UserControlMaintenance.BackgroundImage = null;
+			this.m_UserControlMaintenance.Font = null;
 			this.m_UserControlMaintenance.Name = "m_UserControlMaintenance";
-			this.m_UserControlMaintenance.Size = new System.Drawing.Size(1214, 620);
-			this.m_UserControlMaintenance.TabIndex = 0;
 			// 
-			// FormTimeRaport
+			// FormTimeReport
 			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+			this.AccessibleDescription = null;
+			this.AccessibleName = null;
+			resources.ApplyResources(this, "$this");
 			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(1222, 646);
+			this.BackgroundImage = null;
 			this.Controls.Add(this.m_MyTabControlMain);
+			this.Font = null;
 			this.ForeColor = System.Drawing.Color.Black;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "FormTimeRaport";
-			this.Text = "Tidsrapport";
+			this.Name = "FormTimeReport";
 			this.m_MyTabControlMain.ResumeLayout(false);
 			this.m_TabPageAll.ResumeLayout(false);
 			this.m_TabPageCalender.ResumeLayout(false);

@@ -118,6 +118,212 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_UserControlYearOverview1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;m_MyTabControlMain.Name" xml:space="preserve">
+    <value>m_MyTabControlMain</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageMaintaince.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlSummary.Name" xml:space="preserve">
+    <value>m_UserControlSummary</value>
+  </data>
+  <data name="m_TabPageCalender.Text" xml:space="preserve">
+    <value>    Kalender    </value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCurrent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlSummary.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_MyTabControlMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageMaintaince.Name" xml:space="preserve">
+    <value>m_TabPageMaintaince</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCalender.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlYearOverview1.Name" xml:space="preserve">
+    <value>m_UserControlYearOverview1</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageMaintaince.Parent" xml:space="preserve">
+    <value>m_MyTabControlMain</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_UserControlSummary.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_UserControlMaintenance.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_TabPageMaintaince.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="m_MyTabControlMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1222, 646</value>
+  </data>
+  <data name="m_UserControlYearOverview1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_TabPageMaintaince.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="m_MyTabControlMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_UserControlYearOverview1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_TabPageCalender.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlYearOverview1.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlYearOverview, Hackovic.TimeReport, Version=1.0.3596.31398, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_MyTabControlMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tidsrapport</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlYearOverview1.Parent" xml:space="preserve">
+    <value>m_TabPageCalender</value>
+  </data>
+  <data name="m_MyTabControlMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMaintenance.Name" xml:space="preserve">
+    <value>m_UserControlMaintenance</value>
+  </data>
+  <data name="m_TabPageAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1214, 620</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCurrent.Name" xml:space="preserve">
+    <value>m_TabPageCurrent</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlSummary.Parent" xml:space="preserve">
+    <value>m_TabPageAll</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlYearOverview1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_UserControlSummary.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_UserControlMaintenance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1214, 620</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCurrent.Parent" xml:space="preserve">
+    <value>m_MyTabControlMain</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_UserControlMaintenance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_TabPageAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCurrent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_TabPageCalender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1214, 620</value>
+  </data>
+  <data name="m_UserControlSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMaintenance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_TabPageAll.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>5, 13</value>
+  </data>
+  <data name="m_TabPageAll.Text" xml:space="preserve">
+    <value>            Sammanställning                  </value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1222, 646</value>
+  </data>
+  <data name="m_TabPageCurrent.Text" xml:space="preserve">
+    <value>       Vy: Dag - Vecka - Månad        </value>
+  </data>
+  <data name="m_TabPageCurrent.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCalender.Name" xml:space="preserve">
+    <value>m_TabPageCalender</value>
+  </data>
+  <data name="m_TabPageCurrent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1214, 620</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlSummary.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlSummary, Hackovic.TimeReport, Version=1.0.3596.31398, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCalender.Parent" xml:space="preserve">
+    <value>m_MyTabControlMain</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCalender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_TabPageCurrent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="m_TabPageMaintaince.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1214, 620</value>
+  </data>
+  <data name="m_TabPageCalender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageMaintaince.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageAll.Parent" xml:space="preserve">
+    <value>m_MyTabControlMain</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMaintenance.Parent" xml:space="preserve">
+    <value>m_TabPageMaintaince</value>
+  </data>
+  <data name="m_UserControlYearOverview1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 614</value>
+  </data>
+  <data name="m_TabPageMaintaince.Text" xml:space="preserve">
+    <value>    Underhåll    </value>
+  </data>
+  <data name="m_TabPageAll.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="m_TabPageCurrent.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="m_UserControlMaintenance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageAll.Name" xml:space="preserve">
+    <value>m_TabPageAll</value>
+  </data>
+  <data name="m_UserControlSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 614</value>
+  </data>
+  <data name="m_MyTabControlMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABABMAQEAAAAEAIAAoQgAANgEAAEBAAAABACAAKEIAAF5DAABAQAAAAQAgAChCAACGhQAAQEAAAAEA
@@ -5490,5 +5696,23 @@
         ////////////////////////////////////////////////////////////////////////////////
         //////////////////8=
 </value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormTimeReport</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMaintenance.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlMaintenance, Hackovic.TimeReport, Version=1.0.3596.31398, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_TabPageCalender.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_MyTabControlMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;m_MyTabControlMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
 </root>

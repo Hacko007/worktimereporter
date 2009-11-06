@@ -117,28 +117,364 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGridView_WorkCategory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <metadata name="companyBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>148, 17</value>
   </metadata>
+  <metadata name="timeLogDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="companyDataGridViewComboBoxColumn.HeaderText" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="projectDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="codeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="infoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="displayValueDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DisplayValue</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="displayValueDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="categoryIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>CategoryId</value>
+  </data>
+  <data name="categoryIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <metadata name="categoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>478, 17</value>
   </metadata>
-  <metadata name="companyBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>148, 17</value>
-  </metadata>
-  <metadata name="timeLogDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="timeLogDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dataGridView_WorkCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="dataGridView_WorkCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>791, 420</value>
+  </data>
+  <data name="dataGridView_WorkCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_WorkCategory.Name" xml:space="preserve">
+    <value>dataGridView_WorkCategory</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_WorkCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_WorkCategory.Parent" xml:space="preserve">
+    <value>tabPage_WorkCategory</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_WorkCategory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="button_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="button_save.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button_save.Text" xml:space="preserve">
+    <value>Spara</value>
+  </data>
+  <data name="&gt;&gt;button_save.Name" xml:space="preserve">
+    <value>button_save</value>
+  </data>
+  <data name="&gt;&gt;button_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_save.Parent" xml:space="preserve">
+    <value>tabPage_WorkCategory</value>
+  </data>
+  <data name="&gt;&gt;button_save.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_workCategoryReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 16</value>
+  </data>
+  <data name="button_workCategoryReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="button_workCategoryReset.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button_workCategoryReset.Text" xml:space="preserve">
+    <value>Återställ</value>
+  </data>
+  <data name="&gt;&gt;button_workCategoryReset.Name" xml:space="preserve">
+    <value>button_workCategoryReset</value>
+  </data>
+  <data name="&gt;&gt;button_workCategoryReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_workCategoryReset.Parent" xml:space="preserve">
+    <value>tabPage_WorkCategory</value>
+  </data>
+  <data name="&gt;&gt;button_workCategoryReset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPage_WorkCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_WorkCategory.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_WorkCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>803, 471</value>
+  </data>
+  <data name="tabPage_WorkCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage_WorkCategory.Text" xml:space="preserve">
+    <value>Arbetsgrupp</value>
+  </data>
+  <data name="&gt;&gt;tabPage_WorkCategory.Name" xml:space="preserve">
+    <value>tabPage_WorkCategory</value>
+  </data>
+  <data name="&gt;&gt;tabPage_WorkCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_WorkCategory.Parent" xml:space="preserve">
+    <value>tabControl_Main</value>
+  </data>
+  <data name="&gt;&gt;tabPage_WorkCategory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_comnapnyReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 21</value>
+  </data>
+  <data name="button_comnapnyReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 23</value>
+  </data>
+  <data name="button_comnapnyReset.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="button_comnapnyReset.Text" xml:space="preserve">
+    <value>Återställ</value>
+  </data>
+  <data name="&gt;&gt;button_comnapnyReset.Name" xml:space="preserve">
+    <value>button_comnapnyReset</value>
+  </data>
+  <data name="&gt;&gt;button_comnapnyReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_comnapnyReset.Parent" xml:space="preserve">
+    <value>tabPage_Company</value>
+  </data>
+  <data name="&gt;&gt;button_comnapnyReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button_SaveCompany.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 21</value>
+  </data>
+  <data name="button_SaveCompany.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 23</value>
+  </data>
+  <data name="button_SaveCompany.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button_SaveCompany.Text" xml:space="preserve">
+    <value>Spara</value>
+  </data>
+  <data name="&gt;&gt;button_SaveCompany.Name" xml:space="preserve">
+    <value>button_SaveCompany</value>
+  </data>
+  <data name="&gt;&gt;button_SaveCompany.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_SaveCompany.Parent" xml:space="preserve">
+    <value>tabPage_Company</value>
+  </data>
+  <data name="&gt;&gt;button_SaveCompany.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dataGridView_Company.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="companyNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Företags namn</value>
+  </data>
+  <data name="dataGridView_Company.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 66</value>
+  </data>
+  <data name="dataGridView_Company.Size" type="System.Drawing.Size, System.Drawing">
+    <value>786, 397</value>
+  </data>
+  <data name="dataGridView_Company.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_Company.Name" xml:space="preserve">
+    <value>dataGridView_Company</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_Company.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_Company.Parent" xml:space="preserve">
+    <value>tabPage_Company</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_Company.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPage_Company.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_Company.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_Company.Size" type="System.Drawing.Size, System.Drawing">
+    <value>803, 471</value>
+  </data>
+  <data name="tabPage_Company.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage_Company.Text" xml:space="preserve">
+    <value>Företag</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Company.Name" xml:space="preserve">
+    <value>tabPage_Company</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Company.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Company.Parent" xml:space="preserve">
+    <value>tabControl_Main</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Company.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl_Main.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl_Main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl_Main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>811, 497</value>
+  </data>
+  <data name="tabControl_Main.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tabControl_Main.Name" xml:space="preserve">
+    <value>tabControl_Main</value>
+  </data>
+  <data name="&gt;&gt;tabControl_Main.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl_Main.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl_Main.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="companyTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>315, 17</value>
   </metadata>
   <metadata name="categoryTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>643, 17</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>167</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>811, 497</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Lägg till ny kategory</value>
+  </data>
+  <data name="&gt;&gt;companyDataGridViewComboBoxColumn.Name" xml:space="preserve">
+    <value>companyDataGridViewComboBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;companyDataGridViewComboBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;companyBindingSource.Name" xml:space="preserve">
+    <value>companyBindingSource</value>
+  </data>
+  <data name="&gt;&gt;companyBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeLogDataSet.Name" xml:space="preserve">
+    <value>timeLogDataSet</value>
+  </data>
+  <data name="&gt;&gt;timeLogDataSet.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.TimeLogDataSet, TimeLogDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;projectDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>projectDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;projectDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;codeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>codeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;codeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;infoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>infoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;infoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;displayValueDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>displayValueDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;displayValueDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;categoryIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>categoryIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;categoryIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;categoryBindingSource.Name" xml:space="preserve">
+    <value>categoryBindingSource</value>
+  </data>
+  <data name="&gt;&gt;categoryBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;companyNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>companyNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;companyNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;companyTableAdapter.Name" xml:space="preserve">
+    <value>companyTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;companyTableAdapter.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.TimeLogDataSetTableAdapters.CompanyTableAdapter, TimeLogDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;categoryTableAdapter.Name" xml:space="preserve">
+    <value>categoryTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;categoryTableAdapter.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.TimeLogDataSetTableAdapters.CategoryTableAdapter, TimeLogDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAddCategory</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

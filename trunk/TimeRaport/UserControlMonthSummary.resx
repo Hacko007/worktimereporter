@@ -117,4 +117,271 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Arbetat</value>
+  </data>
+  <data name="&gt;&gt;m_WorkTypeColumn.Name" xml:space="preserve">
+    <value>m_WorkTypeColumn</value>
+  </data>
+  <data name="&gt;&gt;m_LabelHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TableLayoutPanel.Name" xml:space="preserve">
+    <value>m_TableLayoutPanel</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="m_LabelMonth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_DataGridViewMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 29</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;m_WorkedColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn4.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn4</value>
+  </data>
+  <data name="&gt;&gt;m_PlanedColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Specifikation</value>
+  </data>
+  <data name="&gt;&gt;m_DiffCoulmn.Name" xml:space="preserve">
+    <value>m_DiffCoulmn</value>
+  </data>
+  <data name="m_LabelMonth.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMonth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_PlanedColumn.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;m_TableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridViewMonth.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel1.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorPanel, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_LabelMonth.Text" xml:space="preserve">
+    <value>September '08</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="m_LabelMonth.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="m_TableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 27</value>
+  </data>
+  <data name="m_TableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel1.Name" xml:space="preserve">
+    <value>m_ColorPanel1</value>
+  </data>
+  <data name="&gt;&gt;m_WorkTypeColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="m_TableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_LabelHours.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;m_TableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn3.Width" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Diff</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_LabelHours.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_LabelHours.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 9.75pt, style=Bold</value>
+  </data>
+  <data name="m_LabelHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 27</value>
+  </data>
+  <data name="m_LabelMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="m_DataGridViewMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_DiffCoulmn.HeaderText" xml:space="preserve">
+    <value>Diff</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridViewMonth.Parent" xml:space="preserve">
+    <value>m_ColorPanel1</value>
+  </data>
+  <data name="m_WorkedColumn.HeaderText" xml:space="preserve">
+    <value>Arbetat</value>
+  </data>
+  <data name="m_LabelHours.Text" xml:space="preserve">
+    <value>156 timmar</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UserControlMonthSummary</value>
+  </data>
+  <data name="m_LabelMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_WorkedColumn.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;m_WorkedColumn.Name" xml:space="preserve">
+    <value>m_WorkedColumn</value>
+  </data>
+  <data name="&gt;&gt;m_LabelHours.Parent" xml:space="preserve">
+    <value>m_TableLayoutPanel</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Planerat</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridViewMonth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 131</value>
+  </data>
+  <data name="m_LabelHours.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn3.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn3</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMonth.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_LabelMonth.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;m_LabelHours.Name" xml:space="preserve">
+    <value>m_LabelHours</value>
+  </data>
+  <data name="m_ColorPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 131</value>
+  </data>
+  <data name="m_DataGridViewMonth.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="m_DataGridViewMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 99</value>
+  </data>
+  <data name="&gt;&gt;m_TableLayoutPanel.Parent" xml:space="preserve">
+    <value>m_ColorPanel1</value>
+  </data>
+  <data name="m_LabelMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 18</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="m_PlanedColumn.HeaderText" xml:space="preserve">
+    <value>Planerat</value>
+  </data>
+  <data name="&gt;&gt;m_LabelHours.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_ColorPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMonth.Name" xml:space="preserve">
+    <value>m_LabelMonth</value>
+  </data>
+  <data name="m_TableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_LabelMonth.Parent" xml:space="preserve">
+    <value>m_TableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;m_PlanedColumn.Name" xml:space="preserve">
+    <value>m_PlanedColumn</value>
+  </data>
+  <data name="&gt;&gt;m_DiffCoulmn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_ColorPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="m_LabelHours.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_TableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="m_LabelHours" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="m_LabelMonth" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,24,37137,Percent,75,62862" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="m_DataGridViewMonth.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_LabelHours.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_WorkTypeColumn.HeaderText" xml:space="preserve">
+    <value>Specifikation</value>
+  </data>
+  <data name="m_TableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_LabelHours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 0</value>
+  </data>
+  <data name="m_ColorPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;m_DataGridViewMonth.Name" xml:space="preserve">
+    <value>m_DataGridViewMonth</value>
+  </data>
+  <data name="m_DiffCoulmn.Width" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Swedish (Sweden)</value>
+  </metadata>
 </root>
