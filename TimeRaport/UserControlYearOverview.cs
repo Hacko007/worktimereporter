@@ -3,10 +3,11 @@ using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using System.IO;
+using System.ComponentModel;
 
 namespace Hackovic.TimeReport
 {
-	public partial class UserControlYearOverview : UserControl
+	public partial class UserControlYearOverview : UserControl , ILocalizableControl
 	{
 		private HolidaysCollection m_Holydays;
 		private DataTable m_Table;
@@ -137,5 +138,31 @@ namespace Hackovic.TimeReport
 
 
 
+
+		#region ILocalizableControl Members
+
+		public void ChangeLanguage()
+		{
+			ComponentResourceManager resources = new ComponentResourceManager(typeof(UserControlYearOverview));
+			resources.ApplyResources(this.m_MonthCalendar, "m_MonthCalendar");
+			this.m_ToolTip.SetToolTip(this.m_MonthCalendar, resources.GetString("m_MonthCalendar.ToolTip"));
+			resources.ApplyResources(this.ButtonExport, "ButtonExport");
+			this.m_ToolTip.SetToolTip(this.ButtonExport, resources.GetString("ButtonExport.ToolTip"));
+			resources.ApplyResources(this.ButtonImp, "ButtonImp");
+			this.m_ToolTip.SetToolTip(this.ButtonImp, resources.GetString("ButtonImp.ToolTip"));
+			resources.ApplyResources(this.buttonAddHolyday, "buttonAddHolyday");
+			this.m_ToolTip.SetToolTip(this.buttonAddHolyday, resources.GetString("buttonAddHolyday.ToolTip"));
+			resources.ApplyResources(this.m_DataGridView, "m_DataGridView");
+			this.m_ToolTip.SetToolTip(this.m_DataGridView, resources.GetString("m_DataGridView.ToolTip"));
+			resources.ApplyResources(this.m_LabelHolydays, "m_LabelHolydays");
+			this.m_ToolTip.SetToolTip(this.m_LabelHolydays, resources.GetString("m_LabelHolydays.ToolTip"));
+			resources.ApplyResources(this.m_OpenFileDialog, "m_OpenFileDialog");
+			resources.ApplyResources(this.m_SaveFileDialog, "m_SaveFileDialog");
+			resources.ApplyResources(this.m_ColorPanel, "m_ColorPanel");
+			this.m_ToolTip.SetToolTip(this.m_ColorPanel, resources.GetString("m_ColorPanel.ToolTip"));
+			resources.ApplyResources(this, "$this");
+		}
+
+		#endregion
 	}
 }

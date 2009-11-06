@@ -117,29 +117,977 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="m_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1177, 17</value>
-  </metadata>
-  <metadata name="m_ContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1281, 17</value>
+  <data name="digitalClock_Now.Text" xml:space="preserve">
+    <value>digitalClock1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_dataGrids.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ListBox_WorkCaegory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dataGridView_month.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownMinute.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="dataGridView_month.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dataGridViewTextBoxColumn8.HeaderText" xml:space="preserve">
+    <value>Week Nr</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 26</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;My_Button_AddCategory.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorButton, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;categoryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="categoryDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="dataGridView_week.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="My_Button_AddCategory.ToolTip" xml:space="preserve">
+    <value>Ändra kategory</value>
+  </data>
+  <data name="&gt;&gt;button_out.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownHour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_in.Text" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="button_in.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 24pt</value>
+  </data>
+  <data name="panel_dataGrids.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 623</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridViewToday.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_NumericUpDownMinute.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 44</value>
+  </data>
+  <data name="m_ContextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 26</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn9.HeaderText" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="&gt;&gt;timeLogDataSet.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.TimeLogDataSet, TimeLogDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn6.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn6</value>
+  </data>
+  <data name="digitalClock_Now.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_in.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="button_in.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 51</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridViewToday.Name" xml:space="preserve">
+    <value>m_dataGridViewToday</value>
+  </data>
+  <data name="m_NumericUpDownToWork.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="panel_dataGrids.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 0</value>
+  </data>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;m_userControlMonthSummary.Name" xml:space="preserve">
+    <value>m_userControlMonthSummary</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>189</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Timmar</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dataGridViewTextBoxColumn7.HeaderText" xml:space="preserve">
+    <value>Diff</value>
+  </data>
+  <data name="button_out.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_DeleteSelectedRowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Radera vald rad</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;plannedHoursDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Minuter</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 214</value>
+  </data>
+  <data name="&gt;&gt;categoryBindingSource.Name" xml:space="preserve">
+    <value>categoryBindingSource</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ListBox_WorkCaegory.Name" xml:space="preserve">
+    <value>ListBox_WorkCaegory</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_NumericUpDownMinute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 89</value>
+  </data>
+  <data name="&gt;&gt;categoryIdDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>categoryIdDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;plannedHoursDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>plannedHoursDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;timeLogTableAdapter.Name" xml:space="preserve">
+    <value>timeLogTableAdapter</value>
+  </data>
+  <data name="My_Button_AddCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 21</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UserControlCheckInMain</value>
+  </data>
+  <data name="&gt;&gt;m_userControlMonthSummary.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="m_userControlMonthSummary.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_NumericUpDownHour.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="splitContainer1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Välj kategory</value>
+  </data>
+  <data name="m_userControlMonthSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>462, 58</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_NumericUpDownToWork.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 44</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_month.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="ListBox_WorkCaegory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 80</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="ListBox_WorkCaegory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;panel_dataGrids.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_week.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_userControlMonthSummary.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;m_ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;categoryDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;categoryIdDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>categoryIdDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="categoryIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>CategoryId</value>
+  </data>
+  <data name="&gt;&gt;categoryIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_NumericUpDownToWork.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 89</value>
+  </data>
+  <data name="&gt;&gt;ListBox_WorkCaegory.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="button_in.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_userControlMonthSummary.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="colorPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="button_out.Text" xml:space="preserve">
+    <value>Ut</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="My_Button_AddCategory.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn7.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn7</value>
+  </data>
+  <data name="&gt;&gt;timeLogBindingSource.Name" xml:space="preserve">
+    <value>timeLogBindingSource</value>
+  </data>
+  <data name="m_NumericUpDownToWork.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;colorPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Name" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;m_DeleteSelectedRowToolStripMenuItem.Name" xml:space="preserve">
+    <value>m_DeleteSelectedRowToolStripMenuItem</value>
+  </data>
+  <data name="splitContainer2.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="digitalClock_Now.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownHour.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_week.Name" xml:space="preserve">
+    <value>dataGridView_week</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTimeToFinishToday.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_week.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="categoryIdDataGridViewTextBoxColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn9.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn9</value>
+  </data>
+  <data name="&gt;&gt;timeLogDataSet.Name" xml:space="preserve">
+    <value>timeLogDataSet</value>
+  </data>
+  <data name="dataGridView_month.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownMinute.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Info.Name" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="&gt;&gt;My_Button_AddCategory.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="m_DeleteSelectedRowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="m_MonthCalendar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_in.Name" xml:space="preserve">
+    <value>button_in</value>
+  </data>
+  <data name="button_out.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 329</value>
+  </data>
+  <data name="&gt;&gt;categoryDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>categoryDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 72</value>
+  </data>
+  <data name="&gt;&gt;plannedHoursDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="plannedHoursDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Planned</value>
+  </data>
+  <data name="&gt;&gt;button_out.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorButton, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;yearDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;digitalClock_Now.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Info.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_out.Name" xml:space="preserve">
+    <value>button_out</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_month.Name" xml:space="preserve">
+    <value>dataGridView_month</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 623</value>
+  </data>
+  <data name="&gt;&gt;plannedHoursDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>plannedHoursDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;categoryBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="m_userControlMonthSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 401</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="&gt;&gt;timeLogBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 19</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="digitalClock_Now.DateTimeFormat" xml:space="preserve">
+    <value>yyy-MM-dd       HH:mm:ss</value>
+  </data>
+  <data name="dataGridView_month.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_dataGridViewToday.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;My_Button_AddCategory.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="m_NumericUpDownToWork.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;colorPanel1.Name" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridViewToday.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.DataGridViewToday, Hackovic.TimeReport, Version=1.0.3597.29181, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_dataGridViewToday.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_week.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 171</value>
+  </data>
+  <data name="m_dataGridViewToday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.Name" xml:space="preserve">
+    <value>m_MonthCalendar</value>
+  </data>
+  <data name="m_MonthCalendar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>panel_dataGrids</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn10.HeaderText" xml:space="preserve">
+    <value>Diff</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 73</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownToWork.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="splitContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_userControlMonthSummary.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.Text" xml:space="preserve">
+    <value>Klar : 18.00</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownToWork.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_in.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 329</value>
+  </data>
+  <data name="&gt;&gt;m_ContextMenuStrip.Name" xml:space="preserve">
+    <value>m_ContextMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="Info.HeaderText" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1173, 623</value>
+  </data>
+  <data name="&gt;&gt;categoryTableAdapter.Name" xml:space="preserve">
+    <value>categoryTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;yearDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>yearDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;timeLogTableAdapter.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.TimeLogDataSetTableAdapters.TimeLogTableAdapter, TimeLogDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn8.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn8</value>
+  </data>
+  <data name="plannedHoursDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>PlannedHours</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ToolTip.Name" xml:space="preserve">
+    <value>m_ToolTip</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="yearDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_out.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 51</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 145</value>
+  </data>
+  <data name="&gt;&gt;panel_dataGrids.Name" xml:space="preserve">
+    <value>panel_dataGrids</value>
+  </data>
+  <data name="button_out.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 24pt</value>
+  </data>
+  <data name="&gt;&gt;ListBox_WorkCaegory.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;weekTimeLogBindingSource.Name" xml:space="preserve">
+    <value>weekTimeLogBindingSource</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_month.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 247</value>
+  </data>
+  <data name="m_ContextMenuStrip.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_NumericUpDownHour.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="yearDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Att jobba idag</value>
+  </data>
+  <data name="ListBox_WorkCaegory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 243</value>
+  </data>
+  <data name="&gt;&gt;categoryTableAdapter.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.TimeLogDataSetTableAdapters.CategoryTableAdapter, TimeLogDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_NumericUpDownHour.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 89</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="ListBox_WorkCaegory.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="m_dataGridViewToday.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="categoryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="m_NumericUpDownHour.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="My_Button_AddCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="colorPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="dataGridView_week.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_dataGridViewToday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 185</value>
+  </data>
+  <data name="m_NumericUpDownHour.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;m_userControlMonthSummary.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlMonthSummary, Hackovic.TimeReport, Version=1.0.3597.29181, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 430</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_NumericUpDownMinute.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
+    <value>175</value>
+  </data>
+  <data name="My_Button_AddCategory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_MonthCalendar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 61</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_month.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="m_NumericUpDownToWork.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="&gt;&gt;colorPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;weekTimeLogBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_MonthCalendar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colorPanel1.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorPanel, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownToWork.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel_dataGrids.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="m_MonthCalendar.ShowWeekNumbers" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;digitalClock_Now.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.DigitalClock, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="panel_dataGrids.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownMinute.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;categoryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>categoryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dayTimeLogBindingSource.Name" xml:space="preserve">
+    <value>dayTimeLogBindingSource</value>
+  </data>
+  <data name="dataGridView_week.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="digitalClock_Now.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>Desktop</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_NumericUpDownMinute.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownMinute.Name" xml:space="preserve">
+    <value>m_NumericUpDownMinute</value>
+  </data>
+  <data name="splitContainer2.Panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownHour.Name" xml:space="preserve">
+    <value>m_NumericUpDownHour</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ListBox_WorkCaegory.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_NumericUpDownMinute.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="splitContainer1.Panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;button_in.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_month.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 66</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="categoryIdDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button_out.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;digitalClock_Now.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="My_Button_AddCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 219</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_week.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="My_Button_AddCategory.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTimeToFinishToday.Name" xml:space="preserve">
+    <value>m_LabelTimeToFinishToday</value>
+  </data>
+  <data name="splitContainer2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button_in.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;m_DeleteSelectedRowToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="colorPanel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_NumericUpDownMinute.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_in.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Name" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="dataGridView_week.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="button_out.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn10.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn10</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTimeToFinishToday.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_NumericUpDownHour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 44</value>
+  </data>
+  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="&gt;&gt;dayTimeLogBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="categoryIdDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>CategoryId</value>
+  </data>
+  <data name="&gt;&gt;categoryIdDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_week.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="colorPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;button_in.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorButton, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_LabelTimeToFinishToday.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="panel_dataGrids.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="dataGridView_month.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;My_Button_AddCategory.Name" xml:space="preserve">
+    <value>My_Button_AddCategory</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="splitContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="&gt;&gt;m_LabelTimeToFinishToday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_userControlMonthSummary.SpecificationFormat" xml:space="preserve">
+    <value>Arbetat:{0:N2}  Plan:{1:N2}  Delta:{2:N2}</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn5.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn5</value>
+  </data>
+  <data name="splitContainer2.Panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="m_LabelTimeToFinishToday.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownToWork.Name" xml:space="preserve">
+    <value>m_NumericUpDownToWork</value>
+  </data>
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;m_NumericUpDownHour.Parent" xml:space="preserve">
+    <value>colorPanel1</value>
+  </data>
+  <data name="splitContainer1.Panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;m_ContextMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="digitalClock_Now.Size" type="System.Drawing.Size, System.Drawing">
+    <value>462, 41</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colorPanel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;digitalClock_Now.Name" xml:space="preserve">
+    <value>digitalClock_Now</value>
+  </data>
+  <data name="button_out.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_dataGrids.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="colorPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1173, 623</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridViewToday.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="digitalClock_Now.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="timeLogDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="timeLogBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>149, 17</value>
   </metadata>
-  <metadata name="timeLogDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="weekTimeLogBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>986, 17</value>
-  </metadata>
   <metadata name="Info.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="dayTimeLogBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>803, 17</value>
-  </metadata>
-  <metadata name="categoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>474, 17</value>
   </metadata>
   <metadata name="timeLogTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>314, 17</value>
@@ -147,7 +1095,28 @@
   <metadata name="categoryTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>642, 17</value>
   </metadata>
+  <metadata name="weekTimeLogBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>986, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>164</value>
+  </metadata>
+  <metadata name="dayTimeLogBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>803, 17</value>
+  </metadata>
+  <metadata name="m_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1177, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="m_ContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1281, 17</value>
+  </metadata>
+  <metadata name="categoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>474, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>bosanski (Bosna i Hercegovina)</value>
   </metadata>
 </root>

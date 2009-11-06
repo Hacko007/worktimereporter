@@ -9,7 +9,7 @@ using Hackovic.TimeReport.TimeLogDataSetTableAdapters;
 
 namespace Hackovic.TimeReport
 {
-    public partial class UserControlCheckInMain : UserControl
+    public partial class UserControlCheckInMain : UserControl, ILocalizableControl
     {
     	private double m_Hours ;
 		public delegate void RefreshOverviewHandler();
@@ -32,6 +32,7 @@ namespace Hackovic.TimeReport
 			dsTimeReport = TimeLogFactory.Instance;
             
 			InitializeComponent();
+
 			Application.DoEvents();            
 
 			SelectedTime = DateTime.Now;
@@ -193,7 +194,7 @@ namespace Hackovic.TimeReport
 				}
 				return selectedPlanned;
 			}
-		}
+		}		
 
 		#endregion Properties
 
@@ -364,48 +365,7 @@ namespace Hackovic.TimeReport
 
     	private void SetTotalLabel()
 		{
-
-			m_userControlMonthSummary.Month = this.SelectedDate;
-			return;
-
-			//label_info.Text = "Denna månad:" + Environment.NewLine;
-			//int daycount = dsTimeReport.DayTimeLog.GroupBy(dl => dl.Day, dl => dl).Count();
-			//label_info.Text += daycount + " arbetsdagar" + Environment.NewLine +Environment.NewLine ;
-
-			//double totalHours = 0; 
-			//double totalPlanned = 0;
-			//double totalDiff = 0;
-
-			//var worked = dsTimeReport.DayTimeLog.GroupBy(dl => dl.CategoryId, dl => dl );
-			//foreach (var category in worked)
-			//{
-			//    double sum = category.Sum(day => day.Hours);
-			//    double plan = category.Sum(day => day.PlannedHours);
-			//    double diff = sum - plan;
-			//    totalHours += sum;
-			//    totalPlanned += plan;
-			//    totalDiff += diff;
-			//    string format = "{0,4:N2} av {1,4:N2} [+{2,4:N2}] - ";
-			//    if (diff < 0) {
-			//        format = "{0,4:N2} av {1,4:N2} [{2,4:N2}] - ";
-			//    }
-			//    else if (diff == 0) {
-			//        format = "{0,4:N2} av {1,4:N2} - ";
-			//    }
-			//    label_info.Text += string.Format(format , sum, plan, diff);
-			//    label_info.Text += dsTimeReport.Category.FindByCategoryId(category.Key).DisplayValue + Environment.NewLine;
-			//}
-
-			//label_monthTotal.Text = string.Format("Arbetat:{0,7:N2}  tim.{2}Plan:{1,10:N2}  tim.", totalHours, totalPlanned, Environment.NewLine);
-			//if(totalDiff > 0){
-			//    label_Diff.Text = string.Format("Skilnad:+{0,7:N2}  tim.", totalDiff);
-			//    label_Diff.ForeColor = Color.GreenYellow;
-			//}else{
-			//    label_Diff.Text = string.Format("Skilnad:{0,7:N2}  tim.", totalDiff);
-			//    label_Diff.ForeColor = Color.OrangeRed;
-
-			//}
-			
+			m_userControlMonthSummary.Month = this.SelectedDate;				
 		}
 
 
@@ -434,9 +394,15 @@ namespace Hackovic.TimeReport
 					}
 				}
 			}
-			m_LabelTimeToFinishToday.Text = string.Format("Klar {0:HH.mm}", timeToLeave);
+			try
+			{
+				m_LabelTimeToFinishToday.Text = string.Format(TextLocalizations.LabelTimeToFinishTodayFormat, timeToLeave);
+			}
+			catch { 			
+				m_LabelTimeToFinishToday.Text = string.Format("Done at {0:HH.mm}", timeToLeave);				
+			}
 
-		}
+		}		
 		#endregion        
 		
 		#region Events
@@ -451,13 +417,7 @@ namespace Hackovic.TimeReport
 		private void Button_out_Click(object sender, EventArgs e)
 		{
 			WriteEntery(false);
-		}
-
-		//private void Button_Refresh_Click(object sender, EventArgs e)
-		//{
-		//    RefreshDataGrids();
-		//    RefreshTodayOnly();
-		//}
+		}		
 
         private void Button_AddCategory_Click(object sender, EventArgs e)
         {
@@ -498,13 +458,7 @@ namespace Hackovic.TimeReport
             SelectedDate = DateTime.Today;
         }
 
-        void DataGrid_DataError(object sender, DataGridViewDataErrorEventArgs e) {}
-
-		//private void DataGridView_Timmar_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-		//{
-		//    timeLogTableAdapter.Update(dsTimeReport.TimeLog);
-		//    RefreshDataGrids();
-		//}       
+        void DataGrid_DataError(object sender, DataGridViewDataErrorEventArgs e) {}		
         
         private void ListBox_Category_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -681,7 +635,53 @@ namespace Hackovic.TimeReport
 		}
 
 
+		#region ILocalizableControl Members
 
+		public void ChangeLanguage()
+		{
+			try
+			{
+				ComponentResourceManager resources = new ComponentResourceManager(typeof(UserControlCheckInMain));
+				resources.ApplyResources(this.label4, "label4");
+				resources.ApplyResources(this.label3, "label3");
+				resources.ApplyResources(this.label1, "label1");
+				resources.ApplyResources(this.label2, "label2");
+				resources.ApplyResources(this.button_out, "button_out");
+				resources.ApplyResources(this.button_in, "button_in");
+				resources.ApplyResources(this.My_Button_AddCategory, "My_Button_AddCategory");
+				resources.ApplyResources(this.m_ContextMenuStrip, "m_ContextMenuStrip");
+				resources.ApplyResources(this.m_DeleteSelectedRowToolStripMenuItem, "m_DeleteSelectedRowToolStripMenuItem");
+				resources.ApplyResources(this.digitalClock_Now, "digitalClock_Now");
+				resources.ApplyResources(this.m_dataGridViewToday, "m_dataGridViewToday");				
+				resources.ApplyResources(this.ListBox_WorkCaegory, "ListBox_WorkCaegory");
+				resources.ApplyResources(this.m_LabelTimeToFinishToday, "m_LabelTimeToFinishToday");
+				resources.ApplyResources(this.m_NumericUpDownToWork, "m_NumericUpDownToWork");
+				this.m_ToolTip.SetToolTip(this.m_NumericUpDownToWork, resources.GetString("m_NumericUpDownToWork.ToolTip"));
+				this.m_ToolTip.SetToolTip(this.m_NumericUpDownMinute, resources.GetString("m_NumericUpDownMinute.ToolTip"));
+				this.m_ToolTip.SetToolTip(this.m_NumericUpDownHour, resources.GetString("m_NumericUpDownHour.ToolTip"));
+				resources.ApplyResources(this.m_NumericUpDownHour, "m_NumericUpDownHour");
+				resources.ApplyResources(this.m_MonthCalendar, "m_MonthCalendar");
+				resources.ApplyResources(this.dataGridViewTextBoxColumn8, "dataGridViewTextBoxColumn8");
+				resources.ApplyResources(this.dataGridViewTextBoxColumn9, "dataGridViewTextBoxColumn9");
+				resources.ApplyResources(this.plannedHoursDataGridViewTextBoxColumn, "plannedHoursDataGridViewTextBoxColumn");
+				resources.ApplyResources(this.plannedHoursDataGridViewTextBoxColumn1, "plannedHoursDataGridViewTextBoxColumn1");
+				resources.ApplyResources(this.dataGridViewTextBoxColumn10, "dataGridViewTextBoxColumn10");
+				resources.ApplyResources(this.categoryIdDataGridViewTextBoxColumn2, "categoryIdDataGridViewTextBoxColumn2");
+				resources.ApplyResources(this.categoryDataGridViewTextBoxColumn1, "categoryDataGridViewTextBoxColumn1");
+				resources.ApplyResources(this.yearDataGridViewTextBoxColumn, "yearDataGridViewTextBoxColumn");
+				resources.ApplyResources(this.dataGridViewTextBoxColumn5, "dataGridViewTextBoxColumn5");
+				resources.ApplyResources(this.dataGridViewTextBoxColumn6, "dataGridViewTextBoxColumn6");
+				resources.ApplyResources(this.dataGridViewTextBoxColumn6, "dataGridViewTextBoxColumn6");
+				resources.ApplyResources(this.dataGridViewTextBoxColumn7, "dataGridViewTextBoxColumn7");
+				resources.ApplyResources(this.categoryIdDataGridViewTextBoxColumn1, "categoryIdDataGridViewTextBoxColumn1");
+				resources.ApplyResources(this.categoryDataGridViewTextBoxColumn, "categoryDataGridViewTextBoxColumn");
+				resources.ApplyResources(this.Info, "Info");
+				resources.ApplyResources(this, "$this");
+				SetHowLongToWorkTodayLabel();				
+			}
+			catch { }
+		}
 
-    }
+		#endregion
+	}
 }

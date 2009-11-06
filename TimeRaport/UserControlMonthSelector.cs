@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Globalization;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace Hackovic.TimeReport
 {
 	public delegate void DateTimeEventHandler(object sender, DateTime dateTime);
 
-	public partial class UserControlMonthSelector : UserControl
+	public partial class UserControlMonthSelector : UserControl , ILocalizableControl
 	{
 		public event DateTimeEventHandler DateChanged;
 
@@ -67,10 +62,19 @@ namespace Hackovic.TimeReport
 		{
 			try
 			{
+				m_ComboBoxMonth.Items.Clear();
 				m_NumericUpDownYear.Value = Year;
+				string month = "";
 				for (int i = 0; i < 12; i++)
 				{
-					m_ComboBoxMonth.Items.Add(DateTimeFormatInfo.CurrentInfo.MonthNames[i]);
+					try
+					{
+						month = Thread.CurrentThread.CurrentUICulture.DateTimeFormat.MonthNames[i];
+					}
+					catch {
+						month = DateTimeFormatInfo.InvariantInfo.MonthNames[i];
+					}
+					m_ComboBoxMonth.Items.Add(month);
 				}
 				m_ComboBoxMonth.SelectedIndex = 0;
 			}
@@ -109,5 +113,19 @@ namespace Hackovic.TimeReport
 		{
 			OnDateChanged();
 		}
+
+		#region ILocalizableControl Members
+
+		public void ChangeLanguage()
+		{
+			try
+			{
+				UserControlMonthSelector_Load(this, EventArgs.Empty);
+				UpdateControls();
+			}
+			catch { }
+		}
+
+		#endregion
 	}
 }

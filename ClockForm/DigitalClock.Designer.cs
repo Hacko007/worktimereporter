@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DigitalClock));
 			this.Clock_timer = new System.Windows.Forms.Timer(this.components);
 			this.DigitalClock_contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.toolStripTextBox_DateTimeFormat = new System.Windows.Forms.ToolStripTextBox();
@@ -50,45 +51,39 @@
             this.toolStripSeparator1,
             this.toolStripComboBox_Style});
 			this.DigitalClock_contextMenuStrip.Name = "DigitalClock_contextMenuStrip";
-			this.DigitalClock_contextMenuStrip.Size = new System.Drawing.Size(261, 58);
+			resources.ApplyResources(this.DigitalClock_contextMenuStrip, "DigitalClock_contextMenuStrip");
 			this.DigitalClock_contextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.DigitalClock_contextMenuStrip_Opening);
 			// 
 			// toolStripTextBox_DateTimeFormat
 			// 
 			this.toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource.AddRange(new string[] {
-            "HH:mm",
-            "HH:mm:ss",
-            "yyyy-MM-dd",
-            "yyyy-MM-dd  HH:mm",
-            "yyyy-MM-dd  HH:mm:ss",
-            "d MMM yyyy"});
+            resources.GetString("toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource"),
+            resources.GetString("toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource1"),
+            resources.GetString("toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource2"),
+            resources.GetString("toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource3"),
+            resources.GetString("toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource4"),
+            resources.GetString("toolStripTextBox_DateTimeFormat.AutoCompleteCustomSource5")});
 			this.toolStripTextBox_DateTimeFormat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
 			this.toolStripTextBox_DateTimeFormat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 			this.toolStripTextBox_DateTimeFormat.Name = "toolStripTextBox_DateTimeFormat";
-			this.toolStripTextBox_DateTimeFormat.Size = new System.Drawing.Size(200, 21);
-			this.toolStripTextBox_DateTimeFormat.Text = "Time Format";
-			this.toolStripTextBox_DateTimeFormat.ToolTipText = "DateTime Format";
+			resources.ApplyResources(this.toolStripTextBox_DateTimeFormat, "toolStripTextBox_DateTimeFormat");
 			this.toolStripTextBox_DateTimeFormat.TextChanged += new System.EventHandler(this.toolStripTextBox_DateTimeFormat_TextChanged);
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size(257, 6);
+			resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
 			// 
 			// toolStripComboBox_Style
 			// 
 			this.toolStripComboBox_Style.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
 			this.toolStripComboBox_Style.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.toolStripComboBox_Style.Items.AddRange(new object[] {
-            "Simple",
-            "Full",
-            "Image"});
+            resources.GetString("toolStripComboBox_Style.Items"),
+            resources.GetString("toolStripComboBox_Style.Items1"),
+            resources.GetString("toolStripComboBox_Style.Items2")});
 			this.toolStripComboBox_Style.Name = "toolStripComboBox_Style";
-			this.toolStripComboBox_Style.Size = new System.Drawing.Size(200, 21);
-			// 
-			// DigitalClock
-			// 
-			//this.Paint += new System.Windows.Forms.PaintEventHandler(this.DigitalClock_Paint);
+			resources.ApplyResources(this.toolStripComboBox_Style, "toolStripComboBox_Style");
 			this.DigitalClock_contextMenuStrip.ResumeLayout(false);
 			this.DigitalClock_contextMenuStrip.PerformLayout();
 			this.ResumeLayout(false);

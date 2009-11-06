@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddHolyday));
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.buttonCancel = new System.Windows.Forms.Button();
 			this.buttonOK = new System.Windows.Forms.Button();
@@ -55,41 +56,28 @@
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.m_textBoxName);
 			this.groupBox1.Controls.Add(this.m_MonthCalendar);
-			this.groupBox1.Location = new System.Drawing.Point(3, 3);
+			resources.ApplyResources(this.groupBox1, "groupBox1");
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(404, 255);
-			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Lägg till ledig dag";
 			// 
 			// buttonCancel
 			// 
-			this.buttonCancel.Location = new System.Drawing.Point(306, 212);
+			resources.ApplyResources(this.buttonCancel, "buttonCancel");
 			this.buttonCancel.Name = "buttonCancel";
-			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-			this.buttonCancel.TabIndex = 10;
-			this.buttonCancel.Text = "Ångra";
 			this.buttonCancel.UseVisualStyleBackColor = true;
 			this.buttonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
 			// 
 			// buttonOK
 			// 
-			this.buttonOK.Location = new System.Drawing.Point(200, 212);
+			resources.ApplyResources(this.buttonOK, "buttonOK");
 			this.buttonOK.Name = "buttonOK";
-			this.buttonOK.Size = new System.Drawing.Size(100, 23);
-			this.buttonOK.TabIndex = 9;
-			this.buttonOK.Text = "OK";
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.ButtonOK_Click);
 			// 
 			// label4
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(269, 171);
+			resources.ApplyResources(this.label4, "label4");
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(23, 13);
-			this.label4.TabIndex = 8;
-			this.label4.Text = "tim.";
 			// 
 			// m_numericUpDownToWork
 			// 
@@ -98,74 +86,51 @@
             0,
             0,
             0});
-			this.m_numericUpDownToWork.Location = new System.Drawing.Point(200, 169);
+			resources.ApplyResources(this.m_numericUpDownToWork, "m_numericUpDownToWork");
 			this.m_numericUpDownToWork.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
 			this.m_numericUpDownToWork.Name = "m_numericUpDownToWork";
-			this.m_numericUpDownToWork.Size = new System.Drawing.Size(63, 20);
-			this.m_numericUpDownToWork.TabIndex = 7;
 			// 
 			// label3
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(197, 152);
+			resources.ApplyResources(this.label3, "label3");
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(103, 13);
-			this.label3.TabIndex = 6;
-			this.label3.Text = "Att jobba denna dag";
 			// 
 			// label2
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(197, 74);
+			resources.ApplyResources(this.label2, "label2");
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(25, 13);
-			this.label2.TabIndex = 4;
-			this.label2.Text = "Info";
 			// 
 			// m_textBoxInfo
 			// 
-			this.m_textBoxInfo.Location = new System.Drawing.Point(200, 90);
-			this.m_textBoxInfo.Multiline = true;
+			resources.ApplyResources(this.m_textBoxInfo, "m_textBoxInfo");
 			this.m_textBoxInfo.Name = "m_textBoxInfo";
-			this.m_textBoxInfo.Size = new System.Drawing.Size(169, 49);
-			this.m_textBoxInfo.TabIndex = 3;
 			// 
 			// label1
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(197, 23);
+			resources.ApplyResources(this.label1, "label1");
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(35, 13);
-			this.label1.TabIndex = 2;
-			this.label1.Text = "Namn";
 			// 
 			// m_textBoxName
 			// 
-			this.m_textBoxName.Location = new System.Drawing.Point(200, 39);
+			resources.ApplyResources(this.m_textBoxName, "m_textBoxName");
 			this.m_textBoxName.Name = "m_textBoxName";
-			this.m_textBoxName.Size = new System.Drawing.Size(169, 20);
-			this.m_textBoxName.TabIndex = 1;
 			// 
 			// m_MonthCalendar
 			// 
-			this.m_MonthCalendar.Location = new System.Drawing.Point(12, 25);
+			resources.ApplyResources(this.m_MonthCalendar, "m_MonthCalendar");
 			this.m_MonthCalendar.Name = "m_MonthCalendar";
-			this.m_MonthCalendar.TabIndex = 0;
 			// 
 			// FormAddHolyday
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(412, 265);
 			this.Controls.Add(this.groupBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "FormAddHolyday";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Lägg till ";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.m_numericUpDownToWork)).EndInit();

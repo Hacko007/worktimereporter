@@ -2,10 +2,11 @@
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace Hackovic.TimeReport
 {
-	public partial class UserControlSummary : UserControl
+	public partial class UserControlSummary : UserControl, ILocalizableControl
 	{
 		public UserControlSummary()
 		{
@@ -25,7 +26,7 @@ namespace Hackovic.TimeReport
 				TimeLogFactory.CalculateMonths(actualMonth);
 
 				UserControlMonthSummary userControlMonthSummary = new UserControlMonthSummary {Month = actualMonth};
-				userControlMonthSummary.Height = userControlMonthSummary.TotalHeight + 5;
+				userControlMonthSummary.AjustHight();
 				
 				if (!userControlMonthSummary.IsEmpty())
 				{
@@ -152,6 +153,32 @@ namespace Hackovic.TimeReport
 			m_ToolStripSplitButtonTo.HideDropDown();
 		}
 
+
+
+		#region ILocalizableControl Members
+
+		public void ChangeLanguage()
+		{
+			ComponentResourceManager resources = new ComponentResourceManager(typeof(UserControlSummary));
+
+			resources.ApplyResources(this.m_ToolStrip1, "m_ToolStrip1");
+			resources.ApplyResources(this.m_ToolStripButtonPrintOverview, "m_ToolStripButtonPrintOverview");
+			resources.ApplyResources(this.m_ToolStripButtonPrinterSetup, "m_ToolStripButtonPrinterSetup");
+			resources.ApplyResources(this.m_ToolStripButtonShowLastYear, "m_ToolStripButtonShowLastYear");
+			resources.ApplyResources(this.m_ToolStripButton12Months, "m_ToolStripButton12Months");
+			resources.ApplyResources(this.m_ToolStripLabelSumaryTimeSpan, "m_ToolStripLabelSumaryTimeSpan");
+			resources.ApplyResources(this.m_ToolStripSplitButtonFrom, "m_ToolStripSplitButtonFrom");
+			resources.ApplyResources(this.m_ToolStripMonthCalendarFrom, "m_ToolStripMonthCalendarFrom");
+			resources.ApplyResources(this.m_ToolStripLabelAnd, "m_ToolStripLabelAnd");
+			resources.ApplyResources(this.m_ToolStripSplitButtonTo, "m_ToolStripSplitButtonTo");
+			resources.ApplyResources(this.m_ToolStripMonthCalendarTo, "m_ToolStripMonthCalendarTo");
+			resources.ApplyResources(this.m_ToolStripButtonApplayTimeSpan, "m_ToolStripButtonApplayTimeSpan");
+			resources.ApplyResources(this.m_printPreviewDialog, "m_printPreviewDialog");
+			resources.ApplyResources(this, "$this");
+			
 		
+		}
+
+		#endregion
 	}
 }

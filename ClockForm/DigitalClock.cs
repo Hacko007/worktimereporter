@@ -48,8 +48,8 @@ namespace Hackovic.FreshUserControls
 
 
         private Color background_color_2;
-        
-        [Browsable(true)]
+
+		[Browsable(true), Localizable(true)]
         public Color BackColor2 { 
             get { return this.background_color_2; }
             set { this.background_color_2 = value; }
@@ -73,7 +73,7 @@ namespace Hackovic.FreshUserControls
         /// mm - minutes (00-59)
         /// ss - secunds (00-59)
         /// </summary>
-        [Browsable(true)]
+        [Browsable(true), Localizable(true)]
         public string DateTimeFormat { 
             get{ 
                 return datetime_formatstring;

@@ -117,4 +117,457 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_UserControlMonthSelectorBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 32</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorAfter.Name" xml:space="preserve">
+    <value>m_UserControlMonthSelectorAfter</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RadioButtonBosanski.Text" xml:space="preserve">
+    <value>Bosanski</value>
+  </data>
+  <data name="m_GroupBoxLangage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;m_DigitalClock.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_RadioButtonBosanski.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorBefore.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlMonthSelector, Hackovic.TimeReport, Version=1.0.3596.30423, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorTo.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlMonthSelector, Hackovic.TimeReport, Version=1.0.3596.30423, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_GroupBoxLangage.Text" xml:space="preserve">
+    <value>Språk</value>
+  </data>
+  <data name="m_DigitalClock.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8.25pt</value>
+  </data>
+  <data name="m_UserControlMonthSelectorBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 21</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBetween.Name" xml:space="preserve">
+    <value>m_RadioButtonBetween</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="&gt;&gt;m_DigitalClock.Name" xml:space="preserve">
+    <value>m_DigitalClock</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorTo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonSvenska.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxClean.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_RadioButtonEnglish.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBetween.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="m_UserControlMonthSelectorFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 21</value>
+  </data>
+  <data name="m_RadioButtonAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 98</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxLangage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_RadioButtonSvenska.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_RadioButtonBosanski.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonClean.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonSvenska.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="m_UserControlMonthSelectorAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 94</value>
+  </data>
+  <data name="m_RadioButtonAfter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorAfter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="m_GroupBoxClean.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 83</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="m_RadioButtonSvenska.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_RadioButtonBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 36</value>
+  </data>
+  <data name="m_RadioButtonSvenska.Text" xml:space="preserve">
+    <value>Svenska</value>
+  </data>
+  <data name="m_RadioButtonEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonClean.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorButton, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_RadioButtonAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="m_ButtonClean.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 29</value>
+  </data>
+  <data name="m_DigitalClock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 138</value>
+  </data>
+  <data name="m_ButtonClean.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorBefore.Name" xml:space="preserve">
+    <value>m_UserControlMonthSelectorBefore</value>
+  </data>
+  <data name="m_UserControlMonthSelectorBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_UserControlMonthSelectorAfter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="m_DigitalClock.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxLangage.Parent" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonAfter.Name" xml:space="preserve">
+    <value>m_RadioButtonAfter</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxClean.Name" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="m_UserControlMonthSelectorFrom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="m_UserControlMonthSelectorTo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.Name" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonAfter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_RadioButtonAfter.Text" xml:space="preserve">
+    <value>Efter</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorFrom.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="m_RadioButtonBefore.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_ButtonClean.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 142</value>
+  </data>
+  <data name="m_UserControlMonthSelectorTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 21</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBosanski.Parent" xml:space="preserve">
+    <value>m_GroupBoxLangage</value>
+  </data>
+  <data name="m_ColorPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_RadioButtonSvenska.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBetween.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_RadioButtonBetween.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 65</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonEnglish.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorFrom.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlMonthSelector, Hackovic.TimeReport, Version=1.0.3596.30423, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_RadioButtonEnglish.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_GroupBoxClean.Text" xml:space="preserve">
+    <value>Rensa</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxClean.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_DigitalClock.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.DigitalClock, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBefore.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="m_ColorPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_RadioButtonBosanski.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_UserControlMonthSelectorAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 21</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>och innan</value>
+  </data>
+  <data name="m_GroupBoxClean.Size" type="System.Drawing.Size, System.Drawing">
+    <value>478, 178</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.Type" xml:space="preserve">
+    <value>Hackovic.FreshUserControls.ColorPanel, ClockForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_RadioButtonBetween.Text" xml:space="preserve">
+    <value>Från och med</value>
+  </data>
+  <data name="m_DigitalClock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 33</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorBefore.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="m_RadioButtonEnglish.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="m_RadioButtonBetween.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UserControlMaintenance</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 67</value>
+  </data>
+  <data name="m_RadioButtonSvenska.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 29</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonEnglish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonSvenska.Name" xml:space="preserve">
+    <value>m_RadioButtonSvenska</value>
+  </data>
+  <data name="m_UserControlMonthSelectorTo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorAfter.Type" xml:space="preserve">
+    <value>Hackovic.TimeReport.UserControlMonthSelector, Hackovic.TimeReport, Version=1.0.3596.30423, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="m_UserControlMonthSelectorAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxLangage.Name" xml:space="preserve">
+    <value>m_GroupBoxLangage</value>
+  </data>
+  <data name="m_RadioButtonEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 17</value>
+  </data>
+  <data name="m_RadioButtonBefore.Text" xml:space="preserve">
+    <value>Innan</value>
+  </data>
+  <data name="m_ColorPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 418</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBefore.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonEnglish.Parent" xml:space="preserve">
+    <value>m_GroupBoxLangage</value>
+  </data>
+  <data name="m_RadioButtonBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="&gt;&gt;m_ColorPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_DigitalClock.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBetween.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="m_UserControlMonthSelectorBefore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="m_RadioButtonAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxLangage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_RadioButtonSvenska.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="m_RadioButtonBetween.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonAfter.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorTo.Name" xml:space="preserve">
+    <value>m_UserControlMonthSelectorTo</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBefore.Name" xml:space="preserve">
+    <value>m_RadioButtonBefore</value>
+  </data>
+  <data name="m_UserControlMonthSelectorFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBefore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_GroupBoxClean.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_RadioButtonBetween.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="m_RadioButtonBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBosanski.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBosanski.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonAfter.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="m_GroupBoxLangage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 13</value>
+  </data>
+  <data name="m_UserControlMonthSelectorFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 61</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonClean.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_UserControlMonthSelectorTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 61</value>
+  </data>
+  <data name="m_RadioButtonEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 29</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorBefore.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorFrom.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="m_GroupBoxLangage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 64</value>
+  </data>
+  <data name="m_ButtonClean.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;m_GroupBoxClean.Parent" xml:space="preserve">
+    <value>m_ColorPanel</value>
+  </data>
+  <data name="m_RadioButtonBosanski.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 29</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonBosanski.Name" xml:space="preserve">
+    <value>m_RadioButtonBosanski</value>
+  </data>
+  <data name="&gt;&gt;m_DigitalClock.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_ButtonClean.Text" xml:space="preserve">
+    <value>Rensa</value>
+  </data>
+  <data name="m_RadioButtonAfter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorTo.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="m_RadioButtonBosanski.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorAfter.Parent" xml:space="preserve">
+    <value>m_GroupBoxClean</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonClean.Name" xml:space="preserve">
+    <value>m_ButtonClean</value>
+  </data>
+  <data name="m_ColorPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 418</value>
+  </data>
+  <data name="m_DigitalClock.DateTimeFormat" xml:space="preserve">
+    <value>'Idag:'   yyyy/MM/dd</value>
+  </data>
+  <data name="m_RadioButtonBefore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonEnglish.Name" xml:space="preserve">
+    <value>m_RadioButtonEnglish</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlMonthSelectorFrom.Name" xml:space="preserve">
+    <value>m_UserControlMonthSelectorFrom</value>
+  </data>
+  <data name="&gt;&gt;m_RadioButtonSvenska.Parent" xml:space="preserve">
+    <value>m_GroupBoxLangage</value>
+  </data>
+  <data name="m_RadioButtonBetween.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
