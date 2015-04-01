@@ -1,0 +1,1 @@
+Record your working time. Reports and overviews are created directly. For now it is in Swedesh only.
